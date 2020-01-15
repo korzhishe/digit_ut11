@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"></meta><meta http-equiv="X-UA-Compatible" content="IE=9"></meta><style type="text/css">
+	  html { height: 100% }
+	  body { height: 100%; margin: 0px; padding: 0px }
+	  #map { height: 100% }
+	</style><!-- <script type="text/javascript" src="http://api-maps.yandex.ru/2.0.27/?load=package.full&mode=debug&lang=ru-RU"></script>  --><!-- <script type="text/javascript" src="http://api-maps.yandex.ru/2.1.42/?load=package.full&lang=ru-RU"></script>   --><script src="http://api-maps.yandex.ru/2.1.42/?load=package.full&amp;mode=debug&amp;lang=ru-RU" type="text/javascript"> </script><script type="text/javascript">
+// Как только будет загружен API и готов DOM, выполняем инициализацию (с) Yandex
+ymaps.ready(CreateMap);
+
+var collection; //коллекция точек
+var collectionGEO; //коллекция полигонов
+var OurYandexMap;
+
+function CreateMap() {
+	// создаём экземпляр объекта-карты и привязываем к контейнеру с заданным id (именем)
+	// чтобы иметь возможность командовать ею извне, глобализуем
+	OurYandexMap = new ymaps.Map('OurYMap', { // таких объектов-карт можно создать сколько угодно
+	// При инициализации карты обязательно нужно указать ее центр и коэффициент масштабирования
+	center: #КоординатыЦентра#,
+	zoom: #Увеличение#,			
+	type: 'yandex#map', // Возможные значения типа карты см. в модуле обработки
+	behaviors: ['default', 'scrollZoom'] // масштабирование колесом мыши
+	}, // конец задания основных параметров
+	{// опции (только те, которые требуют явной переустановки)
+	maxZoom: 23, // максимальный уровень масштабирования карты (по умолчанию 23)
+	minZoom: 0, // минимальный уровень масштабирования карты (по умолчанию 0)
+	geoObjectDraggable: false,
+	balloonCloseButton: true
+	} // конец задания опций
+	);
+	
+	///Колекция Точек
+	collection = new ymaps.GeoObjectCollection({}, {
+	// preset: 'twirl#blueIcon', // все метки коллекции с пиктограммой "кафе"
+	// cursor: 'grab', // курсор на метках будет "рукой"
+	draggable: false // метки можно будет перемещать
+	});	
+	OurYandexMap.geoObjects.add(collection);
+	
+	///Колекция Полигонов
+	collectionGEO = new ymaps.GeoObjectCollection();
+	OurYandexMap.geoObjects.add(collectionGEO);
+	
+	
+	//////////////////////////////////////////////////////////////////////   СОБЫТИЯ 
+	
+	// При окночании перемещения.
+	collectionGEO.events.add('dragend', function (event) {
+		//    setActivePointsGEO(collection,collectionGEO);   
+		});
+		
+	// При окночании перемещения.
+	collectionGEO.events.add('drag', function (event) {
+		//   alert('ddd');
+		//  var myPolygon = event.get('target');
+		//        setActivePointsGEO(collection,collectionGEO);
+		//   alert(myPolygon.geometry.getCoordinates());
+		});
+		
+		
+	// При окночании перемещения njxrb
+	collection.events.add('dragend', function (event) {
+		  // alert('ddd');
+		  var myPlacemark = event.get('target');
+		//        setActivePointsGEO(collection,collectionGEO);
+		//   alert(myPolygon.geometry.getCoordinates());
+		  //myPlacemark.options.set('iconColor',#ЦветМеткиПоУмолчанию#);
+		  
+		});
+	
+		
+  return window.OurYandexMap;
+ } // конец функции CreateMap
+			
+			
+	//////////////////////////////////////////////////////////////// удаление карты		
+	function RemoveMap(MapObject) {	
+    	MapObject.destroy(); // Удаление карты
+    	MapObject = null; // полный сброс, после которого if (!MapObject) вернёт истину.
+	} // конец функции RemoveMap 
+			
+			
+			
+		//Функция добавляет точку на карту
+	 function AddPlacemark(X,Y,p_iconContent,p_balloonContentHeader,p_balloonContentBody,p_balloonContentFooter,p_hintContent,p_id,p_preset) {
+    	Placemark = new ymaps.Placemark( [X, Y] ,
+    				 // спецификация
+    				 
+                   { 
+                     
+					 iconContent: p_iconContent,  		
+					 balloonContentHeader: p_balloonContentHeader,
+					 balloonContentBody:  p_balloonContentBody ,
+					 balloonContentFooter: p_balloonContentFooter, 
+					 hintContent: p_hintContent,
+					 metro: '',
+					 metro_Coordinates: '',
+					 id: p_id
+                    },
+                	 { preset: p_preset,
+					  draggable: false,
+					  iconColor: #ЦветМеткиПоУмолчанию#
+					 }                 );
+                	                   
+           collection.add(Placemark);
+           
+          
+                	                   
+       	return Placemark;
+    } // конец функции AddPlacemark
+
+	
+     // Удаление всех элементов коллекции.
+     function RemoveAllPlacemark() {
+    	 collection.removeAll();
+    } // конец функции RemoveAllPlacemark
+
+   // Удаление метки по ID элементов коллекции.
+     function RemoveIDPlacemark(id) {
+     collection.each(function (obj) {
+        if(obj.properties.get('id') == id) {
+    	  collection.remove(obj);
+    	 }
+      });	 
+    } // конец функции RemoveIDPlacemark		
+			
+	
+	
+	
+	
+	  ////////////////////////////////////////---------- Устанавливает элементам коллекции станциии метро
+   		 function SetMetro() {
+		 var name;
+		 var coords;
+		 var strCoords;
+		 name = '';
+		    collection.each(function (obj) {		        
+		   //  if(obj.properties.get('id') == id) { 		          
+		       		
+		        var myGeocoder = ymaps.geocode(obj.geometry.getCoordinates(), {kind: 'metro',results: '1'});
+		        myGeocoder.then(
+		       
+		        function (res) {
+		  	       var nearest = res.geoObjects.get(0);
+		  	       //alert(nearest);
+		  	       if (nearest != null){
+		  	      name = nearest.properties.get('name');
+		          obj.properties.set('metro',name);
+		          
+		          var cGeoObject = res.geoObjects.get(0);
+                  coords = cGeoObject.geometry.getCoordinates();
+                  
+                  strCoords = coords.join(',');
+		          obj.properties.set('metro_Coordinates',strCoords);
+		        // alert(strCoords); 
+                  }                                                  	
+		  	    },
+		  	  function (err) {
+		  	alert('Ошибка');
+		    });	    
+		    //  }
+		      });
+		     } // конец функции
+
+
+         
+        //////////////////////////////////////////----------- Поиск станциии метро
+   		 function GetMetro(id) {
+		 var name;
+		    collection.each(function (obj) {      
+		     if(obj.properties.get('id') == id) {   
+		 		
+		 		  name = obj.properties.get('metro');
+		 		 //alert(typeof name);
+		         //return name;   
+		     }
+		      })
+		        return name;
+		     } // конец функции
+        
+         
+        //////////////////////////////////////////----------- Поиск координат метро
+   		 function GetMetroCoords(id) {
+		 var coords;
+		    collection.each(function (obj) {      
+		     if(obj.properties.get('id') == id) {   
+		 		
+		 		  coords = obj.properties.get('metro_Coordinates');   
+		     }
+		      })
+		        return coords;
+		     } // конец функции
+
+	
+	
+	     ////////////////////////////////////////---------- редактирования
+   		 function SetDraggablePlacemark(id) {
+		 
+		    collection.each(function (obj) {      
+		     if(obj.properties.get('id') == id) {   
+		 		
+		 		   obj.options.set('draggable',true);
+				   obj.options.set('iconColor','#ff1839');
+ 
+				   
+		     }
+		      }) 
+			}  // конец функции
+
+		 ////////////////////////////////////////---------- получить координаты метки	
+		 function GetCoordinatesPlacemark(id) {
+		 var strCoords;
+		    collection.each(function (obj) {      
+		     if(obj.properties.get('id') == id) {   
+				 
+				  coords = obj.geometry.getCoordinates();
+                  
+                  strCoords = coords.join(',');
+
+				  obj.options.set('iconColor',#ЦветМеткиПоУмолчанию#);
+
+		 		 // name = obj.properties.get('metro');
+		 		 //alert(typeof name);
+		         //return name;   
+		     }
+		      })
+		        return strCoords;
+		     } // конец функции
+	
+	       
+			
+</script><meta name="GENERATOR" content="MSHTML 11.00.9600.18538"></meta></head><body><!-- здесь может быть всякий сопроводительный HTML-код --><!-- простое размещение на самом HTML-документе -->
+<div id="OurYMap" style="HEIGHT: 100%; WIDTH: 100%"></div><!-- здесь может быть всякий сопроводительный HTML-код --></body></html>

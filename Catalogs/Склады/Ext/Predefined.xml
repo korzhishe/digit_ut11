@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.6">
+	<Item id="7c95f5a3-88d1-4f3d-8b39-fdb10b8d2225">
+		<Name>СкладФотографа</Name>
+		<Code/>
+		<Description>Склад фотографа</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

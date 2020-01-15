@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа_ОПрограмме" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>О ПРОГРАММЕ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа о программе</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="Группа_ОПрограммеРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<LabelField name="Р_НазваниеПрограммы" id="3">
+					<DataPath>Объект.Р_НазваниеПрограммы</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="Р_НазваниеПрограммыКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="Р_НазваниеПрограммыРасширеннаяПодсказка" id="5"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа_Автор" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>АВТОРСКИЕ ПРАВА</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа автор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="Группа_АвторРасширеннаяПодсказка" id="7"/>
+			<ChildItems>
+				<InputField name="Поле1" id="16">
+					<DataPath>РФ_ОбАвторе</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<HorizontalStretch>true</HorizontalStretch>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="Поле1КонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="Поле1РасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<LabelDecoration name="Декорация_Автор" id="8">
+					<Visible>false</Visible>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ульянов Юрий - Профессиональная разработка решений на базе 1С. 
+2002 - 2016 (c)  Все права защищены.</v8:content>
+						</v8:item>
+					</Title>
+					<BackColor>#CCFFFF</BackColor>
+					<ContextMenu name="Декорация_АвторКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="Декорация_АвторРасширеннаяПодсказка" id="10"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа_Лицензия" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ЛИЦЕНЗИЯ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа лицензия</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="Группа_ЛицензияРасширеннаяПодсказка" id="12"/>
+			<ChildItems>
+				<LabelField name="Р_ОписаниеЛицензии" id="13">
+					<DataPath>Объект.Р_ОписаниеЛицензии</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="Р_ОписаниеЛицензииКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="Р_ОписаниеЛицензииРасширеннаяПодсказка" id="15"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.APPLIX_RU_СМ_ОПрограмме</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="РФ_ОбАвторе" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Р ф об авторе</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

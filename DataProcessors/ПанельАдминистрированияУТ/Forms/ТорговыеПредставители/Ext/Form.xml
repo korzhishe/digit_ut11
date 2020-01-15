@@ -1,0 +1,703 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<Width>88</Width>
+	<Customizable>false</Customizable>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаЗаголовок" id="1946">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content> </v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content> </v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЗаголовокРасширеннаяПодсказка" id="1951"/>
+			<ChildItems>
+				<LabelDecoration name="ОписаниеРаздела" id="1557">
+					<Width>78</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка работы через торговых представителей. Настройка мобильного оборудования.</v8:content>
+						</v8:item>
+					</Title>
+					<VerticalAlign>Top</VerticalAlign>
+					<ContextMenu name="ОписаниеРазделаКонтекстноеМеню" id="1558"/>
+					<ExtendedTooltip name="ОписаниеРазделаРасширеннаяПодсказка" id="1952"/>
+				</LabelDecoration>
+				<LabelDecoration name="ДекорацияЗаголовка" id="1947">
+					<HorizontalStretch>true</HorizontalStretch>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</ToolTip>
+					<ContextMenu name="ДекорацияЗаголовкаКонтекстноеМеню" id="1948"/>
+					<ExtendedTooltip name="ДекорацияЗаголовкаРасширеннаяПодсказка" id="1953"/>
+				</LabelDecoration>
+				<CommandBar name="ГруппаСправка" id="1949">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<ExtendedTooltip name="ГруппаСправкаРасширеннаяПодсказка" id="1954"/>
+					<ChildItems>
+						<Button name="Справка" id="1950">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.StandardCommand.Help</CommandName>
+							<ExtendedTooltip name="СправкаРасширеннаяПодсказка" id="1955"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКомментарийВедетсяРаботаЧерезТорговыхПредставителей" id="1928">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа комментарий дополнительные реквизиты и сведения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа комментарий дополнительные реквизиты и сведения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>86</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКомментарийВедетсяРаботаЧерезТорговыхПредставителейРасширеннаяПодсказка" id="1956"/>
+			<ChildItems>
+				<PictureDecoration name="Декорация36" id="1929">
+					<Width>2</Width>
+					<Height>1</Height>
+					<Picture>
+						<xr:Ref>CommonPicture.ИнформацияПоНедоступнымПолям</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="Декорация36КонтекстноеМеню" id="1930"/>
+					<ExtendedTooltip name="Декорация36РасширеннаяПодсказка" id="1957"/>
+				</PictureDecoration>
+				<LabelDecoration name="КомментарийВедетсяРаботаЧерезТорговыхПредставителей" id="1931">
+					<Width>86</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Для использования функционала работы через торговых представителей необходимо включить "Заказы клиентов" в разделе "Продажи".</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="КомментарийВедетсяРаботаЧерезТорговыхПредставителейКонтекстноеМеню" id="1932"/>
+					<ExtendedTooltip name="КомментарийВедетсяРаботаЧерезТорговыхПредставителейРасширеннаяПодсказка" id="1958"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаВедетсяРаботаЧерезТорговыхПредставителей" id="1066">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа ведется работа через торговых представителей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа ведется работа через торговых представителей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>43</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВедетсяРаботаЧерезТорговыхПредставителейРасширеннаяПодсказка" id="1959"/>
+			<ChildItems>
+				<CheckBoxField name="ВедетсяРаботаЧерезТорговыхПредставителей" id="806">
+					<DataPath>НаборКонстант.ВедетсяРаботаЧерезТорговыхПредставителей</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ведется работа через торговых представителей</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</ToolTip>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВедетсяРаботаЧерезТорговыхПредставителейКонтекстноеМеню" id="807"/>
+					<ExtendedTooltip name="ВедетсяРаботаЧерезТорговыхПредставителейРасширеннаяПодсказка" id="1960"/>
+					<Events>
+						<Event name="OnChange">ВедетсяРаботаЧерезТорговыхПредставителейПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<LabelDecoration name="ПояснениеВедетсяРаботаЧерезТорговыхПредставителей" id="1067">
+					<Height>3</Height>
+					<TextColor>style:ПоясняющийТекст</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Осуществление торговли или предоставления услуг через торговых представителей.
+Только при использовании заказов клиентов.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПояснениеВедетсяРаботаЧерезТорговыхПредставителейКонтекстноеМеню" id="1068"/>
+					<ExtendedTooltip name="ПояснениеВедетсяРаботаЧерезТорговыхПредставителейРасширеннаяПодсказка" id="1961"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаИспользованиеЗаданийТП" id="1069">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа использование заданий ТП</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа использование заданий ТП</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>86</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИспользованиеЗаданийТПРасширеннаяПодсказка" id="1962"/>
+			<ChildItems>
+				<InputField name="ИспользованиеЗаданийТорговымПредставителям" id="808">
+					<DataPath>НаборКонстант.ИспользованиеЗаданийТорговымПредставителям</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задания торговым представителям</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Top</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</ToolTip>
+					<ClearButton>false</ClearButton>
+					<ContextMenu name="ИспользованиеЗаданийТорговымПредставителямКонтекстноеМеню" id="809"/>
+					<ExtendedTooltip name="ИспользованиеЗаданийТорговымПредставителямРасширеннаяПодсказка" id="1963"/>
+					<Events>
+						<Event name="OnChange">ИспользованиеЗаданийТорговымПредставителямПриИзменении</Event>
+						<Event name="Clearing">ИспользованиеЗаданийТорговымПредставителямОчистка</Event>
+					</Events>
+				</InputField>
+				<LabelDecoration name="ПояснениеИспользованиеЗаданийТП1" id="1070">
+					<TextColor>style:ПоясняющийТекст</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Для управления торговыми представителями - формирование заданий торговым представителям.
+Например, необходимо осуществить продажи на 100 000 руб. в следующем месяце.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПояснениеИспользованиеЗаданийТП1КонтекстноеМеню" id="1071"/>
+					<ExtendedTooltip name="ПояснениеИспользованиеЗаданийТП1РасширеннаяПодсказка" id="1964"/>
+				</LabelDecoration>
+				<LabelDecoration name="ПояснениеИспользованиеЗаданийТП2" id="1072">
+					<TextColor>style:ПоясняющийТекст</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Для планирования торговыми представителями - на мобильных устройствах торговых представителей появляется возможность формирования заданий.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПояснениеИспользованиеЗаданийТП2КонтекстноеМеню" id="1073"/>
+					<ExtendedTooltip name="ПояснениеИспользованиеЗаданийТП2РасширеннаяПодсказка" id="1965"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа5" id="1600">
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="1966"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДетализироватьЗаданияТорговымПредставителямПоНоменклатуре" id="1074">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа детализировать задания торговым представителям по номенклатуре</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа детализировать задания торговым представителям по номенклатуре</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>43</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>NormalSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДетализироватьЗаданияТорговымПредставителямПоНоменклатуреРасширеннаяПодсказка" id="1967"/>
+					<ChildItems>
+						<CheckBoxField name="ДетализироватьЗаданияТорговымПредставителямПоНоменклатуре" id="810">
+							<DataPath>НаборКонстант.ДетализироватьЗаданияТорговымПредставителямПоНоменклатуре</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Детализировать задания торговым представителям по номенклатуре</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content> </v8:content>
+								</v8:item>
+							</ToolTip>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ДетализироватьЗаданияТорговымПредставителямПоНоменклатуреКонтекстноеМеню" id="811"/>
+							<ExtendedTooltip name="ДетализироватьЗаданияТорговымПредставителямПоНоменклатуреРасширеннаяПодсказка" id="1968"/>
+							<Events>
+								<Event name="OnChange">ДетализироватьЗаданияТорговымПредставителямПоНоменклатуреПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<LabelDecoration name="ПояснениеДетализироватьЗаданияТорговымПредставителямПоНоменклатуре" id="1075">
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Формирование заданий с указанием планов продаж по конкретной номеклатуре.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПояснениеДетализироватьЗаданияТорговымПредставителямПоНоменклатуреКонтекстноеМеню" id="1076"/>
+							<ExtendedTooltip name="ПояснениеДетализироватьЗаданияТорговымПредставителямПоНоменклатуреРасширеннаяПодсказка" id="1969"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="НастройкиДляРасширенияДляКПК" id="1940">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки, требуемые для работы торговых представителей, использующих мобильное приложение на базе "Расширения для КПК"</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки для расширения для КПК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>86</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="НастройкиДляРасширенияДляКПКРасширеннаяПодсказка" id="1970"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаУправлениеМобильнымиПриложениями" id="1077">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа управление мобильными приложениями</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа управление мобильными приложениями</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>86</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Horizontal</Group>
+					<Representation>NormalSeparation</Representation>
+					<ChildItemsWidth>Equal</ChildItemsWidth>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаУправлениеМобильнымиПриложениямиРасширеннаяПодсказка" id="1971"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаУправлениеМобильнымиПриложениями1" id="1078">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа управление мобильными приложениями1</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа управление мобильными приложениями1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаУправлениеМобильнымиПриложениями1РасширеннаяПодсказка" id="1972"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаОткрытьМобильныеПриложения" id="1081">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа открыть мобильные приложения</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа открыть мобильные приложения</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>NormalSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОткрытьМобильныеПриложенияРасширеннаяПодсказка" id="1973"/>
+									<ChildItems>
+										<Button name="ОткрытьМобильныеПриложения" id="1080">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ОткрытьМобильныеПриложения</CommandName>
+											<ExtendedTooltip name="ОткрытьМобильныеПриложенияРасширеннаяПодсказка" id="1974"/>
+										</Button>
+										<LabelDecoration name="ПояснениеОткрытьМобильныеПриложения" id="1082">
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Список приложений для работы через КПК.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПояснениеОткрытьМобильныеПриложенияКонтекстноеМеню" id="1083"/>
+											<ExtendedTooltip name="ПояснениеОткрытьМобильныеПриложенияРасширеннаяПодсказка" id="1975"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаОбщаяКомандаНастройкиКомпонентыОбменаДаннымиСКПК" id="1093">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа общая команда настройки компоненты обмена данными СКПК</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа общая команда настройки компоненты обмена данными СКПК</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>NormalSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОбщаяКомандаНастройкиКомпонентыОбменаДаннымиСКПКРасширеннаяПодсказка" id="1976"/>
+									<ChildItems>
+										<Button name="ОткрытьНастройкиКомпонентыОбменаДаннымиСКПК" id="1583">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ОткрытьНастройкиКомпонентыОбменаДаннымиСКПК</CommandName>
+											<ExtendedTooltip name="ОткрытьНастройкиКомпонентыОбменаДаннымиСКПКРасширеннаяПодсказка" id="1977"/>
+										</Button>
+										<LabelDecoration name="ПояснениеОбщаяКомандаНастройкиКомпонентыОбменаДаннымиСКПК" id="1094">
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Определение настроек компоненты обмена с мобильными компьютерами.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПояснениеОбщаяКомандаНастройкиКомпонентыОбменаДаннымиСКПККонтекстноеМеню" id="1095"/>
+											<ExtendedTooltip name="ПояснениеОбщаяКомандаНастройкиКомпонентыОбменаДаннымиСКПКРасширеннаяПодсказка" id="1978"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаУправлениеМобильнымиПриложениями2" id="1079">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа управление мобильными приложениями1</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа управление мобильными приложениями1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаУправлениеМобильнымиПриложениями2РасширеннаяПодсказка" id="1979"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаОткрытьМобильныеКомпьютеры" id="1085">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа открыть мобильные компьютеры</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа открыть мобильные компьютеры</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>NormalSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОткрытьМобильныеКомпьютерыРасширеннаяПодсказка" id="1980"/>
+									<ChildItems>
+										<Button name="ОткрытьМобильныеКомпьютеры" id="1084">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ОткрытьМобильныеКомпьютеры</CommandName>
+											<ExtendedTooltip name="ОткрытьМобильныеКомпьютерыРасширеннаяПодсказка" id="1981"/>
+										</Button>
+										<LabelDecoration name="ПояснениеОткрытьМобильныеКомпьютеры" id="1086">
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Список зарегистрированных мобильных компьютеров.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПояснениеОткрытьМобильныеКомпьютерыКонтекстноеМеню" id="1087"/>
+											<ExtendedTooltip name="ПояснениеОткрытьМобильныеКомпьютерыРасширеннаяПодсказка" id="1982"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаОткрытьНастройкиТорговыхПредставителей" id="1937">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа открыть настройки торговых представителей</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа открыть настройки торговых представителей</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОткрытьНастройкиТорговыхПредставителейРасширеннаяПодсказка" id="1983"/>
+									<ChildItems>
+										<Button name="ОткрытьНастройкиТорговыхПредставителей" id="1936">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ОткрытьНастройкиТорговыхПредставителей</CommandName>
+											<ExtendedTooltip name="ОткрытьНастройкиТорговыхПредставителейРасширеннаяПодсказка" id="1984"/>
+										</Button>
+										<LabelDecoration name="ПояснениеОткрытьНастройкиТорговыхПредставителей" id="1938">
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Добавление и изменение настроек обмена данными для торговых представителей - пользователей мобильных приложений на базе Расширения для КПК.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПояснениеОткрытьНастройкиТорговыхПредставителейКонтекстноеМеню" id="1939"/>
+											<ExtendedTooltip name="ПояснениеОткрытьНастройкиТорговыхПредставителейРасширеннаяПодсказка" id="1985"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="НастройкиДляКонфигурацииТорговыйПредставитель" id="1941">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки, требуемые для работы торговых представителей, использующих мобильную конфигурацию "Торговый представитель"</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки для конфигурации торговый представитель</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>86</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="НастройкиДляКонфигурацииТорговыйПредставительРасширеннаяПодсказка" id="1986"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНастройкиОбменаДанными" id="1942">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройки обмена данными</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройки обмена данными</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>43</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНастройкиОбменаДаннымиРасширеннаяПодсказка" id="1987"/>
+					<ChildItems>
+						<Button name="НастройкиОбменаДанными" id="1945">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.НастройкиОбменаДанными</CommandName>
+							<ExtendedTooltip name="НастройкиОбменаДаннымиРасширеннаяПодсказка" id="1988"/>
+						</Button>
+						<LabelDecoration name="ПояснениеОткрытьНастройкиТорговыхПредставителей1" id="1943">
+							<Height>3</Height>
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Добавление и изменение настроек обмена данными для торговых представителей - пользователей мобильной конфигурации"Торговый представитель".</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПояснениеОткрытьНастройкиТорговыхПредставителей1КонтекстноеМеню" id="1944"/>
+							<ExtendedTooltip name="ПояснениеОткрытьНастройкиТорговыхПредставителей1РасширеннаяПодсказка" id="1989"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="РежимРаботы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим работы</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОткрытьМобильныеПриложения" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Мобильные приложения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть справочник мобильных приложений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьМобильныеПриложения</Action>
+		</Command>
+		<Command name="ОткрытьМобильныеКомпьютеры" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Мобильные компьютеры (КПК)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть справочник мобильных компьютеров</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьМобильныеКомпьютеры</Action>
+		</Command>
+		<Command name="ОткрытьНастройкиКомпонентыОбменаДаннымиСКПК" id="48">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки компоненты обмена данными с КПК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть настройки компоненты обмена данными СКПК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьНастройкиКомпонентыОбменаДаннымиСКПК</Action>
+		</Command>
+		<Command name="ОткрытьНастройкиТорговыхПредставителей" id="57">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки обмена данными для торговых представителей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть настройки обмена данными для торговых представителей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьНастройкиТорговыхПредставителей</Action>
+		</Command>
+		<Command name="НастройкиОбменаДанными" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки обмена данными для торговых представителей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки обмена данными для пользователей мобильной конфигурации "Торговый представитель"</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастройкиОбменаДанными</Action>
+		</Command>
+	</Commands>
+</Form>

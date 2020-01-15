@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодExtendedTooltip" id="9"/>
+		</InputField>
+		<InputField name="Наименование" id="3">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="НаименованиеExtendedTooltip" id="10"/>
+		</InputField>
+		<CheckBoxField name="КонечныйСтатус" id="22">
+			<DataPath>Объект.КонечныйСтатус</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="КонечныйСтатусКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="КонечныйСтатусРасширеннаяПодсказка" id="24"/>
+		</CheckBoxField>
+		<InputField name="НашЦвет" id="11">
+			<DataPath>НашЦвет</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="НашЦветКонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="НашЦветРасширеннаяПодсказка" id="13"/>
+		</InputField>
+		<UsualGroup name="ГруппаМетки" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа метки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа метки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаМеткиРасширеннаяПодсказка" id="21"/>
+			<ChildItems>
+				<InputField name="ЗначениеЦветаМетки" id="14">
+					<DataPath>Объект.ЗначениеЦветаМетки</DataPath>
+					<Visible>false</Visible>
+					<ChoiceButton>true</ChoiceButton>
+					<ContextMenu name="ЗначениеЦветаМеткиКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ЗначениеЦветаМеткиРасширеннаяПодсказка" id="16"/>
+					<Events>
+						<Event name="StartChoice">ЗначениеЦветаМеткиНачалоВыбора</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ШаблонSMS" id="25">
+			<DataPath>Объект.ШаблонSMS</DataPath>
+			<ContextMenu name="ШаблонSMSКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ШаблонSMSРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="ШаблонEMAIL" id="28">
+			<DataPath>Объект.ШаблонEMAIL</DataPath>
+			<ContextMenu name="ШаблонEMAILКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ШаблонEMAILРасширеннаяПодсказка" id="30"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ГАЛ_СтатусыЗаявокНаДоставку</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="НашЦвет" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наш цвет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Color</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КартинкаМетки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Картинка метки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Picture</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

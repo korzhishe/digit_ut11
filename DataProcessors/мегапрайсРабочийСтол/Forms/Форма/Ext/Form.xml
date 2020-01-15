@@ -1,0 +1,1788 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Мегапрайс PRO</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Область" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Область</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Область</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>true</VerticalStretch>
+			<ExtendedTooltip name="ОбластьРасширеннаяПодсказка" id="12"/>
+			<ChildItems>
+				<Page name="РабочийСтол" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рабочий стол Мегапрайс</v8:content>
+						</v8:item>
+					</Title>
+					<TitleTextColor>#808080</TitleTextColor>
+					<TitleFont ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рабочий стол</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<BackColor>web:WhiteSmoke</BackColor>
+					<ExtendedTooltip name="РабочийСтолРасширеннаяПодсказка" id="14"/>
+					<ChildItems>
+						<UsualGroup name="Меню" id="57">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Меню</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Меню</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="МенюРасширеннаяПодсказка" id="58"/>
+							<ChildItems>
+								<Button name="ОткрытьУправлениеМегпрайсом" id="55">
+									<Type>UsualButton</Type>
+									<Width>22</Width>
+									<Height>1</Height>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<CommandName>Form.Command.ОткрытьУправлениеМегарайсом</CommandName>
+									<TextColor>#FFFFFF</TextColor>
+									<BackColor>#333399</BackColor>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройки Мегапрайс</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ОткрытьУправлениеМегпрайсомРасширеннаяПодсказка" id="56"/>
+								</Button>
+								<UsualGroup name="ЗагрузкаВ1С" id="9">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Импорт прайсов </v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Загрузка в1 С</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<ExtendedTooltip name="ЗагрузкаВ1СРасширеннаяПодсказка" id="10"/>
+									<ChildItems>
+										<Button name="ОткрытьРасширеннаяЗагрузка" id="25">
+											<Type>UsualButton</Type>
+											<Width>22</Width>
+											<Height>1</Height>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<CommandName>Form.Command.ОткрытьРасширеннаяЗагрузка</CommandName>
+											<TextColor>#FFFFFF</TextColor>
+											<BackColor>#808080</BackColor>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Загрузить (новая настройка)</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ОткрытьРасширеннаяЗагрузкаРасширеннаяПодсказка" id="26"/>
+										</Button>
+										<Button name="ОткрытьЗагрузкуКартинок" id="53">
+											<Type>Hyperlink</Type>
+											<Width>22</Width>
+											<CommandName>Form.Command.ОткрытьЗагрузкуКартинок</CommandName>
+											<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Загрузка картинок</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ОткрытьЗагрузкуКартинокРасширеннаяПодсказка" id="54"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Номенклатура" id="47">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Управление номенклатурой</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Номенклатура</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="48"/>
+									<ChildItems>
+										<Button name="ОткрытьМарафетНоменклатуры" id="51">
+											<Type>UsualButton</Type>
+											<Width>22</Width>
+											<Height>1</Height>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<CommandName>Form.Command.ОткрытьМарафетНоменклатуры</CommandName>
+											<TextColor>#FFFFFF</TextColor>
+											<BackColor>#993366</BackColor>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Марафет номенклатуры</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ОткрытьМарафетНоменклатурыРасширеннаяПодсказка" id="52"/>
+										</Button>
+										<Button name="ОткрытьСправочник" id="49">
+											<Type>Hyperlink</Type>
+											<Width>22</Width>
+											<CommandName>Form.Command.ОткрытьСправочник</CommandName>
+											<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Управление номенклатурой</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ОткрытьСправочникРасширеннаяПодсказка" id="50"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Маркетинг" id="15">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Маркетинг</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Маркетинг</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<ExtendedTooltip name="МаркетингРасширеннаяПодсказка" id="16"/>
+									<ChildItems>
+										<Button name="ОткрытьАнализаторПрайсов" id="21">
+											<Type>UsualButton</Type>
+											<Width>22</Width>
+											<Height>1</Height>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<CommandName>Form.Command.ОткрытьАнализаторПрайсов</CommandName>
+											<TextColor>#FFFFFF</TextColor>
+											<BackColor>#666699</BackColor>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Анализатор прайсов</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ОткрытьАнализаторПрайсовРасширеннаяПодсказка" id="22"/>
+										</Button>
+										<Button name="ОткрытьУстановкаЦенНоменклатуры" id="23">
+											<Type>UsualButton</Type>
+											<Width>22</Width>
+											<Height>1</Height>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<CommandName>Form.Command.ОткрытьУстановкаЦенНоменклатуры</CommandName>
+											<TextColor>#FFFFFF</TextColor>
+											<BackColor>#666699</BackColor>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Помощник установки цен</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ОткрытьУстановкаЦенНоменклатурыРасширеннаяПодсказка" id="24"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Продажи" id="17">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Продажи</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Продажи</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<ExtendedTooltip name="ПродажиРасширеннаяПодсказка" id="18"/>
+									<ChildItems>
+										<Button name="ОткрытьПрайсЛист" id="45">
+											<Type>UsualButton</Type>
+											<Width>22</Width>
+											<Height>1</Height>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<CommandName>Form.Command.ОткрытьПрайсЛист</CommandName>
+											<TextColor>#FFFFFF</TextColor>
+											<BackColor>#008080</BackColor>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Мультипрайс</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ОткрытьПрайсЛистРасширеннаяПодсказка" id="46"/>
+										</Button>
+										<Button name="ОткрытьПомощникПродаж" id="3">
+											<Type>UsualButton</Type>
+											<Width>22</Width>
+											<Height>1</Height>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<CommandName>Form.Command.ОткрытьПомощникПродаж</CommandName>
+											<TextColor>#FFFFFF</TextColor>
+											<BackColor>#008080</BackColor>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Помощник продаж</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ОткрытьПомощникПродажРасширеннаяПодсказка" id="4"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Закупки" id="19">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Закупки</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Закупки</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<ExtendedTooltip name="ЗакупкиРасширеннаяПодсказка" id="20"/>
+									<ChildItems>
+										<Button name="ОткрытьПомощникЗакупок" id="5">
+											<Type>UsualButton</Type>
+											<Width>22</Width>
+											<Height>1</Height>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<CommandName>Form.Command.ОткрытьПомощникЗакупок</CommandName>
+											<TextColor>#FFFFFF</TextColor>
+											<BackColor>#003300</BackColor>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Помощник закупок</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ОткрытьПомощникЗакупокРасширеннаяПодсказка" id="6"/>
+										</Button>
+										<Button name="ОткрытьПомощникЗакупокПоЗаказам" id="641">
+											<Type>UsualButton</Type>
+											<Width>22</Width>
+											<Height>1</Height>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<CommandName>Form.Command.ОткрытьПомощникЗакупокПоЗаказам</CommandName>
+											<TextColor>#FFFFFF</TextColor>
+											<BackColor>#003300</BackColor>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Обеспечение заказов</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ОткрытьПомощникЗакупокПоЗаказамРасширеннаяПодсказка" id="642"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Сервис" id="633">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сервис</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сервис</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<ExtendedTooltip name="СервисРасширеннаяПодсказка" id="634"/>
+									<ChildItems>
+										<Button name="ОткрытьФоновыеЗадания" id="417">
+											<Type>UsualButton</Type>
+											<Width>22</Width>
+											<Height>1</Height>
+											<CommandName>Form.Command.ОткрытьФоновыеЗадания</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Фоновые задания</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ОткрытьФоновыеЗаданияРасширеннаяПодсказка" id="418"/>
+										</Button>
+										<Button name="ДополнительныеОтчетыИОбработки" id="250">
+											<Type>UsualButton</Type>
+											<Width>22</Width>
+											<CommandName>Form.Command.ДополнительныеОтчетыИОбработки</CommandName>
+											<ExtendedTooltip name="ДополнительныеОтчетыИОбработкиРасширеннаяПодсказка" id="251"/>
+										</Button>
+										<Button name="НастройкаДополнительныхРеквизитов" id="252">
+											<Type>UsualButton</Type>
+											<Width>22</Width>
+											<Height>1</Height>
+											<CommandName>Form.Command.НастройкаДополнительныхРеквизитов</CommandName>
+											<ExtendedTooltip name="НастройкаДополнительныхРеквизитовРасширеннаяПодсказка" id="253"/>
+										</Button>
+										<Button name="УдалениеПомеченныхОбъектов" id="631">
+											<Type>UsualButton</Type>
+											<Width>22</Width>
+											<CommandName>Form.Command.УдалениеПомеченныхОбъектов</CommandName>
+											<ExtendedTooltip name="УдалениеПомеченныхОбъектовРасширеннаяПодсказка" id="632"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа1" id="59">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="60"/>
+							<ChildItems>
+								<UsualGroup name="ПрофилиПрайсов" id="224">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Профили прайсов</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Профили прайсов</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ПрофилиПрайсовРасширеннаяПодсказка" id="225"/>
+									<ChildItems>
+										<Table name="МониторПрайсов" id="61">
+											<UseAlternationRowColor>true</UseAlternationRowColor>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>Объект.МониторПрайсов</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="МониторПрайсовКонтекстноеМеню" id="62"/>
+											<AutoCommandBar name="МониторПрайсовКоманднаяПанель" id="63">
+												<Autofill>false</Autofill>
+												<ChildItems>
+													<Button name="ОбновитьМонитор" id="254">
+														<Type>CommandBarButton</Type>
+														<Representation>PictureAndText</Representation>
+														<Height>1</Height>
+														<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+														<CommandName>Form.Command.МониторОбновить</CommandName>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Обновить монитор</v8:content>
+															</v8:item>
+														</Title>
+														<ExtendedTooltip name="ОбновитьМониторExtendedTooltip" id="255"/>
+													</Button>
+													<Button name="СписокКомандаВыполнитьИмпорт1" id="606">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.КомандаОткрытьЗагрузку</CommandName>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Открыть загрузку</v8:content>
+															</v8:item>
+														</Title>
+														<ExtendedTooltip name="СписокКомандаВыполнитьИмпорт1РасширеннаяПодсказка" id="607"/>
+													</Button>
+													<Button name="ЗапуститьРобота" id="608">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ЗапуститьРобота</CommandName>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Робот-запуск (общее)</v8:content>
+															</v8:item>
+														</Title>
+														<ExtendedTooltip name="ЗапуститьРоботаРасширеннаяПодсказка" id="609"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
+											<ExtendedTooltip name="МониторПрайсовРасширеннаяПодсказка" id="64"/>
+											<SearchStringAddition name="МониторПрайсовСтрокаПоиска" id="65">
+												<AdditionSource>
+													<Item>МониторПрайсов</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="МониторПрайсовСтрокаПоискаКонтекстноеМеню" id="66"/>
+												<ExtendedTooltip name="МониторПрайсовСтрокаПоискаРасширеннаяПодсказка" id="67"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="МониторПрайсовСостояниеПросмотра" id="68">
+												<AdditionSource>
+													<Item>МониторПрайсов</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="МониторПрайсовСостояниеПросмотраКонтекстноеМеню" id="69"/>
+												<ExtendedTooltip name="МониторПрайсовСостояниеПросмотраРасширеннаяПодсказка" id="70"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="МониторПрайсовУправлениеПоиском" id="71">
+												<AdditionSource>
+													<Item>МониторПрайсов</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="МониторПрайсовУправлениеПоискомКонтекстноеМеню" id="72"/>
+												<ExtendedTooltip name="МониторПрайсовУправлениеПоискомРасширеннаяПодсказка" id="73"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="Selection">МониторПрайсовВыбор</Event>
+											</Events>
+											<ChildItems>
+												<InputField name="СписокПрофилиСтатус" id="259">
+													<DataPath>Объект.МониторПрайсов.Статус</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<Width>10</Width>
+													<ContextMenu name="СписокПрофилиСтатусКонтекстноеМеню" id="260"/>
+													<ExtendedTooltip name="СписокПрофилиСтатусРасширеннаяПодсказка" id="261"/>
+												</InputField>
+												<InputField name="СписокПрофилиПрофильПрайса" id="262">
+													<DataPath>Объект.МониторПрайсов.ПрофильПрайса</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ChoiceButton>false</ChoiceButton>
+													<OpenButton>true</OpenButton>
+													<ContextMenu name="СписокПрофилиПрофильПрайсаКонтекстноеМеню" id="263"/>
+													<ExtendedTooltip name="СписокПрофилиПрофильПрайсаРасширеннаяПодсказка" id="264"/>
+												</InputField>
+												<CheckBoxField name="СписокПрофилиЗагружатьРоботом" id="265">
+													<DataPath>Объект.МониторПрайсов.ИспользоватьРегламентноеЗадание</DataPath>
+													<Enabled>false</Enabled>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Робот</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="СписокПрофилиЗагружатьРоботомКонтекстноеМеню" id="266"/>
+													<ExtendedTooltip name="СписокПрофилиЗагружатьРоботомРасширеннаяПодсказка" id="267"/>
+												</CheckBoxField>
+												<InputField name="СписокПрофилиЗаданиеВремяНачало" id="268">
+													<DataPath>Объект.МониторПрайсов.ЗаданиеВремяНачало</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Запуск</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СписокПрофилиЗаданиеВремяНачалоКонтекстноеМеню" id="269"/>
+													<ExtendedTooltip name="СписокПрофилиЗаданиеВремяНачалоРасширеннаяПодсказка" id="270"/>
+												</InputField>
+												<InputField name="СписокПрофилиИдентификаторПрайса" id="274">
+													<DataPath>Объект.МониторПрайсов.ИдентификаторПрайса</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Последний прайс</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<Width>25</Width>
+													<ContextMenu name="СписокПрофилиИдентификаторПрайсаКонтекстноеМеню" id="275"/>
+													<ExtendedTooltip name="СписокПрофилиИдентификаторПрайсаРасширеннаяПодсказка" id="276"/>
+												</InputField>
+												<InputField name="СписокПрофилиФайлКаталогНаЛокальномДиске" id="271">
+													<DataPath>Объект.МониторПрайсов.ФайлКаталогНаЛокальномДиске</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Каталог на локальном диске</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СписокПрофилиФайлКаталогНаЛокальномДискеКонтекстноеМеню" id="272"/>
+													<ExtendedTooltip name="СписокПрофилиФайлКаталогНаЛокальномДискеРасширеннаяПодсказка" id="273"/>
+												</InputField>
+												<InputField name="МониторПрайсовПриоритет" id="643">
+													<DataPath>Объект.МониторПрайсов.ПрофильПрайса.Приоритет</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="МониторПрайсовПриоритетКонтекстноеМеню" id="644"/>
+													<ExtendedTooltip name="МониторПрайсовПриоритетРасширеннаяПодсказка" id="645"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ПрайсыПартнеров" id="277">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прайсы партнеров</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прайсы партнеров</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ПрайсыПартнеровРасширеннаяПодсказка" id="278"/>
+					<ChildItems>
+						<Pages name="Группа4" id="419">
+							<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="420"/>
+						</Pages>
+						<Table name="СписокПрофилиПрайсов" id="423">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>СписокПрофилиПрайсов</DataPath>
+							<RowPictureDataPath>СписокПрофилиПрайсов.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="СписокПрофилиПрайсовКонтекстноеМеню" id="424"/>
+							<AutoCommandBar name="СписокПрофилиПрайсовКоманднаяПанель" id="425">
+								<ChildItems>
+									<Button name="СписокКомандаВыполнитьИмпорт" id="588">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.КомандаОткрытьЗагрузку</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Открыть загрузку</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="СписокКомандаВыполнитьИмпортExtendedTooltip" id="589"/>
+									</Button>
+									<Button name="СписокУдалитьДанныеПрайса" id="586">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.УдалитьДанныеПрайса</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Удалить прайс</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="СписокУдалитьДанныеПрайсаРасширеннаяПодсказка" id="587"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокПрофилиПрайсовРасширеннаяПодсказка" id="426"/>
+							<SearchStringAddition name="СписокПрофилиПрайсовСтрокаПоиска" id="427">
+								<AdditionSource>
+									<Item>СписокПрофилиПрайсов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокПрофилиПрайсовСтрокаПоискаКонтекстноеМеню" id="428"/>
+								<ExtendedTooltip name="СписокПрофилиПрайсовСтрокаПоискаРасширеннаяПодсказка" id="429"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокПрофилиПрайсовСостояниеПросмотра" id="430">
+								<AdditionSource>
+									<Item>СписокПрофилиПрайсов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокПрофилиПрайсовСостояниеПросмотраКонтекстноеМеню" id="431"/>
+								<ExtendedTooltip name="СписокПрофилиПрайсовСостояниеПросмотраРасширеннаяПодсказка" id="432"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокПрофилиПрайсовУправлениеПоиском" id="433">
+								<AdditionSource>
+									<Item>СписокПрофилиПрайсов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокПрофилиПрайсовУправлениеПоискомКонтекстноеМеню" id="434"/>
+								<ExtendedTooltip name="СписокПрофилиПрайсовУправлениеПоискомРасширеннаяПодсказка" id="435"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СписокПрофилиПрайсовКод" id="439">
+									<DataPath>СписокПрофилиПрайсов.Code</DataPath>
+									<ContextMenu name="СписокПрофилиПрайсовКодКонтекстноеМеню" id="440"/>
+									<ExtendedTooltip name="СписокПрофилиПрайсовКодРасширеннаяПодсказка" id="441"/>
+								</LabelField>
+								<LabelField name="СписокПрофилиПрайсовНаименование" id="436">
+									<DataPath>СписокПрофилиПрайсов.Description</DataPath>
+									<ContextMenu name="СписокПрофилиПрайсовНаименованиеКонтекстноеМеню" id="437"/>
+									<ExtendedTooltip name="СписокПрофилиПрайсовНаименованиеРасширеннаяПодсказка" id="438"/>
+								</LabelField>
+								<LabelField name="СписокПрофилиПрайсовПартнер" id="442">
+									<DataPath>СписокПрофилиПрайсов.Партнер</DataPath>
+									<ContextMenu name="СписокПрофилиПрайсовПартнерКонтекстноеМеню" id="443"/>
+									<ExtendedTooltip name="СписокПрофилиПрайсовПартнерРасширеннаяПодсказка" id="444"/>
+								</LabelField>
+								<CheckBoxField name="СписокПрофилиПрайсовЗагружатьРоботом" id="487">
+									<DataPath>~СписокПрофилиПрайсов.ЗагружатьРоботом</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СписокПрофилиПрайсовЗагружатьРоботомКонтекстноеМеню" id="488"/>
+									<ExtendedTooltip name="СписокПрофилиПрайсовЗагружатьРоботомРасширеннаяПодсказка" id="489"/>
+								</CheckBoxField>
+								<LabelField name="СписокПрофилиПрайсовПриоритет" id="514">
+									<DataPath>СписокПрофилиПрайсов.Приоритет</DataPath>
+									<ContextMenu name="СписокПрофилиПрайсовПриоритетКонтекстноеМеню" id="515"/>
+									<ExtendedTooltip name="СписокПрофилиПрайсовПриоритетРасширеннаяПодсказка" id="516"/>
+								</LabelField>
+								<LabelField name="СписокПрофилиПрайсовИдентификаторПрайса" id="517">
+									<DataPath>СписокПрофилиПрайсов.ИдентификаторПрайса</DataPath>
+									<ContextMenu name="СписокПрофилиПрайсовИдентификаторПрайсаКонтекстноеМеню" id="518"/>
+									<ExtendedTooltip name="СписокПрофилиПрайсовИдентификаторПрайсаРасширеннаяПодсказка" id="519"/>
+								</LabelField>
+								<LabelField name="СписокПрофилиПрайсовФайлКаталогНаЛокальномДиске" id="535">
+									<DataPath>СписокПрофилиПрайсов.ФайлКаталогНаЛокальномДиске</DataPath>
+									<ContextMenu name="СписокПрофилиПрайсовФайлКаталогНаЛокальномДискеКонтекстноеМеню" id="536"/>
+									<ExtendedTooltip name="СписокПрофилиПрайсовФайлКаталогНаЛокальномДискеРасширеннаяПодсказка" id="537"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ЖурналРегистрацииЦен" id="421">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблицы прайсов</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Журнал регистрации цен</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЖурналРегистрацииЦенРасширеннаяПодсказка" id="422"/>
+					<ChildItems>
+						<Table name="РегистрацияПрайсов" id="279">
+							<Representation>List</Representation>
+							<HeaderHeight>2</HeaderHeight>
+							<VerticalScrollBar>UseAlways</VerticalScrollBar>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>РегистрацияПрайсов</DataPath>
+							<RowPictureDataPath>РегистрацияПрайсов.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="РегистрацияПрайсовКонтекстноеМеню" id="280"/>
+							<AutoCommandBar name="РегистрацияПрайсовКоманднаяПанель" id="281"/>
+							<ExtendedTooltip name="РегистрацияПрайсовРасширеннаяПодсказка" id="282"/>
+							<SearchStringAddition name="РегистрацияПрайсовСтрокаПоиска" id="283">
+								<AdditionSource>
+									<Item>РегистрацияПрайсов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РегистрацияПрайсовСтрокаПоискаКонтекстноеМеню" id="284"/>
+								<ExtendedTooltip name="РегистрацияПрайсовСтрокаПоискаРасширеннаяПодсказка" id="285"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="РегистрацияПрайсовСостояниеПросмотра" id="286">
+								<AdditionSource>
+									<Item>РегистрацияПрайсов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РегистрацияПрайсовСостояниеПросмотраКонтекстноеМеню" id="287"/>
+								<ExtendedTooltip name="РегистрацияПрайсовСостояниеПросмотраРасширеннаяПодсказка" id="288"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="РегистрацияПрайсовУправлениеПоиском" id="289">
+								<AdditionSource>
+									<Item>РегистрацияПрайсов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="РегистрацияПрайсовУправлениеПоискомКонтекстноеМеню" id="290"/>
+								<ExtendedTooltip name="РегистрацияПрайсовУправлениеПоискомРасширеннаяПодсказка" id="291"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="РегистрацияПрайсовПериод" id="292">
+									<DataPath>РегистрацияПрайсов.Period</DataPath>
+									<BackColor>web:WhiteSmoke</BackColor>
+									<ContextMenu name="РегистрацияПрайсовПериодКонтекстноеМеню" id="293"/>
+									<ExtendedTooltip name="РегистрацияПрайсовПериодРасширеннаяПодсказка" id="294"/>
+								</LabelField>
+								<LabelField name="РегистрацияПрайсовПрайсПартнера" id="295">
+									<DataPath>РегистрацияПрайсов.ПрайсПартнера</DataPath>
+									<BackColor>web:WhiteSmoke</BackColor>
+									<ContextMenu name="РегистрацияПрайсовПрайсПартнераКонтекстноеМеню" id="296"/>
+									<ExtendedTooltip name="РегистрацияПрайсовПрайсПартнераРасширеннаяПодсказка" id="297"/>
+								</LabelField>
+								<LabelField name="РегистрацияПрайсовНоменклатура" id="298">
+									<DataPath>РегистрацияПрайсов.Номенклатура</DataPath>
+									<ContextMenu name="РегистрацияПрайсовНоменклатураКонтекстноеМеню" id="299"/>
+									<ExtendedTooltip name="РегистрацияПрайсовНоменклатураРасширеннаяПодсказка" id="300"/>
+								</LabelField>
+								<LabelField name="РегистрацияПрайсовХарактеристикаНоменклатуры" id="301">
+									<DataPath>РегистрацияПрайсов.ХарактеристикаНоменклатуры</DataPath>
+									<ContextMenu name="РегистрацияПрайсовХарактеристикаНоменклатурыКонтекстноеМеню" id="302"/>
+									<ExtendedTooltip name="РегистрацияПрайсовХарактеристикаНоменклатурыРасширеннаяПодсказка" id="303"/>
+								</LabelField>
+								<LabelField name="РегистрацияПрайсовПоле_Идентификатор" id="613">
+									<DataPath>РегистрацияПрайсов.Поле_Идентификатор</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ID</v8:content>
+										</v8:item>
+									</Title>
+									<Width>15</Width>
+									<ContextMenu name="РегистрацияПрайсовПоле_ИдентификаторКонтекстноеМеню" id="614"/>
+									<ExtendedTooltip name="РегистрацияПрайсовПоле_ИдентификаторРасширеннаяПодсказка" id="615"/>
+								</LabelField>
+								<LabelField name="РегистрацияПрайсовПоле_Артикул" id="610">
+									<DataPath>РегистрацияПрайсов.Поле_Артикул</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Артикул поставщика</v8:content>
+										</v8:item>
+									</Title>
+									<Width>15</Width>
+									<ContextMenu name="РегистрацияПрайсовПоле_АртикулКонтекстноеМеню" id="611"/>
+									<ExtendedTooltip name="РегистрацияПрайсовПоле_АртикулРасширеннаяПодсказка" id="612"/>
+								</LabelField>
+								<LabelField name="РегистрацияПрайсовПоле_Наименование" id="616">
+									<DataPath>РегистрацияПрайсов.Поле_Наименование</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Наименование поставщика</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="РегистрацияПрайсовПоле_НаименованиеКонтекстноеМеню" id="617"/>
+									<ExtendedTooltip name="РегистрацияПрайсовПоле_НаименованиеРасширеннаяПодсказка" id="618"/>
+								</LabelField>
+								<LabelField name="РегистрацияПрайсовСклад" id="638">
+									<DataPath>РегистрацияПрайсов.Склад</DataPath>
+									<ContextMenu name="РегистрацияПрайсовСкладКонтекстноеМеню" id="639"/>
+									<ExtendedTooltip name="РегистрацияПрайсовСкладРасширеннаяПодсказка" id="640"/>
+								</LabelField>
+								<LabelField name="РегистрацияПрайсовКоличество" id="313">
+									<DataPath>РегистрацияПрайсов.Количество</DataPath>
+									<Width>10</Width>
+									<ContextMenu name="РегистрацияПрайсовКоличествоКонтекстноеМеню" id="314"/>
+									<ExtendedTooltip name="РегистрацияПрайсовКоличествоРасширеннаяПодсказка" id="315"/>
+								</LabelField>
+								<LabelField name="РегистрацияПрайсовЦена" id="307">
+									<DataPath>РегистрацияПрайсов.Цена</DataPath>
+									<Width>10</Width>
+									<ContextMenu name="РегистрацияПрайсовЦенаКонтекстноеМеню" id="308"/>
+									<ExtendedTooltip name="РегистрацияПрайсовЦенаРасширеннаяПодсказка" id="309"/>
+								</LabelField>
+								<LabelField name="РегистрацияПрайсовВалюта" id="310">
+									<DataPath>РегистрацияПрайсов.Валюта</DataPath>
+									<ContextMenu name="РегистрацияПрайсовВалютаКонтекстноеМеню" id="311"/>
+									<ExtendedTooltip name="РегистрацияПрайсовВалютаРасширеннаяПодсказка" id="312"/>
+								</LabelField>
+								<LabelField name="РегистрацияПрайсовЦенаПродажи" id="635">
+									<DataPath>РегистрацияПрайсов.ЦенаПродажи</DataPath>
+									<ContextMenu name="РегистрацияПрайсовЦенаПродажиКонтекстноеМеню" id="636"/>
+									<ExtendedTooltip name="РегистрацияПрайсовЦенаПродажиРасширеннаяПодсказка" id="637"/>
+								</LabelField>
+								<LabelField name="РегистрацияПрайсовМинимальныйЗаказ" id="316">
+									<DataPath>РегистрацияПрайсов.МинимальныйЗаказ</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Min закупка</v8:content>
+										</v8:item>
+									</Title>
+									<Width>10</Width>
+									<ContextMenu name="РегистрацияПрайсовМинимальныйЗаказКонтекстноеМеню" id="317"/>
+									<ExtendedTooltip name="РегистрацияПрайсовМинимальныйЗаказРасширеннаяПодсказка" id="318"/>
+								</LabelField>
+								<LabelField name="РегистрацияПрайсовСрокПоставки" id="319">
+									<DataPath>РегистрацияПрайсов.СрокПоставки</DataPath>
+									<ContextMenu name="РегистрацияПрайсовСрокПоставкиКонтекстноеМеню" id="320"/>
+									<ExtendedTooltip name="РегистрацияПрайсовСрокПоставкиРасширеннаяПодсказка" id="321"/>
+								</LabelField>
+								<LabelField name="РегистрацияПрайсовКлючСтроки" id="628">
+									<DataPath>РегистрацияПрайсов.КлючСтроки</DataPath>
+									<ContextMenu name="РегистрацияПрайсовКлючСтрокиКонтекстноеМеню" id="629"/>
+									<ExtendedTooltip name="РегистрацияПрайсовКлючСтрокиРасширеннаяПодсказка" id="630"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ЖурналВиртуальныхОстатков" id="322">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Виртуальные остатки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Журнал виртуальных остатков</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЖурналВиртуальныхОстатковРасширеннаяПодсказка" id="323"/>
+					<ChildItems>
+						<UsualGroup name="Группа2" id="406">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="407"/>
+							<ChildItems>
+								<Button name="Сформировать" id="408">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<Height>1</Height>
+									<CommandName>Form.Command.СформироватьВиртуальныеОстатки</CommandName>
+									<ExtendedTooltip name="СформироватьРасширеннаяПодсказка" id="409"/>
+								</Button>
+								<LabelDecoration name="Декорация1" id="410">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Генерация виртуальных остатков выполняет запрос по загруженным прайсам поставщиков, получает остатки и создает в ИБ стандартные документы оприходования товаров, Остатки поставщиков суммируются, а также разбиваются на разные склады в зависимости от настроек профилей прайс-листов.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="411"/>
+									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="412"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="СписокОприходования" id="324">
+							<HeaderHeight>2</HeaderHeight>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>СписокОприходования</DataPath>
+							<RowPictureDataPath>СписокОприходования.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="СписокОприходованияКонтекстноеМеню" id="325"/>
+							<AutoCommandBar name="СписокОприходованияКоманднаяПанель" id="326"/>
+							<ExtendedTooltip name="СписокОприходованияРасширеннаяПодсказка" id="327"/>
+							<SearchStringAddition name="СписокОприходованияСтрокаПоиска" id="328">
+								<AdditionSource>
+									<Item>СписокОприходования</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокОприходованияСтрокаПоискаКонтекстноеМеню" id="329"/>
+								<ExtendedTooltip name="СписокОприходованияСтрокаПоискаРасширеннаяПодсказка" id="330"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокОприходованияСостояниеПросмотра" id="331">
+								<AdditionSource>
+									<Item>СписокОприходования</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокОприходованияСостояниеПросмотраКонтекстноеМеню" id="332"/>
+								<ExtendedTooltip name="СписокОприходованияСостояниеПросмотраРасширеннаяПодсказка" id="333"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокОприходованияУправлениеПоиском" id="334">
+								<AdditionSource>
+									<Item>СписокОприходования</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокОприходованияУправлениеПоискомКонтекстноеМеню" id="335"/>
+								<ExtendedTooltip name="СписокОприходованияУправлениеПоискомРасширеннаяПодсказка" id="336"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СписокОприходованияДата" id="337">
+									<DataPath>СписокОприходования.Date</DataPath>
+									<ContextMenu name="СписокОприходованияДатаКонтекстноеМеню" id="338"/>
+									<ExtendedTooltip name="СписокОприходованияДатаРасширеннаяПодсказка" id="339"/>
+								</LabelField>
+								<LabelField name="СписокОприходованияНомер" id="340">
+									<DataPath>СписокОприходования.Number</DataPath>
+									<ContextMenu name="СписокОприходованияНомерКонтекстноеМеню" id="341"/>
+									<ExtendedTooltip name="СписокОприходованияНомерРасширеннаяПодсказка" id="342"/>
+								</LabelField>
+								<LabelField name="СписокОприходованияОрганизация" id="349">
+									<DataPath>СписокОприходования.Организация</DataPath>
+									<ContextMenu name="СписокОприходованияОрганизацияКонтекстноеМеню" id="350"/>
+									<ExtendedTooltip name="СписокОприходованияОрганизацияРасширеннаяПодсказка" id="351"/>
+								</LabelField>
+								<LabelField name="СписокОприходованияСклад" id="358">
+									<DataPath>СписокОприходования.Склад</DataPath>
+									<ContextMenu name="СписокОприходованияСкладКонтекстноеМеню" id="359"/>
+									<ExtendedTooltip name="СписокОприходованияСкладРасширеннаяПодсказка" id="360"/>
+								</LabelField>
+								<LabelField name="СписокОприходованияКомментарий" id="346">
+									<DataPath>СписокОприходования.Комментарий</DataPath>
+									<ContextMenu name="СписокОприходованияКомментарийКонтекстноеМеню" id="347"/>
+									<ExtendedTooltip name="СписокОприходованияКомментарийРасширеннаяПодсказка" id="348"/>
+								</LabelField>
+								<LabelField name="СписокОприходованияОтветственный" id="352">
+									<DataPath>СписокОприходования.Ответственный</DataPath>
+									<ContextMenu name="СписокОприходованияОтветственныйКонтекстноеМеню" id="353"/>
+									<ExtendedTooltip name="СписокОприходованияОтветственныйРасширеннаяПодсказка" id="354"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ЖурналСобытийРобот" id="382">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Логи - робот</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Журнал событий робот</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЖурналСобытийРоботРасширеннаяПодсказка" id="383"/>
+					<ChildItems>
+						<Table name="СписокЖурналСобытий" id="384">
+							<VerticalScrollBar>UseAlways</VerticalScrollBar>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ЖурналСобытий</DataPath>
+							<RowPictureDataPath>ЖурналСобытий.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="СписокЖурналСобытийКонтекстноеМеню" id="385"/>
+							<AutoCommandBar name="СписокЖурналСобытийКоманднаяПанель" id="386"/>
+							<ExtendedTooltip name="СписокЖурналСобытийРасширеннаяПодсказка" id="387"/>
+							<SearchStringAddition name="СписокЖурналСобытийСтрокаПоиска" id="388">
+								<AdditionSource>
+									<Item>СписокЖурналСобытий</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокЖурналСобытийСтрокаПоискаКонтекстноеМеню" id="389"/>
+								<ExtendedTooltip name="СписокЖурналСобытийСтрокаПоискаРасширеннаяПодсказка" id="390"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокЖурналСобытийСостояниеПросмотра" id="391">
+								<AdditionSource>
+									<Item>СписокЖурналСобытий</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокЖурналСобытийСостояниеПросмотраКонтекстноеМеню" id="392"/>
+								<ExtendedTooltip name="СписокЖурналСобытийСостояниеПросмотраРасширеннаяПодсказка" id="393"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокЖурналСобытийУправлениеПоиском" id="394">
+								<AdditionSource>
+									<Item>СписокЖурналСобытий</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокЖурналСобытийУправлениеПоискомКонтекстноеМеню" id="395"/>
+								<ExtendedTooltip name="СписокЖурналСобытийУправлениеПоискомРасширеннаяПодсказка" id="396"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СписокЖурналСобытийПериод" id="622">
+									<DataPath>ЖурналСобытий.Дата</DataPath>
+									<ContextMenu name="СписокЖурналСобытийПериодКонтекстноеМеню" id="623"/>
+									<ExtendedTooltip name="СписокЖурналСобытийПериодРасширеннаяПодсказка" id="624"/>
+								</LabelField>
+								<LabelField name="ЖурналСобытий2ПрофильПрайса" id="397">
+									<DataPath>ЖурналСобытий.Объект</DataPath>
+									<ContextMenu name="ЖурналСобытий2ПрофильПрайсаКонтекстноеМеню" id="398"/>
+									<ExtendedTooltip name="ЖурналСобытий2ПрофильПрайсаРасширеннаяПодсказка" id="399"/>
+								</LabelField>
+								<LabelField name="ЖурналСобытий2ТекстСообщения" id="403">
+									<DataPath>ЖурналСобытий.ТекстСообщения</DataPath>
+									<ContextMenu name="ЖурналСобытий2ТекстСообщенияКонтекстноеМеню" id="404"/>
+									<ExtendedTooltip name="ЖурналСобытий2ТекстСообщенияРасширеннаяПодсказка" id="405"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="Техподдержка" id="590">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Техподдержка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Техподдержка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="ТехподдержкаРасширеннаяПодсказка" id="591"/>
+					<ChildItems>
+						<UsualGroup name="Группа14" id="592">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа14РасширеннаяПодсказка" id="593"/>
+							<ChildItems>
+								<Button name="ПерейтиНаСайтРазработчика" id="594">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<Width>35</Width>
+									<Height>1</Height>
+									<CommandName>Form.Command.SubSysПерейтиНаСайтРазработчика</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>SubSystems.ru</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ПерейтиНаСайтРазработчикаExtendedTooltip" id="595"/>
+								</Button>
+								<Button name="SubSysSkype" id="596">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<Width>35</Width>
+									<Height>1</Height>
+									<CommandName>Form.Command.SubSysSkype</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Skype</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="SubSysSkypeExtendedTooltip" id="597"/>
+								</Button>
+								<Button name="ПроверитьОбновления" id="600">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<Width>35</Width>
+									<Height>1</Height>
+									<CommandName>Form.Command.SubSysПроверитьОбновления</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Новости</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ПроверитьОбновленияExtendedTooltip" id="601"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<Button name="ВидеоОбзор" id="604">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Width>35</Width>
+							<Height>1</Height>
+							<CommandName>Form.Command.ВидеоОбзор</CommandName>
+							<Font ref="style:NormalTextFont" height="10" kind="StyleItem"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Канал на YouTube</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ВидеоОбзорРасширеннаяПодсказка" id="605"/>
+						</Button>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.мегапрайсРабочийСтол</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ЖурналСобытий" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Журнал событий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.мегапрайсЖурналСобытий</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Дата</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="РегистрацияПрайсов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регистрация прайсов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.мегапрайсЦеныНоменклатурыПоставщиков</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">Период</dcsset:left>
+							<dcsset:comparisonType>Greater</dcsset:comparisonType>
+							<dcsset:right xsi:type="v8:StandardBeginningDate">
+								<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
+							</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">ПрайсПартнера</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:userSettingID>3dfa58e6-f10a-46d1-813f-9194e167fd65</dcsset:userSettingID>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">ПрайсПартнера.Партнер</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:userSettingID>c8f90740-ac98-4359-b296-32323010e263</dcsset:userSettingID>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">Номенклатура</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:userSettingID>63c8d8d2-82bf-49e4-8c19-2230002d7702</dcsset:userSettingID>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокОприходования" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список оприходования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Document.ОприходованиеИзлишковТоваров</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокПрофилиПрайсов" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список профили прайсов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>СписокПрофилиПрайсов.Ref</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog.мегапрайсПрофилиПрайсов</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОткрытьПомощникПродаж" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть помощник продаж</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть помощник продаж</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьПомощникПродаж</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьПомощникЗакупок" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть помощник закупок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть помощник закупок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьПомощникЗакупок</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьАнализаторПрайсов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть анализатор прайсов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть анализатор прайсов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьАнализаторПрайсов</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьУстановкаЦенНоменклатуры" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть установка цен номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть установка цен номенклатуры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьУстановкаЦенНоменклатуры</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьПрайсЛист" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть прайс лист</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть прайс лист</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьПрайсЛист</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьМарафетНоменклатуры" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть марафет номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть марафет номенклатуры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьМарафетНоменклатуры</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьУправлениеНоменклатурой" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть управление номенклатурой</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть управление номенклатурой</v8:content>
+				</v8:item>
+			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьСправочникПрофилейПрайсов" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть справочник профилей прайсов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть справочник профилей прайсов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьЖурналРегистрацииПрайсов" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть журнал регистрации прайсов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть журнал регистрации прайсов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьРасширеннаяЗагрузка" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть расширенная загрузка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть расширенная загрузка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьРасширеннаяЗагрузка</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьСправочник" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть справочник</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть справочник</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСправочник</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьЗагрузкуКартинок" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть загрузку картинок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть загрузку картинок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьЗагрузкуКартинок</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьУправлениеМегарайсом" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть управление мегарайсом</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть управление мегарайсом</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьУправлениеМегарайсом</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДополнительныеОтчетыИОбработки" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные отчеты и обработки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные отчеты и обработки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДополнительныеОтчетыИОбработки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="НастройкаДополнительныхРеквизитов" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка дополнительных реквизитов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка дополнительных реквизитов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастройкаДополнительныхРеквизитов</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="МониторОбновить" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Монитор обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Монитор обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаОбновитьМонитор</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="НастроитьРегламентноеЗадание" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить регламентное задание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить регламентное задание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастроитьРегламентноеЗадание</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьФоновыеЗадания" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть фоновые задания</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть фоновые задания</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьФоновыеЗадания</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СформироватьВиртуальныеОстатки" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать виртуальные остатки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать виртуальные остатки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьВиртуальныеОстатки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УдалитьДанныеПрайса" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить данные прайса</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить данные прайса</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьДанныеПрайса</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаОткрытьЗагрузку" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда открыть загрузку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда открыть загрузку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаОткрытьЗагрузку</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="SubSysSkype" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Sub sys skype</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Sub sys skype</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>SubSysSkype</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="SubSysПерейтиНаСайтРазработчика" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Sub sys перейти на сайт разработчика</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Sub sys перейти на сайт разработчика</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>SubSysПерейтиНаСайтРазработчика</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="SubSysПроверитьОбновления" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Sub sys проверить обновления</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Sub sys проверить обновления</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>SubSysПроверитьОбновления</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВидеоОбзор" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Видео обзор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Видео обзор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВидеоОбзор</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗапуститьРобота" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить робота</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить робота</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапуститьРобота</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УдалениеПомеченныхОбъектов" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удаление помеченных объектов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удаление помеченных объектов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалениеПомеченныхОбъектов</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьОбменССайтом" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть обмен с сайтом</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть обмен с сайтом</v8:content>
+				</v8:item>
+			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьПомощникЗакупокПоЗаказам" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть помощник закупок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть помощник закупок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьПомощникЗакупокПоЗаказам</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

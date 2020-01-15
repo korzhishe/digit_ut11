@@ -1,0 +1,1194 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Загрузка номенклатуры</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<Customizable>false</Customizable>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Команды" id="149">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команды</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команды</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="КомандыExtendedTooltip" id="201"/>
+			<ChildItems>
+				<Button name="СоздатьНоменклатуру" id="21">
+					<Type>Hyperlink</Type>
+					<Representation>PictureAndText</Representation>
+					<Width>20</Width>
+					<Height>3</Height>
+					<CommandName>Form.Command.СоздатьНовуюНоменклатуру</CommandName>
+					<TextColor>#000000</TextColor>
+					<BorderColor>web:Gainsboro</BorderColor>
+					<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="СоздатьНоменклатуруExtendedTooltip" id="202"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ДопЗаполнение" id="86">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доп заполнение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доп заполнение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Height>7</Height>
+			<VerticalStretch>false</VerticalStretch>
+			<ExtendedTooltip name="ДопЗаполнениеExtendedTooltip" id="203"/>
+			<ChildItems>
+				<Page name="НастройкаЗаполненияНовойНоменклатуры" id="22">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка заполнения новой номенклатуры</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка заполнения новой номенклатуры</v8:content>
+						</v8:item>
+					</ToolTip>
+					<VerticalStretch>false</VerticalStretch>
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="НастройкаЗаполненияНовойНоменклатурыExtendedTooltip" id="204"/>
+					<ChildItems>
+						<UsualGroup name="Основные" id="124">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>По умолчанию</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Основные</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="ОсновныеExtendedTooltip" id="205"/>
+							<ChildItems>
+								<InputField name="УстановитьГруппу" id="3">
+									<DataPath>Объект.ГруппаНоменклатурыПоУмолчанию</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа номенклатуры</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<BackColor>web:Lavender</BackColor>
+									<BorderColor>web:Gainsboro</BorderColor>
+									<ContextMenu name="УстановитьГруппуКонтекстноеМеню" id="4"/>
+									<ExtendedTooltip name="УстановитьГруппуExtendedTooltip" id="206"/>
+									<Events>
+										<Event name="OnChange">УстановитьГруппуПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="НовыйВидНоменклатуры" id="5">
+									<DataPath>Объект.ВидНоменклатурыПоУмолчанию</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вид номенклатуры</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<BackColor>web:Lavender</BackColor>
+									<BorderColor>web:Gainsboro</BorderColor>
+									<ContextMenu name="НовыйВидНоменклатурыКонтекстноеМеню" id="6"/>
+									<ExtendedTooltip name="НовыйВидНоменклатурыExtendedTooltip" id="207"/>
+									<Events>
+										<Event name="OnChange">НовыйВидНоменклатурыПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="НовыйЕдиницаИзмерения" id="7">
+									<DataPath>Объект.ЕдиницаИзмеренияПоУмолчанию</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Единица измерения</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<BorderColor>web:Gainsboro</BorderColor>
+									<ContextMenu name="НовыйЕдиницаИзмеренияКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="НовыйЕдиницаИзмеренияExtendedTooltip" id="208"/>
+								</InputField>
+								<InputField name="Производитель" id="143">
+									<DataPath>Объект.ПроизводительПоУмолчанию</DataPath>
+									<BorderColor>web:Gainsboro</BorderColor>
+									<ContextMenu name="ПроизводительКонтекстноеМеню" id="144"/>
+									<ExtendedTooltip name="ПроизводительExtendedTooltip" id="209"/>
+								</InputField>
+								<CheckBoxField name="ВестиУчетПоГТД" id="13">
+									<DataPath>Объект.ВестиУчетПоГТД</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<BorderColor>web:Gainsboro</BorderColor>
+									<ContextMenu name="ВестиУчетПоГТДКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="ВестиУчетПоГТДExtendedTooltip" id="210"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Реквизиты" id="23">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Реквизиты</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Реквизиты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="РеквизитыExtendedTooltip" id="211"/>
+							<ChildItems>
+								<InputField name="НовыйСтавкаНДС" id="9">
+									<DataPath>Объект.СтавкаНДСПоУмолчанию</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ставка НДС</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<BorderColor>web:Gainsboro</BorderColor>
+									<ContextMenu name="НовыйСтавкаНДСКонтекстноеМеню" id="10"/>
+									<ExtendedTooltip name="НовыйСтавкаНДСExtendedTooltip" id="212"/>
+								</InputField>
+								<InputField name="НовыйЦеноваяГруппа" id="11">
+									<DataPath>Объект.НовыйЦеноваяГруппа</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ценовая группа</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<BackColor>web:Lavender</BackColor>
+									<BorderColor>web:Gainsboro</BorderColor>
+									<ContextMenu name="НовыйЦеноваяГруппаКонтекстноеМеню" id="12"/>
+									<ExtendedTooltip name="НовыйЦеноваяГруппаExtendedTooltip" id="213"/>
+									<Events>
+										<Event name="OnChange">НовыйЦеноваяГруппаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="НовыйГруппаДоступа" id="17">
+									<DataPath>Объект.НовыйГруппаДоступа</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа доступа</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<BorderColor>web:Gainsboro</BorderColor>
+									<ContextMenu name="НовыйГруппаДоступаКонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="НовыйГруппаДоступаExtendedTooltip" id="214"/>
+								</InputField>
+								<InputField name="НовыйСкладскаяГруппа" id="19">
+									<DataPath>Объект.НовыйСкладскаяГруппа</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Складская группа</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<BorderColor>web:Gainsboro</BorderColor>
+									<ContextMenu name="НовыйСкладскаяГруппаКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="НовыйСкладскаяГруппаExtendedTooltip" id="215"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Упаковки" id="142">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Упаковки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Упаковки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="УпаковкиExtendedTooltip" id="216"/>
+							<ChildItems>
+								<InputField name="НаборУпаковок" id="57">
+									<DataPath>Объект.НаборУпаковок</DataPath>
+									<BorderColor>web:Gainsboro</BorderColor>
+									<ContextMenu name="НаборУпаковокКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="НаборУпаковокExtendedTooltip" id="217"/>
+								</InputField>
+								<CheckBoxField name="СоздаватьУпаковки" id="53">
+									<DataPath>Объект.СоздаватьУпаковки</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<BorderColor>web:Gainsboro</BorderColor>
+									<ContextMenu name="СоздаватьУпаковкиКонтекстноеМеню" id="54"/>
+									<ExtendedTooltip name="СоздаватьУпаковкиExtendedTooltip" id="218"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="Группы" id="87">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Установить группы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<VerticalStretch>false</VerticalStretch>
+					<ExtendedTooltip name="ГруппыExtendedTooltip" id="219"/>
+					<ChildItems>
+						<InputField name="УстановитьГруппуПоСтрокам" id="59">
+							<DataPath>Объект.ГруппаНоменклатурыПоУмолчанию</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа справочника</v8:content>
+								</v8:item>
+							</Title>
+							<BorderColor>web:Gainsboro</BorderColor>
+							<ContextMenu name="УстановитьГруппуПоСтрокамКонтекстноеМеню" id="60"/>
+							<ExtendedTooltip name="УстановитьГруппуПоСтрокамExtendedTooltip" id="220"/>
+						</InputField>
+						<UsualGroup name="ГруппаКнопок1" id="123">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопок1</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопок1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКнопок1ExtendedTooltip" id="221"/>
+							<ChildItems>
+								<Button name="УстановитьГруппуНаВсеСтроки" id="80">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ИерархияНаВсеСтроки</CommandName>
+									<TextColor>#000000</TextColor>
+									<BorderColor>web:Gainsboro</BorderColor>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Установить на всe строки</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="УстановитьГруппуНаВсеСтрокиExtendedTooltip" id="222"/>
+								</Button>
+								<Button name="УстановитьГруппуПоВыделеннымСтрокам" id="62">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ИерархияПоВыделеннымСтрокам</CommandName>
+									<TextColor>#000000</TextColor>
+									<BorderColor>web:Gainsboro</BorderColor>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Установить по выделенным строкам</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="УстановитьГруппуПоВыделеннымСтрокамExtendedTooltip" id="223"/>
+								</Button>
+								<Button name="УстановитьГруппыПоНомерамСтрок" id="79">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ИерархияУстановитьПоДиапазонам</CommandName>
+									<TextColor>#000000</TextColor>
+									<BorderColor>web:Gainsboro</BorderColor>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Установить группы по диапазонам строк</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="УстановитьГруппыПоНомерамСтрокExtendedTooltip" id="224"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="УстановкаГруппПоДиапазонам" id="135">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройка для установки групп по диапазонам строк (назначаются строки по которым установить указанную группу)</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Установка групп по диапазонам</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="УстановкаГруппПоДиапазонамExtendedTooltip" id="225"/>
+							<ChildItems>
+								<Table name="УстановкаГруппПоСтрокам" id="69">
+									<Representation>List</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>УстановкаГруппПоСтрокам</DataPath>
+									<BorderColor>web:Gainsboro</BorderColor>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="УстановкаГруппПоСтрокамКонтекстноеМеню" id="70"/>
+									<AutoCommandBar name="УстановкаГруппПоСтрокамКоманднаяПанель" id="71">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="УстановкаГруппПоСтрокамExtendedTooltip" id="226"/>
+									<SearchStringAddition name="УстановкаГруппПоСтрокамSearchString" id="227">
+										<AdditionSource>
+											<Item>УстановкаГруппПоСтрокам</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="УстановкаГруппПоСтрокамSearchStringContextMenu" id="228"/>
+										<ExtendedTooltip name="УстановкаГруппПоСтрокамSearchStringExtendedTooltip" id="229"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="УстановкаГруппПоСтрокамViewStatus" id="230">
+										<AdditionSource>
+											<Item>УстановкаГруппПоСтрокам</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="УстановкаГруппПоСтрокамViewStatusContextMenu" id="231"/>
+										<ExtendedTooltip name="УстановкаГруппПоСтрокамViewStatusExtendedTooltip" id="232"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="УстановкаГруппПоСтрокамSearchControl" id="233">
+										<AdditionSource>
+											<Item>УстановкаГруппПоСтрокам</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="УстановкаГруппПоСтрокамSearchControlContextMenu" id="234"/>
+										<ExtendedTooltip name="УстановкаГруппПоСтрокамSearchControlExtendedTooltip" id="235"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="УстановкаГруппПоСтрокамСоСтроки" id="72">
+											<DataPath>УстановкаГруппПоСтрокам.СоСтроки</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>1</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="УстановкаГруппПоСтрокамСоСтрокиКонтекстноеМеню" id="73"/>
+											<ExtendedTooltip name="УстановкаГруппПоСтрокамСоСтрокиExtendedTooltip" id="236"/>
+										</InputField>
+										<InputField name="УстановкаГруппПоСтрокамПоСтроку" id="74">
+											<DataPath>УстановкаГруппПоСтрокам.ПоСтроку</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>1</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="УстановкаГруппПоСтрокамПоСтрокуКонтекстноеМеню" id="75"/>
+											<ExtendedTooltip name="УстановкаГруппПоСтрокамПоСтрокуExtendedTooltip" id="237"/>
+										</InputField>
+										<InputField name="УстановкаГруппПоСтрокамГруппа" id="76">
+											<DataPath>УстановкаГруппПоСтрокам.Группа</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>5</Width>
+											<ChoiceFoldersAndItems>Folders</ChoiceFoldersAndItems>
+											<ContextMenu name="УстановкаГруппПоСтрокамГруппаКонтекстноеМеню" id="77"/>
+											<ExtendedTooltip name="УстановкаГруппПоСтрокамГруппаExtendedTooltip" id="238"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ВидыНоменклатуры" id="88">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Установить вид номенклатуры</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Виды номенклатуры</v8:content>
+						</v8:item>
+					</ToolTip>
+					<VerticalStretch>false</VerticalStretch>
+					<ExtendedTooltip name="ВидыНоменклатурыExtendedTooltip" id="239"/>
+					<ChildItems>
+						<InputField name="УстановитьВидНоменклатуры" id="189">
+							<DataPath>УстановитьВидНоменклатуры</DataPath>
+							<BorderColor>web:Gainsboro</BorderColor>
+							<ContextMenu name="УстановитьВидНоменклатурыКонтекстноеМеню" id="190"/>
+							<ExtendedTooltip name="УстановитьВидНоменклатурыExtendedTooltip" id="240"/>
+						</InputField>
+						<UsualGroup name="Группа1" id="188">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1ExtendedTooltip" id="241"/>
+							<ChildItems>
+								<Button name="УстановитьВидНоменклатурыПоВыделеннымСтрокам" id="187">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.УстановитьВидНоменклатурыПоВыделеннымСтрокам</CommandName>
+									<TextColor>#000000</TextColor>
+									<BorderColor>web:Gainsboro</BorderColor>
+									<ExtendedTooltip name="УстановитьВидНоменклатурыПоВыделеннымСтрокамExtendedTooltip" id="242"/>
+								</Button>
+								<Button name="УстановитьВидыПоНомерамСтрок" id="108">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПроставитьВиды</CommandName>
+									<TextColor>#000000</TextColor>
+									<BorderColor>web:Gainsboro</BorderColor>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Установить виды по дипазонам строк</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="УстановитьВидыПоНомерамСтрокExtendedTooltip" id="243"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="УстановкаВидовНоменклатуры" id="90">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>УстановкаВидовНоменклатуры</DataPath>
+							<BorderColor>web:Gainsboro</BorderColor>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="УстановкаВидовНоменклатурыКонтекстноеМеню" id="91"/>
+							<AutoCommandBar name="УстановкаВидовНоменклатурыКоманднаяПанель" id="92">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="УстановкаВидовНоменклатурыExtendedTooltip" id="244"/>
+							<SearchStringAddition name="УстановкаВидовНоменклатурыSearchString" id="245">
+								<AdditionSource>
+									<Item>УстановкаВидовНоменклатуры</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="УстановкаВидовНоменклатурыSearchStringContextMenu" id="246"/>
+								<ExtendedTooltip name="УстановкаВидовНоменклатурыSearchStringExtendedTooltip" id="247"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="УстановкаВидовНоменклатурыViewStatus" id="248">
+								<AdditionSource>
+									<Item>УстановкаВидовНоменклатуры</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="УстановкаВидовНоменклатурыViewStatusContextMenu" id="249"/>
+								<ExtendedTooltip name="УстановкаВидовНоменклатурыViewStatusExtendedTooltip" id="250"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="УстановкаВидовНоменклатурыSearchControl" id="251">
+								<AdditionSource>
+									<Item>УстановкаВидовНоменклатуры</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="УстановкаВидовНоменклатурыSearchControlContextMenu" id="252"/>
+								<ExtendedTooltip name="УстановкаВидовНоменклатурыSearchControlExtendedTooltip" id="253"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="УстановкаВидовНоменклатурыСоСтроки" id="93">
+									<DataPath>УстановкаВидовНоменклатуры.СоСтроки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="УстановкаВидовНоменклатурыСоСтрокиКонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="УстановкаВидовНоменклатурыСоСтрокиExtendedTooltip" id="254"/>
+								</InputField>
+								<InputField name="УстановкаВидовНоменклатурыПоСтроку" id="95">
+									<DataPath>УстановкаВидовНоменклатуры.ПоСтроку</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="УстановкаВидовНоменклатурыПоСтрокуКонтекстноеМеню" id="96"/>
+									<ExtendedTooltip name="УстановкаВидовНоменклатурыПоСтрокуExtendedTooltip" id="255"/>
+								</InputField>
+								<InputField name="УстановкаВидовНоменклатурыВидНоменклатуры" id="97">
+									<DataPath>УстановкаВидовНоменклатуры.ВидНоменклатуры</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="УстановкаВидовНоменклатурыВидНоменклатурыКонтекстноеМеню" id="98"/>
+									<ExtendedTooltip name="УстановкаВидовНоменклатурыВидНоменклатурыExtendedTooltip" id="256"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<Pages name="ТабличныеЧасти" id="152">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Табличные части</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Табличные части</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ТабличныеЧастиExtendedTooltip" id="257"/>
+			<ChildItems>
+				<Page name="ТаблицаЗагрузки" id="131">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новая номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица загрузки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Height>12</Height>
+					<ExtendedTooltip name="ТаблицаЗагрузкиExtendedTooltip" id="258"/>
+					<ChildItems>
+						<Table name="ОбработкаНоменклатуры" id="26">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ОбработкаНоменклатуры</DataPath>
+							<BorderColor>web:Gainsboro</BorderColor>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ОбработкаНоменклатурыКонтекстноеМеню" id="27"/>
+							<AutoCommandBar name="ОбработкаНоменклатурыКоманднаяПанель" id="28">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ОбработкаНоменклатурыExtendedTooltip" id="259"/>
+							<SearchStringAddition name="ОбработкаНоменклатурыSearchString" id="260">
+								<AdditionSource>
+									<Item>ОбработкаНоменклатуры</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбработкаНоменклатурыSearchStringContextMenu" id="261"/>
+								<ExtendedTooltip name="ОбработкаНоменклатурыSearchStringExtendedTooltip" id="262"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОбработкаНоменклатурыViewStatus" id="263">
+								<AdditionSource>
+									<Item>ОбработкаНоменклатуры</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбработкаНоменклатурыViewStatusContextMenu" id="264"/>
+								<ExtendedTooltip name="ОбработкаНоменклатурыViewStatusExtendedTooltip" id="265"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОбработкаНоменклатурыSearchControl" id="266">
+								<AdditionSource>
+									<Item>ОбработкаНоменклатуры</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбработкаНоменклатурыSearchControlContextMenu" id="267"/>
+								<ExtendedTooltip name="ОбработкаНоменклатурыSearchControlExtendedTooltip" id="268"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="НомерСтроки" id="29">
+									<DataPath>Объект.ОбработкаНоменклатуры.LineNumber</DataPath>
+									<TitleTextColor>#000000</TitleTextColor>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НомерСтрокиКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="НомерСтрокиExtendedTooltip" id="269"/>
+								</LabelField>
+								<ColumnGroup name="ОбработкаНоменклатурыГруппа" id="125">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ВНИМАНИЕ! Ключевые поля записи</v8:content>
+										</v8:item>
+									</Title>
+									<TitleTextColor>#000000</TitleTextColor>
+									<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="true" strikeout="false" kind="WindowsFont"/>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Обработка номенклатуры группа</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<TitleBackColor>web:Lavender</TitleBackColor>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="ОбработкаНоменклатурыГруппаExtendedTooltip" id="270"/>
+									<ChildItems>
+										<InputField name="ГруппаСправочника" id="65">
+											<DataPath>Объект.ОбработкаНоменклатуры.ГруппаСправочника</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа иерархии</v8:content>
+												</v8:item>
+											</Title>
+											<TitleTextColor>#000000</TitleTextColor>
+											<TitleBackColor>web:Lavender</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<CellHyperlink>true</CellHyperlink>
+											<Width>15</Width>
+											<ContextMenu name="ГруппаСправочникаКонтекстноеМеню" id="66"/>
+											<ExtendedTooltip name="ГруппаСправочникаExtendedTooltip" id="271"/>
+										</InputField>
+										<InputField name="ОбработкаНоменклатурыОбВидНоменклатуры" id="110">
+											<DataPath>Объект.ОбработкаНоменклатуры.ВидНоменклатурыСсылка</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Вид номенклатуры</v8:content>
+												</v8:item>
+											</Title>
+											<TitleTextColor>#000000</TitleTextColor>
+											<TitleBackColor>web:Lavender</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<CellHyperlink>true</CellHyperlink>
+											<Width>15</Width>
+											<ContextMenu name="ОбработкаНоменклатурыОбВидНоменклатурыКонтекстноеМеню" id="111"/>
+											<ExtendedTooltip name="ОбработкаНоменклатурыОбВидНоменклатурыExtendedTooltip" id="272"/>
+										</InputField>
+										<InputField name="ПроизводительСсылка" id="193">
+											<DataPath>Объект.ОбработкаНоменклатуры.ПроизводительСсылка</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Производитель</v8:content>
+												</v8:item>
+											</Title>
+											<TitleTextColor>#000000</TitleTextColor>
+											<TitleBackColor>web:Lavender</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<CellHyperlink>true</CellHyperlink>
+											<Width>20</Width>
+											<ContextMenu name="ПроизводительСсылкаКонтекстноеМеню" id="194"/>
+											<ExtendedTooltip name="ПроизводительСсылкаExtendedTooltip" id="273"/>
+										</InputField>
+										<InputField name="ОбработкаНоменклатурыЕдиницаИзмеренияСсылка" id="195">
+											<DataPath>Объект.ОбработкаНоменклатуры.ЕдиницаИзмеренияСсылка</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Единица</v8:content>
+												</v8:item>
+											</Title>
+											<TitleTextColor>#000000</TitleTextColor>
+											<TitleBackColor>web:Lavender</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<CellHyperlink>true</CellHyperlink>
+											<Width>15</Width>
+											<ContextMenu name="ОбработкаНоменклатурыЕдиницаИзмеренияСсылкаКонтекстноеМеню" id="196"/>
+											<ExtendedTooltip name="ОбработкаНоменклатурыЕдиницаИзмеренияСсылкаExtendedTooltip" id="274"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<CheckBoxField name="ОбработкаНоменклатурыЭтоГруппа" id="145">
+									<DataPath>Объект.ОбработкаНоменклатуры.ЭтоГруппа</DataPath>
+									<TitleTextColor>#000000</TitleTextColor>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОбработкаНоменклатурыЭтоГруппаКонтекстноеМеню" id="146"/>
+									<ExtendedTooltip name="ОбработкаНоменклатурыЭтоГруппаExtendedTooltip" id="275"/>
+								</CheckBoxField>
+								<InputField name="Поле_Код" id="191">
+									<DataPath>Объект.ОбработкаНоменклатуры.Поле_Код</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Код импорт</v8:content>
+										</v8:item>
+									</Title>
+									<TitleTextColor>#000000</TitleTextColor>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>10</Width>
+									<ContextMenu name="Поле_КодКонтекстноеМеню" id="192"/>
+									<ExtendedTooltip name="Поле_КодExtendedTooltip" id="276"/>
+								</InputField>
+								<InputField name="Поле_Артикул" id="31">
+									<DataPath>Объект.ОбработкаНоменклатуры.Поле_Артикул</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Артикул импорт</v8:content>
+										</v8:item>
+									</Title>
+									<TitleTextColor>#000000</TitleTextColor>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>10</Width>
+									<ContextMenu name="Поле_АртикулКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="Поле_АртикулExtendedTooltip" id="277"/>
+								</InputField>
+								<InputField name="Поле_Штрихкод" id="33">
+									<DataPath>Объект.ОбработкаНоменклатуры.Поле_Штрихкод</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Штрихкод импорт</v8:content>
+										</v8:item>
+									</Title>
+									<TitleTextColor>#000000</TitleTextColor>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>10</Width>
+									<ContextMenu name="Поле_ШтрихкодКонтекстноеМеню" id="34"/>
+									<ExtendedTooltip name="Поле_ШтрихкодExtendedTooltip" id="278"/>
+								</InputField>
+								<InputField name="Поле_Наименование" id="35">
+									<DataPath>Объект.ОбработкаНоменклатуры.Поле_Наименование</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Наименование импорт</v8:content>
+										</v8:item>
+									</Title>
+									<TitleTextColor>#000000</TitleTextColor>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>25</Width>
+									<ContextMenu name="Поле_НаименованиеКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="Поле_НаименованиеExtendedTooltip" id="279"/>
+								</InputField>
+								<InputField name="Поле_НаименованиеПолное" id="37">
+									<DataPath>Объект.ОбработкаНоменклатуры.Поле_ПолноеНаименование</DataPath>
+									<TitleTextColor>#000000</TitleTextColor>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>15</Width>
+									<ContextMenu name="Поле_НаименованиеПолноеКонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="Поле_НаименованиеПолноеExtendedTooltip" id="280"/>
+								</InputField>
+								<InputField name="ОписаниеЗагрузка" id="127">
+									<DataPath>Объект.ОбработкаНоменклатуры.Описание</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Описание импорт</v8:content>
+										</v8:item>
+									</Title>
+									<TitleTextColor>#000000</TitleTextColor>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОписаниеЗагрузкаКонтекстноеМеню" id="128"/>
+									<ExtendedTooltip name="ОписаниеЗагрузкаExtendedTooltip" id="281"/>
+								</InputField>
+								<InputField name="ОбработкаНоменклатурыСтавкаНДС" id="199">
+									<DataPath>Объект.ОбработкаНоменклатуры.СтавкаНДС</DataPath>
+									<TitleTextColor>#000000</TitleTextColor>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>10</Width>
+									<ContextMenu name="ОбработкаНоменклатурыСтавкаНДСКонтекстноеМеню" id="200"/>
+									<ExtendedTooltip name="ОбработкаНоменклатурыСтавкаНДСExtendedTooltip" id="282"/>
+								</InputField>
+								<InputField name="ОбработкаНоменклатурыНомерСтрокиЗагрузки" id="136">
+									<DataPath>Объект.ОбработкаНоменклатуры.КлючСтроки</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>№</v8:content>
+										</v8:item>
+									</Title>
+									<TitleTextColor>#000000</TitleTextColor>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>4</Width>
+									<ContextMenu name="ОбработкаНоменклатурыНомерСтрокиЗагрузкиКонтекстноеМеню" id="137"/>
+									<ExtendedTooltip name="ОбработкаНоменклатурыНомерСтрокиЗагрузкиExtendedTooltip" id="283"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<LabelDecoration name="Декорация1" id="197">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В форму попадают все строки таблицы импорта, с пустой колонкой "Номенклатура 1С". Это значит что эти строки не были найдены.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="198"/>
+			<ExtendedTooltip name="Декорация1ExtendedTooltip" id="284"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.мегапрайсРасширеннаяЗагрузкаИзExcel</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Объект.ВидНоменклатурыПоУмолчанию</Field>
+				<Field>Объект.ЕдиницаИзмеренияПоУмолчанию</Field>
+				<Field>Объект.НовыйВариантОформленияПродажи</Field>
+				<Field>Объект.НовыйКачество</Field>
+				<Field>Объект.НовыйСкладскаяГруппа</Field>
+				<Field>Объект.СоздаватьУпаковки</Field>
+				<Field>Объект.СтавкаНДСПоУмолчанию</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="АдресВХранилище" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес в хранилище</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>150</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="УстановкаГруппПоСтрокам" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установка групп по строкам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="СоСтроки" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Со строки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПоСтроку" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По строку</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Группа" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="УстановкаВидовНоменклатуры" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установка видов номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="СоСтроки" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Со строки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПоСтроку" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По строку</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВидНоменклатуры" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид номенклатуры</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВидыНоменклатуры</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="УстановитьВидНоменклатуры" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить вид номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВидыНоменклатуры</v8:Type>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ХарактеристикаКонтрагента</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ОбработкаНоменклатуры.Номенклатура</dcsset:left>
+						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.Номенклатура.ПустаяСсылка</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FF99CC</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ОбработкаНоменклатуры</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ОбработкаНоменклатуры.ЭтоГруппа</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Bisque</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="true" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьНовуюНоменклатуру" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать новую номенклатуру</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать новую номенклатуру</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьНовуюНоменклатуру</Action>
+		</Command>
+		<Command name="ИерархияПоВыделеннымСтрокам" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Иерархия по выделенным строкам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Иерархия по выделенным строкам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИерархияУстановитьГруппуПоВыделеннымСтрокам</Action>
+		</Command>
+		<Command name="ИерархияУстановитьПоДиапазонам" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Иерархия установить по диапазонам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Иерархия установить по диапазонам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИерархияПроставитьГруппыПоДиапазонам</Action>
+		</Command>
+		<Command name="ИерархияНаВсеСтроки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Иерархия на все строки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Иерархия на все строки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИерархияУстановитьНаВсеСтроки</Action>
+		</Command>
+		<Command name="ПроставитьВиды" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проставить виды</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проставить виды</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроставитьВиды</Action>
+		</Command>
+		<Command name="СоздатьГруппыНоменклатуры" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать группы номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать группы номенклатуры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьГруппыНоменклатуры</Action>
+		</Command>
+		<Command name="КомандаПроверкаРеквизитов" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда проверка реквизитов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда проверка реквизитов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаПроверкаРеквизитов</Action>
+		</Command>
+		<Command name="УстановитьВидНоменклатурыПоВыделеннымСтрокам" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить вид по выделенным строкам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить группу по выделенным строкам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьВидНоменклатурыПоВыделеннымСтрокам</Action>
+		</Command>
+	</Commands>
+</Form>

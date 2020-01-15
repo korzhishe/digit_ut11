@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PlanOfCharacteristicKindPredefinedItems" version="2.6">
+	<Item id="aaa58d86-5593-42cd-8939-928a7678c9c8">
+		<Name>НоменклатураКонтрагентовАртикул</Name>
+		<Code>80</Code>
+		<Description>Номенклатура контрагентов: артикул</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>10</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3c6679e3-7e49-4c9e-8cdc-21398116d827">
+		<Name>НоменклатураКонтрагентовАртикулИНаименование</Name>
+		<Code>90</Code>
+		<Description>Номенклатура контрагентов: артикул и наименование</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>10</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a91d8300-b812-421f-96de-152a034396f8">
+		<Name>НоменклатураКонтрагентовИдентификатор</Name>
+		<Code>75</Code>
+		<Description>Номенклатура контрагентов: идентификатор</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>10</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0e85c76c-ac67-40b1-95ea-136296d99fd6">
+		<Name>НоменклатураКонтрагентовКод</Name>
+		<Code>100</Code>
+		<Description>Номенклатура контрагентов: код</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>10</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="733001e6-bcea-49b6-b773-38ff0e58b5cd">
+		<Name>НоменклатураКонтрагентовНаименование</Name>
+		<Code>110</Code>
+		<Description>Номенклатура контрагентов: наименование (до 100 символов)</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>10</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d823e4f5-94b7-4710-8edc-a82a6c1ae996">
+		<Name>РегистрШтрихкод</Name>
+		<Code>10</Code>
+		<Description>Регистр: штрихкод</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>10</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5499c11f-8708-45fc-8c64-8222885f7f24">
+		<Name>СправочникАртикул</Name>
+		<Code>20</Code>
+		<Description>Справочник: артикул</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>10</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="012d03b3-3215-41e8-b591-82ad0a0d5322">
+		<Name>СправочникАртикулИНаименование</Name>
+		<Code>40</Code>
+		<Description>Справочник: артикул и наименование</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>10</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="014a30c2-670f-4b3d-806d-037b7970d709">
+		<Name>СправочникАртикулИПроизводитель</Name>
+		<Code>30</Code>
+		<Description>Справочник: артикул и производитель</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>10</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c21691d2-ed2d-42c7-9820-ab1c256ca112">
+		<Name>СправочникКод</Name>
+		<Code>50</Code>
+		<Description>Справочник: код</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>10</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="aa73ea5a-b236-461c-9617-2511980bf66e">
+		<Name>СправочникНаименование</Name>
+		<Code>60</Code>
+		<Description>Справочник: наименование (до 100 символов)</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>10</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2e0d3bb8-9b5d-4be1-8dcc-4278ac445add">
+		<Name>СправочникНаименованиеПолное</Name>
+		<Code>70</Code>
+		<Description>Справочник: наименование полное</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>10</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

@@ -1,0 +1,820 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Popup name="Группа2" id="12">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Примеры алгоритмов</v8:content>
+					</v8:item>
+				</Title>
+				<TitleTextColor>#FFFFFF</TitleTextColor>
+				<Height>3</Height>
+				<BackColor>#333333</BackColor>
+				<ExtendedTooltip name="Группа2ExtendedTooltip" id="13"/>
+				<ChildItems>
+					<Button name="ИгнорИмпортаСтроки" id="14">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ИгнорИмпортаСтроки</CommandName>
+						<ExtendedTooltip name="ИгнорИмпортаСтрокиExtendedTooltip" id="15"/>
+					</Button>
+					<ButtonGroup name="Группа4" id="16">
+						<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="17"/>
+						<ChildItems>
+							<Button name="СложениеНаименования" id="18">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.СложениеНаименования</CommandName>
+								<ExtendedTooltip name="СложениеНаименованияExtendedTooltip" id="19"/>
+							</Button>
+							<Button name="АлгоритмУбратьСимволыСтроки" id="20">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.АлгоритмУбратьСимволыСтроки</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Убрать лишние символы</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="АлгоритмУбратьСимволыСтрокиРасширеннаяПодсказка" id="21"/>
+							</Button>
+							<Button name="УбратьДвойныеПробелы" id="22">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.УбратьДвойныеПробелы</CommandName>
+								<ExtendedTooltip name="УбратьДвойныеПробелыРасширеннаяПодсказка" id="23"/>
+							</Button>
+							<Button name="УдалитьВсеПослеСкобки" id="24">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.УдалитьВсеПослеСкобки</CommandName>
+								<ExtendedTooltip name="УдалитьВсеПослеСкобкиРасширеннаяПодсказка" id="25"/>
+							</Button>
+							<Button name="ДобавитьЛидирующийНули" id="26">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ДобавитьЛидирующийНули</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Добавить лидирующие нули</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ДобавитьЛидирующийНулиExtendedTooltip" id="27"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<ButtonGroup name="Группа5" id="28">
+						<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="29"/>
+						<ChildItems>
+							<Button name="ПолучитьСловоПоПорядку" id="30">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.АлгоритмПолучитьСловоПоПорядку</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Получить слово по порядку</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ПолучитьСловоПоПорядкуРасширеннаяПодсказка" id="31"/>
+							</Button>
+							<Button name="УбратьПервоеСлово" id="32">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.УбратьПервоеСлово</CommandName>
+								<ExtendedTooltip name="УбратьПервоеСловоExtendedTooltip" id="33"/>
+							</Button>
+							<Button name="УбратьПереводСтроки" id="34">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.УбратьПереводСтроки</CommandName>
+								<ExtendedTooltip name="УбратьПереводСтрокиРасширеннаяПодсказка" id="35"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+				</ChildItems>
+			</Popup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа3" id="36">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="37"/>
+			<ChildItems>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа6" id="117">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="118"/>
+			<ChildItems>
+				<UsualGroup name="НастройкиАлгоритма" id="106">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки алгоритма</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки алгоритма</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="НастройкиАлгоритмаРасширеннаяПодсказка" id="107"/>
+					<ChildItems>
+						<CheckBoxField name="ИспользоватьАлгоритм" id="108">
+							<DataPath>Объект.ИспользоватьАлгоритм</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Использовать код</v8:content>
+								</v8:item>
+							</Title>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользоватьАлгоритмКонтекстноеМеню" id="109"/>
+							<ExtendedTooltip name="ИспользоватьАлгоритмРасширеннаяПодсказка" id="110"/>
+							<Events>
+								<Event name="OnChange">ПриИзмененииОпций</Event>
+							</Events>
+						</CheckBoxField>
+						<CheckBoxField name="ИспользоватьЗамены" id="111">
+							<DataPath>Объект.ИспользоватьЗамены</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользоватьЗаменыКонтекстноеМеню" id="112"/>
+							<ExtendedTooltip name="ИспользоватьЗаменыРасширеннаяПодсказка" id="113"/>
+							<Events>
+								<Event name="OnChange">ПриИзмененииОпций</Event>
+							</Events>
+						</CheckBoxField>
+						<CheckBoxField name="ИспользоватьФильтр" id="114">
+							<DataPath>Объект.ИспользоватьФильтр</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Включить фильтр данных</v8:content>
+								</v8:item>
+							</Title>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользоватьФильтрКонтекстноеМеню" id="115"/>
+							<ExtendedTooltip name="ИспользоватьФильтрРасширеннаяПодсказка" id="116"/>
+							<Events>
+								<Event name="OnChange">ПриИзмененииОпций</Event>
+							</Events>
+						</CheckBoxField>
+						<UsualGroup name="МарафетНоменклатуры" id="200">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Марафет номенклатуры</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Марафет номенклатуры</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="МарафетНоменклатурыРасширеннаяПодсказка" id="201"/>
+							<ChildItems>
+								<CheckBoxField name="ИспользоватьНазначениеГруппы" id="119">
+									<DataPath>Объект.ИспользоватьНазначениеГруппы</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Назначение группы</v8:content>
+										</v8:item>
+									</Title>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспользоватьНазначениеГруппыКонтекстноеМеню" id="120"/>
+									<ExtendedTooltip name="ИспользоватьНазначениеГруппыРасширеннаяПодсказка" id="121"/>
+									<Events>
+										<Event name="OnChange">ПриИзмененииОпций</Event>
+									</Events>
+								</CheckBoxField>
+								<CheckBoxField name="ИспользоватьНазначениеПроизводителя" id="122">
+									<DataPath>Объект.ИспользоватьНазначениеПроизводителя</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Назначение производителей</v8:content>
+										</v8:item>
+									</Title>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспользоватьНазначениеПроизводителяКонтекстноеМеню" id="123"/>
+									<ExtendedTooltip name="ИспользоватьНазначениеПроизводителяРасширеннаяПодсказка" id="124"/>
+								</CheckBoxField>
+								<CheckBoxField name="ИспользоватьНазначениеСвойства" id="125">
+									<DataPath>Объект.ИспользоватьНазначениеСвойства</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Назначение свойства</v8:content>
+										</v8:item>
+									</Title>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспользоватьНазначениеСвойстваКонтекстноеМеню" id="126"/>
+									<ExtendedTooltip name="ИспользоватьНазначениеСвойстваРасширеннаяПодсказка" id="127"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<Pages name="Группа1" id="51">
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="52"/>
+					<ChildItems>
+						<Page name="ЗакладкаАлгоритм" id="53">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Произвольный код</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Закладка алгоритм</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ЗакладкаАлгоритмРасширеннаяПодсказка" id="54"/>
+							<ChildItems>
+								<TextDocumentField name="ТекстАлгоритма" id="7">
+									<DataPath>Объект.ТекстАлгоритма</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТекстАлгоритмаКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="ТекстАлгоритмаРасширеннаяПодсказка" id="9"/>
+								</TextDocumentField>
+								<UsualGroup name="ГруппаПроверка" id="41">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Проверка для алгоритмов в которых используется только Значение</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа проверка</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Group>Horizontal</Group>
+									<ExtendedTooltip name="ГруппаПроверкаExtendedTooltip" id="42"/>
+									<ChildItems>
+										<InputField name="АлгоритмЗначение" id="43">
+											<DataPath>АлгоритмЗначение</DataPath>
+											<ContextMenu name="АлгоритмЗначениеКонтекстноеМеню" id="44"/>
+											<ExtendedTooltip name="АлгоритмЗначениеExtendedTooltip" id="45"/>
+										</InputField>
+										<Button name="АлгоритмПроверить" id="46">
+											<Type>UsualButton</Type>
+											<Width>15</Width>
+											<CommandName>Form.Command.АлгоритмПроверить</CommandName>
+											<TextColor>#000000</TextColor>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Тест</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="АлгоритмПроверитьExtendedTooltip" id="47"/>
+										</Button>
+										<InputField name="АлгоритмРезультат" id="48">
+											<DataPath>АлгоритмРезультат</DataPath>
+											<ContextMenu name="АлгоритмРезультатКонтекстноеМеню" id="49"/>
+											<ExtendedTooltip name="АлгоритмРезультатExtendedTooltip" id="50"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</Page>
+						<Page name="ЗакладкаАвтозаменыПодстрок" id="79">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Автозамены подстрок</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Закладка автозамены подстрок</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ЗакладкаАвтозаменыПодстрокРасширеннаяПодсказка" id="80"/>
+							<ChildItems>
+								<Table name="АвтозаменыПодстрок" id="81">
+									<Representation>List</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Объект.АвтозаменыПодстрок</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="АвтозаменыПодстрокКонтекстноеМеню" id="82"/>
+									<AutoCommandBar name="АвтозаменыПодстрокКоманднаяПанель" id="83"/>
+									<ExtendedTooltip name="АвтозаменыПодстрокРасширеннаяПодсказка" id="84"/>
+									<SearchStringAddition name="АвтозаменыПодстрокСтрокаПоиска" id="85">
+										<AdditionSource>
+											<Item>АвтозаменыПодстрок</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="АвтозаменыПодстрокСтрокаПоискаКонтекстноеМеню" id="86"/>
+										<ExtendedTooltip name="АвтозаменыПодстрокСтрокаПоискаРасширеннаяПодсказка" id="87"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="АвтозаменыПодстрокСостояниеПросмотра" id="88">
+										<AdditionSource>
+											<Item>АвтозаменыПодстрок</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="АвтозаменыПодстрокСостояниеПросмотраКонтекстноеМеню" id="89"/>
+										<ExtendedTooltip name="АвтозаменыПодстрокСостояниеПросмотраРасширеннаяПодсказка" id="90"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="АвтозаменыПодстрокУправлениеПоиском" id="91">
+										<AdditionSource>
+											<Item>АвтозаменыПодстрок</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="АвтозаменыПодстрокУправлениеПоискомКонтекстноеМеню" id="92"/>
+										<ExtendedTooltip name="АвтозаменыПодстрокУправлениеПоискомРасширеннаяПодсказка" id="93"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="АвтозаменыПодстрокНомерСтроки" id="94">
+											<DataPath>Объект.АвтозаменыПодстрок.LineNumber</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="АвтозаменыПодстрокНомерСтрокиКонтекстноеМеню" id="95"/>
+											<ExtendedTooltip name="АвтозаменыПодстрокНомерСтрокиРасширеннаяПодсказка" id="96"/>
+										</LabelField>
+										<InputField name="АвтозаменыПодстрокПодстрокаПоиска" id="100">
+											<DataPath>Объект.АвтозаменыПодстрок.ПодстрокаПоиска</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>20</Width>
+											<ContextMenu name="АвтозаменыПодстрокПодстрокаПоискаКонтекстноеМеню" id="101"/>
+											<ExtendedTooltip name="АвтозаменыПодстрокПодстрокаПоискаРасширеннаяПодсказка" id="102"/>
+										</InputField>
+										<InputField name="АвтозаменыПодстрокПодстрокаЗамены" id="103">
+											<DataPath>Объект.АвтозаменыПодстрок.ПодстрокаЗамены</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Подстрока замены</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>20</Width>
+											<ContextMenu name="АвтозаменыПодстрокПодстрокаЗаменыКонтекстноеМеню" id="104"/>
+											<ExtendedTooltip name="АвтозаменыПодстрокПодстрокаЗаменыРасширеннаяПодсказка" id="105"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="ЗакладкаИсключенияИзИмпорта" id="55">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Фильтрация данных из импорта</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Закладка исключения из импорта</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ЗакладкаИсключенияИзИмпортаРасширеннаяПодсказка" id="56"/>
+							<ChildItems>
+								<CheckBoxField name="ВидФильтрацииДанных" id="76">
+									<DataPath>Объект.ИсключитьДанныеФильтра</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Исключить указанные данные</v8:content>
+										</v8:item>
+									</Title>
+									<TitleTextColor>#FF0000</TitleTextColor>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ВидФильтрацииДанныхКонтекстноеМеню" id="77"/>
+									<ExtendedTooltip name="ВидФильтрацииДанныхРасширеннаяПодсказка" id="78"/>
+								</CheckBoxField>
+								<Table name="ИсключениеДанныхИзИмпорта" id="57">
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Объект.ФильтрацияДанныхИзИмпорта</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ИсключениеДанныхИзИмпортаКонтекстноеМеню" id="58"/>
+									<AutoCommandBar name="ИсключениеДанныхИзИмпортаКоманднаяПанель" id="59"/>
+									<ExtendedTooltip name="ИсключениеДанныхИзИмпортаРасширеннаяПодсказка" id="60"/>
+									<SearchStringAddition name="ИсключениеДанныхИзИмпортаСтрокаПоиска" id="61">
+										<AdditionSource>
+											<Item>ИсключениеДанныхИзИмпорта</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ИсключениеДанныхИзИмпортаСтрокаПоискаКонтекстноеМеню" id="62"/>
+										<ExtendedTooltip name="ИсключениеДанныхИзИмпортаСтрокаПоискаРасширеннаяПодсказка" id="63"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ИсключениеДанныхИзИмпортаСостояниеПросмотра" id="64">
+										<AdditionSource>
+											<Item>ИсключениеДанныхИзИмпорта</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ИсключениеДанныхИзИмпортаСостояниеПросмотраКонтекстноеМеню" id="65"/>
+										<ExtendedTooltip name="ИсключениеДанныхИзИмпортаСостояниеПросмотраРасширеннаяПодсказка" id="66"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ИсключениеДанныхИзИмпортаУправлениеПоиском" id="67">
+										<AdditionSource>
+											<Item>ИсключениеДанныхИзИмпорта</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ИсключениеДанныхИзИмпортаУправлениеПоискомКонтекстноеМеню" id="68"/>
+										<ExtendedTooltip name="ИсключениеДанныхИзИмпортаУправлениеПоискомРасширеннаяПодсказка" id="69"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="ИсключениеДанныхИзИмпортаНомерСтроки" id="70">
+											<DataPath>Объект.ФильтрацияДанныхИзИмпорта.LineNumber</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ИсключениеДанныхИзИмпортаНомерСтрокиКонтекстноеМеню" id="71"/>
+											<ExtendedTooltip name="ИсключениеДанныхИзИмпортаНомерСтрокиРасширеннаяПодсказка" id="72"/>
+										</LabelField>
+										<InputField name="ИсключениеДанныхИзИмпортаИсключитьЗначение" id="73">
+											<DataPath>Объект.ФильтрацияДанныхИзИмпорта.ЗначениеФильтра</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ИсключениеДанныхИзИмпортаИсключитьЗначениеКонтекстноеМеню" id="74"/>
+											<ExtendedTooltip name="ИсключениеДанныхИзИмпортаИсключитьЗначениеРасширеннаяПодсказка" id="75"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="ЗакладкаНазначениеГруппы" id="128">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Назначение группы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Закладка назначение группы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ЗакладкаНазначениеГруппыРасширеннаяПодсказка" id="129"/>
+							<ChildItems>
+								<Table name="НазначениеГруппы" id="134">
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Объект.НазначениеГруппы</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="НазначениеГруппыКонтекстноеМеню" id="135"/>
+									<AutoCommandBar name="НазначениеГруппыКоманднаяПанель" id="136"/>
+									<ExtendedTooltip name="НазначениеГруппыРасширеннаяПодсказка" id="137"/>
+									<SearchStringAddition name="НазначениеГруппыСтрокаПоиска" id="138">
+										<AdditionSource>
+											<Item>НазначениеГруппы</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="НазначениеГруппыСтрокаПоискаКонтекстноеМеню" id="139"/>
+										<ExtendedTooltip name="НазначениеГруппыСтрокаПоискаРасширеннаяПодсказка" id="140"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="НазначениеГруппыСостояниеПросмотра" id="141">
+										<AdditionSource>
+											<Item>НазначениеГруппы</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="НазначениеГруппыСостояниеПросмотраКонтекстноеМеню" id="142"/>
+										<ExtendedTooltip name="НазначениеГруппыСостояниеПросмотраРасширеннаяПодсказка" id="143"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="НазначениеГруппыУправлениеПоиском" id="144">
+										<AdditionSource>
+											<Item>НазначениеГруппы</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="НазначениеГруппыУправлениеПоискомКонтекстноеМеню" id="145"/>
+										<ExtendedTooltip name="НазначениеГруппыУправлениеПоискомРасширеннаяПодсказка" id="146"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="НазначениеГруппыНомерСтроки" id="147">
+											<DataPath>Объект.НазначениеГруппы.LineNumber</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="НазначениеГруппыНомерСтрокиКонтекстноеМеню" id="148"/>
+											<ExtendedTooltip name="НазначениеГруппыНомерСтрокиРасширеннаяПодсказка" id="149"/>
+										</LabelField>
+										<InputField name="НазначениеГруппыКлючевыеСлова" id="150">
+											<DataPath>Объект.НазначениеГруппы.КлючевыеСлова</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="НазначениеГруппыКлючевыеСловаКонтекстноеМеню" id="151"/>
+											<ExtendedTooltip name="НазначениеГруппыКлючевыеСловаРасширеннаяПодсказка" id="152"/>
+										</InputField>
+										<InputField name="НазначениеГруппыНазначитьГруппу" id="153">
+											<DataPath>Объект.НазначениеГруппы.НазначитьГруппу</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="НазначениеГруппыНазначитьГруппуКонтекстноеМеню" id="154"/>
+											<ExtendedTooltip name="НазначениеГруппыНазначитьГруппуРасширеннаяПодсказка" id="155"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+								<LabelDecoration name="Декорация2" id="204">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>В правиле может быть несколько слов через пробел. Указанные в одной строке слова проверяются с условием И (то есть наличие всех слов в наименовании). 
+Если слова в разных товарах, то на каждое слово - отдельное правило.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация2КонтекстноеМеню" id="205"/>
+									<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="206"/>
+								</LabelDecoration>
+							</ChildItems>
+						</Page>
+						<Page name="Инструкция" id="202">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Инструкция</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Инструкция</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ИнструкцияРасширеннаяПодсказка" id="203"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация1" id="38">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;fontsize 12&gt;&lt;color #000000&gt;Для создания алгоритма установите слева соответствующие пометки (опции).
+
+При использовании Алгоритма для модуля Загрузка в 1С (режим код)&lt;/&gt;&lt;/&gt;&lt;b&gt;
+
+&lt;/&gt;&lt;b&gt;&lt;color #000000&gt;Значение &lt;/&gt;&lt;/&gt;&lt;color #000000&gt;- обращение к значению ячейки, номер которой был указан в настройках.  
+&lt;/&gt;&lt;i&gt;&lt;color #000000&gt;Пример: Значение = СокрЛП(Значение);&lt;/&gt;&lt;/&gt;&lt;color #000000&gt;
+&lt;/&gt;&lt;b&gt;&lt;color #000000&gt;Колонка1, Колонка2 &lt;/&gt;&lt;/&gt;&lt;color #000000&gt;и так &lt;/&gt;&lt;color #000000&gt;далее - обращение к любой &lt;/&gt;&lt;color #000000&gt;ячейке &lt;/&gt;&lt;color #000000&gt;строки по номеру колонки.  
+&lt;/&gt;&lt;i&gt;&lt;color #000000&gt;Пример: Значение = Значение+"  "+Колонка4;&lt;/&gt;&lt;/&gt;&lt;color #000000&gt;
+&lt;/&gt;&lt;b&gt;&lt;color #000000&gt;СтрокаИмпорт &lt;/&gt;&lt;/&gt;&lt;color #000000&gt;- обращение &lt;/&gt;&lt;color #000000&gt;ко всем данным строки.&lt;/&gt;&lt;color #000000&gt;
+&lt;/&gt;&lt;b&gt;&lt;color #000000&gt;ТаблицаИмпорта &lt;/&gt;&lt;/&gt;&lt;color #000000&gt;- обращение во всей таблице в целом.&lt;/&gt;&lt;color #666699&gt;
+
+
+&lt;/&gt;&lt;fontsize 12&gt;&lt;color #000000&gt;При использовании Алгоритма для модуля Марафет номенклатуры (режим код)
+
+&lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;&lt;colorstyle -11&gt;В алгоритме доступно использование следующих переменных:
+&lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;&lt;b&gt;&lt;colorstyle -11&gt;Артикул, Наименование, НаименованиеПолное, Описание&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;&lt;colorstyle -11&gt;. &lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;&lt;colorstyle -11&gt;
+Через переменную Номенклатура, можно обращаться ко всем реквизитам.&lt;/&gt;&lt;/&gt;
+</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="Декорация1ExtendedTooltip" id="40"/>
+								</LabelDecoration>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.мегапрайсАлгоритмы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="АлгоритмЗначение" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исходное значение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АлгоритмРезультат" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="АлгоритмПолучитьСловоПоПорядку" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм получить слово по порядку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм получить слово по порядку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>АлгоритмПолучитьСловоПоПорядку</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="АлгоритмУбратьСимволыСтроки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм убрать символы строки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм убрать символы строки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>АлгоритмУбратьСимволыСтроки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="АлгоритмПрименить" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм применить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>АлгоритмПрименить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="АлгоритмПроверить" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм проверить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>АлгоритмПроверить</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДобавитьЛидирующийНули" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить лидирующий нули</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить лидирующий нули</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьЛидирующийНули</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ИгнорИмпортаСтроки" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Игнор импорта строки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Игнор импорта строки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИгнорИмпортаСтроки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СложениеНаименования" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сложение наименования</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сложение наименования</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СложениеНаименования</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УбратьДвойныеПробелы" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Убрать двойные пробелы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Убрать двойные пробелы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УбратьДвойныеПробелы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УбратьПервоеСлово" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Убрать первое слово</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Убрать первое слово</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УбратьПервоеСлово</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УбратьПереводСтроки" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Убрать перевод строки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Убрать перевод строки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УбратьПереводСтроки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УдалитьВсеПослеСкобки" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить все после скобки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить все после скобки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьВсеПослеСкобки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

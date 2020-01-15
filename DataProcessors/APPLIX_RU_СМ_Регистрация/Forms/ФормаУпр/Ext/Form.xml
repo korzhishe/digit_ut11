@@ -1,0 +1,974 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Регистрация программы [APPLIX.RU]</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ПанельОсновная" id="111">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Панель основная</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Панель основная</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnBottom</PagesRepresentation>
+			<ExtendedTooltip name="ПанельОсновнаяРасширеннаяПодсказка" id="112"/>
+			<ChildItems>
+				<Page name="ПанельОсновная_Соглашение" id="113">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Соглашение</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Панель основная соглашение</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="ПанельОсновная_СоглашениеРасширеннаяПодсказка" id="114"/>
+					<ChildItems>
+						<UsualGroup name="Группа7" id="187">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>web:WhiteSmoke</BackColor>
+							<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="188"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация5" id="40">
+									<Width>20</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Height>6</Height>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<HorizontalStretch>true</HorizontalStretch>
+									<TextColor>web:SteelBlue</TextColor>
+									<Font ref="sys:DefaultGUIFont" faceName="Arial" height="10" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;b&gt;ВНИМАНИЕ!&lt;/&gt;
+На одну лицензию выдается только ОДИН ключ активации.
+Для тестирования программы выдается ОДИН дополнительный временный ключ.
+Итого - одна лицензия включает два ключа - один временный и один постоянный.
+Один ключ действует в пределах одной базы для ВСЕХ организаций и для ВСЕХ пользователей.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация5КонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="Декорация5ExtendedTooltip" id="82"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация9" id="189">
+									<ContextMenu name="Декорация9КонтекстноеМеню" id="190"/>
+									<ExtendedTooltip name="Декорация9РасширеннаяПодсказка" id="191"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация3" id="23">
+									<Width>20</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Height>2</Height>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<HorizontalStretch>true</HorizontalStretch>
+									<TextColor>web:Seagreen</TextColor>
+									<Font ref="sys:DefaultGUIFont" faceName="Arial" height="10" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Если у Вас уже имеется файл с ключом активации, то его можно сразу загрузить без указания организации и сохранения кода.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="Декорация3КонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="Декорация3ExtendedTooltip" id="83"/>
+								</LabelDecoration>
+								<UsualGroup name="Группа14" id="128">
+									<Width>20</Width>
+									<Height>2</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа14РасширеннаяПодсказка" id="129"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация6" id="130">
+											<Width>2</Width>
+											<Height>2</Height>
+											<Picture>
+												<xr:Abs>Picture.png</xr:Abs>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="Декорация6КонтекстноеМеню" id="131"/>
+											<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="132"/>
+										</PictureDecoration>
+										<LabelDecoration name="Декорация7" id="119">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Height>3</Height>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<HorizontalStretch>true</HorizontalStretch>
+											<TextColor>web:DimGray</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Таким символом обозначены подсказки к действиям. Используйте подсказки, если что-то не понятно.</v8:content>
+												</v8:item>
+											</Title>
+											<VerticalAlign>Center</VerticalAlign>
+											<ContextMenu name="Декорация7КонтекстноеМеню" id="120"/>
+											<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="121"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа12" id="78">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа12ExtendedTooltip" id="81"/>
+							<ChildItems>
+								<Button name="Команда_НачалоРегистрации" id="122">
+									<Type>UsualButton</Type>
+									<TitleHeight>1</TitleHeight>
+									<Representation>PictureAndText</Representation>
+									<Width>23</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Height>4</Height>
+									<CommandName>Form.Command.Команда_НачалоРегистрации</CommandName>
+									<TextColor>#FFFFFF</TextColor>
+									<BackColor>web:SteelBlue</BackColor>
+									<BorderColor>web:SteelBlue</BorderColor>
+									<Font ref="style:NormalTextFont" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<ExtendedTooltip name="Команда_НачалоРегистрацииРасширеннаяПодсказка" id="123"/>
+								</Button>
+								<LabelDecoration name="Декорация11" id="195">
+									<Width>23</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>или</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<ContextMenu name="Декорация11КонтекстноеМеню" id="196"/>
+									<ExtendedTooltip name="Декорация11РасширеннаяПодсказка" id="197"/>
+								</LabelDecoration>
+								<Button name="Команда_ЗагрузитьКлюч" id="126">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<Width>23</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Height>4</Height>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<CommandName>Form.Command.Команда_ЗагрузитьКлючАктивации</CommandName>
+									<TextColor>#FFFFFF</TextColor>
+									<BackColor>web:MediumAquaMarine</BackColor>
+									<BorderColor>web:MediumAquaMarine</BorderColor>
+									<Font ref="style:NormalTextFont" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<ExtendedTooltip name="Команда_ЗагрузитьКлючРасширеннаяПодсказка" id="127"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ПанельОсновная_Регистрация" id="115">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регистрация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Панель основная соглашение</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ПанельОсновная_РегистрацияРасширеннаяПодсказка" id="116"/>
+					<ChildItems>
+						<UsualGroup name="Группа_Заказ" id="159">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа заказ</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>web:WhiteSmoke</BackColor>
+							<ExtendedTooltip name="Группа_ЗаказРасширеннаяПодсказка" id="160"/>
+							<ChildItems>
+								<PictureDecoration name="ПолеКартинки_Заказ" id="167">
+									<Width>5</Width>
+									<Height>3</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Поле картинки организация</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Abs>Picture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="ПолеКартинки_ЗаказКонтекстноеМеню" id="168"/>
+									<ExtendedTooltip name="ПолеКартинки_ЗаказРасширеннаяПодсказка" id="169"/>
+								</PictureDecoration>
+								<LabelDecoration name="Декорация2" id="172">
+									<Width>25</Width>
+									<Height>3</Height>
+									<Font height="10" bold="true" kind="AutoFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЗАКАЗ</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="Декорация2КонтекстноеМеню" id="173"/>
+									<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="174"/>
+								</LabelDecoration>
+								<Button name="Команда_ПодсказкаЗаказ" id="175">
+									<Type>Hyperlink</Type>
+									<Representation>Picture</Representation>
+									<SkipOnInput>true</SkipOnInput>
+									<Height>2</Height>
+									<CommandName>Form.Command.Команда_ПодсказкаЗаказ</CommandName>
+									<Picture>
+										<xr:Abs>Picture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="Команда_ПодсказкаЗаказРасширеннаяПодсказка" id="176"/>
+								</Button>
+								<UsualGroup name="Группа1" id="170">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="171"/>
+									<ChildItems>
+										<UsualGroup name="Группа2" id="177">
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="178"/>
+											<ChildItems>
+												<InputField name="Р_НомерЗаказа" id="161">
+													<DataPath>Объект.Р_НомерЗаказа</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<InputHint>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Номер вашего заказа</v8:content>
+														</v8:item>
+													</InputHint>
+													<ContextMenu name="Р_НомерЗаказаКонтекстноеМеню" id="162"/>
+													<ExtendedTooltip name="Р_НомерЗаказаРасширеннаяПодсказка" id="163"/>
+												</InputField>
+												<LabelDecoration name="Декорация4" id="179">
+													<TextColor>#C0C0C0</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>&lt;-- Номер вашего заказа</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация4КонтекстноеМеню" id="180"/>
+													<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="181"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа5" id="182">
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="183"/>
+											<ChildItems>
+												<InputField name="Р_ЭлПочтаПокупателя" id="164">
+													<DataPath>Объект.Р_ЭлПочтаПокупателя</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<AutoMarkIncomplete>true</AutoMarkIncomplete>
+													<InputHint>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>E-mail указанный в заказе</v8:content>
+														</v8:item>
+													</InputHint>
+													<ContextMenu name="Р_ЭлПочтаПокупателяКонтекстноеМеню" id="165"/>
+													<ExtendedTooltip name="Р_ЭлПочтаПокупателяРасширеннаяПодсказка" id="166"/>
+													<Events>
+														<Event name="OnChange">Объект_УстановитьВидимостьЭлементов</Event>
+													</Events>
+												</InputField>
+												<LabelDecoration name="Декорация8" id="184">
+													<TextColor>#C0C0C0</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>&lt;-- E-mail указанный в заказе</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация8КонтекстноеМеню" id="185"/>
+													<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="186"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа_Организация" id="8">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа организация</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>web:WhiteSmoke</BackColor>
+							<ExtendedTooltip name="Группа_ОрганизацияРасширеннаяПодсказка" id="85"/>
+							<ChildItems>
+								<PictureDecoration name="ПолеКартинки_Организация" id="133">
+									<Width>5</Width>
+									<Height>3</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Поле картинки организация</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Abs>Picture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="ПолеКартинки_ОрганизацияКонтекстноеМеню" id="134"/>
+									<ExtendedTooltip name="ПолеКартинки_ОрганизацияРасширеннаяПодсказка" id="135"/>
+								</PictureDecoration>
+								<LabelDecoration name="Декорация1" id="13">
+									<Width>25</Width>
+									<Height>3</Height>
+									<Font height="10" bold="true" kind="AutoFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ОРГАНИЗАЦИЯ</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="Декорация1ExtendedTooltip" id="86"/>
+								</LabelDecoration>
+								<UsualGroup name="Группа4" id="136">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="137"/>
+									<ChildItems>
+										<UsualGroup name="Группа15" id="138">
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа15РасширеннаяПодсказка" id="139"/>
+											<ChildItems>
+												<Button name="Команда_Подсказка_Организация" id="9">
+													<Type>Hyperlink</Type>
+													<Representation>Picture</Representation>
+													<CommandName>Form.Command.Команда_Подсказка</CommandName>
+													<Picture>
+														<xr:Abs>Picture.png</xr:Abs>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<ExtendedTooltip name="Команда_Подсказка_ОрганизацияExtendedTooltip" id="87"/>
+												</Button>
+												<InputField name="Организация" id="1">
+													<DataPath>Объект.Организация</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<EditMode>EnterOnInput</EditMode>
+													<HorizontalStretch>true</HorizontalStretch>
+													<OpenButton>true</OpenButton>
+													<AutoMarkIncomplete>true</AutoMarkIncomplete>
+													<ChooseType>false</ChooseType>
+													<Font ref="sys:DefaultGUIFont" height="10" bold="true" kind="WindowsFont"/>
+													<ContextMenu name="ОрганизацияКонтекстноеМеню" id="2"/>
+													<ExtendedTooltip name="ОрганизацияExtendedTooltip" id="88"/>
+													<Events>
+														<Event name="OnChange">ОрганизацияПриИзменении</Event>
+													</Events>
+												</InputField>
+												<LabelDecoration name="Декорация10" id="198">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<HorizontalStretch>true</HorizontalStretch>
+													<ContextMenu name="Декорация10КонтекстноеМеню" id="199"/>
+													<ExtendedTooltip name="Декорация10РасширеннаяПодсказка" id="200"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа9" id="35">
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа9ExtendedTooltip" id="94"/>
+											<ChildItems>
+												<Button name="Команда_Подсказка3" id="38">
+													<Type>Hyperlink</Type>
+													<Representation>Picture</Representation>
+													<CommandName>Form.Command.Команда_Подсказка3</CommandName>
+													<Picture>
+														<xr:Abs>Picture.png</xr:Abs>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<ExtendedTooltip name="Команда_Подсказка3ExtendedTooltip" id="96"/>
+												</Button>
+												<CheckBoxField name="ВременныйКлюч" id="36">
+													<DataPath>Объект.ВременныйКлюч</DataPath>
+													<TitleTextColor>#339966</TitleTextColor>
+													<TitleFont ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+													<TitleLocation>Right</TitleLocation>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ВременныйКлючКонтекстноеМеню" id="37"/>
+													<ExtendedTooltip name="ВременныйКлючExtendedTooltip" id="95"/>
+												</CheckBoxField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа8" id="26">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>web:WhiteSmoke</BackColor>
+							<ExtendedTooltip name="Группа8ExtendedTooltip" id="97"/>
+							<ChildItems>
+								<UsualGroup name="Группа3" id="7">
+									<HorizontalStretch>true</HorizontalStretch>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа3ExtendedTooltip" id="98"/>
+									<ChildItems>
+										<PictureDecoration name="ПолеКартинки_КодРегистрации" id="146">
+											<Width>5</Width>
+											<Height>2</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Поле картинки организация</v8:content>
+												</v8:item>
+											</Title>
+											<Picture>
+												<xr:Abs>Picture.png</xr:Abs>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="ПолеКартинки_КодРегистрацииКонтекстноеМеню" id="147"/>
+											<ExtendedTooltip name="ПолеКартинки_КодРегистрацииРасширеннаяПодсказка" id="148"/>
+										</PictureDecoration>
+										<Button name="Команда_ОтправитьКодРегистрации" id="155">
+											<Type>UsualButton</Type>
+											<Width>25</Width>
+											<Height>2</Height>
+											<CommandName>Form.Command.Команда_ОтправитьКодРегистрации</CommandName>
+											<Font height="10" bold="true" kind="AutoFont"/>
+											<ExtendedTooltip name="Команда_ОтправитьКодРегистрацииРасширеннаяПодсказка" id="156"/>
+										</Button>
+										<Button name="Команда_Подсказка_КодРегистрации" id="12">
+											<Type>Hyperlink</Type>
+											<Representation>Picture</Representation>
+											<Height>1</Height>
+											<CommandName>Form.Command.Команда_Подсказка1</CommandName>
+											<Picture>
+												<xr:Abs>Picture.png</xr:Abs>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="Команда_Подсказка_КодРегистрацииExtendedTooltip" id="100"/>
+										</Button>
+										<UsualGroup name="Группа_ФайлРегистрации" id="29">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа файл регистрации</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа файл регистрации</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа_ФайлРегистрацииExtendedTooltip" id="101"/>
+											<ChildItems>
+												<LabelField name="Поле1" id="27">
+													<DataPath>Объект.ФайлРегистрации</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<AutoMaxHeight>false</AutoMaxHeight>
+													<HorizontalStretch>true</HorizontalStretch>
+													<ContextMenu name="Поле1КонтекстноеМеню" id="28"/>
+													<ExtendedTooltip name="Поле1ExtendedTooltip" id="102"/>
+												</LabelField>
+												<Button name="Команда_ОткрытьКаталог" id="25">
+													<Type>Hyperlink</Type>
+													<Representation>PictureAndText</Representation>
+													<CommandName>Form.Command.Команда_ОткрытьКаталог</CommandName>
+													<Font ref="style:NormalTextFont" height="8" kind="StyleItem"/>
+													<Picture>
+														<xr:Abs>Picture.png</xr:Abs>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<ExtendedTooltip name="Команда_ОткрытьКаталогExtendedTooltip" id="105"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа6" id="18">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>web:WhiteSmoke</BackColor>
+							<ExtendedTooltip name="Группа6ExtendedTooltip" id="106"/>
+							<ChildItems>
+								<PictureDecoration name="ПолеКартинки_КлючАктивации" id="149">
+									<Width>5</Width>
+									<Height>2</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Поле картинки организация</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Abs>Picture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="ПолеКартинки_КлючАктивацииКонтекстноеМеню" id="150"/>
+									<ExtendedTooltip name="ПолеКартинки_КлючАктивацииРасширеннаяПодсказка" id="151"/>
+								</PictureDecoration>
+								<Button name="Команда_ЗагрузитьКлючАктивации" id="157">
+									<Type>UsualButton</Type>
+									<Width>25</Width>
+									<Height>2</Height>
+									<CommandName>Form.Command.Команда_ЗагрузитьКлючАктивации</CommandName>
+									<Font height="10" bold="true" kind="AutoFont"/>
+									<ExtendedTooltip name="Команда_ЗагрузитьКлючАктивацииРасширеннаяПодсказка" id="158"/>
+								</Button>
+								<Button name="Команда_Подсказка_Ключ" id="20">
+									<Type>Hyperlink</Type>
+									<Representation>Picture</Representation>
+									<Height>1</Height>
+									<CommandName>Form.Command.Команда_Подсказка2</CommandName>
+									<Picture>
+										<xr:Abs>Picture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="Команда_Подсказка_КлючExtendedTooltip" id="108"/>
+								</Button>
+								<LabelDecoration name="Декорация13" id="218">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="Декорация13КонтекстноеМеню" id="219"/>
+									<ExtendedTooltip name="Декорация13РасширеннаяПодсказка" id="220"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ПанельОсновная_Служебная" id="117">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Служебная</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Панель основная соглашение</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="ПанельОсновная_СлужебнаяРасширеннаяПодсказка" id="118"/>
+					<ChildItems>
+						<PictureDecoration name="ПолеКартинки_ФлагНеУстановлен" id="143">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Поле картинки флаг не установлен</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Abs>Picture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="ПолеКартинки_ФлагНеУстановленКонтекстноеМеню" id="144"/>
+							<ExtendedTooltip name="ПолеКартинки_ФлагНеУстановленРасширеннаяПодсказка" id="145"/>
+						</PictureDecoration>
+						<PictureDecoration name="ПолеКартинки_ФлагУстановлен" id="140">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Поле картинки флаг установлен</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Abs>Picture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="ПолеКартинки_ФлагУстановленКонтекстноеМеню" id="141"/>
+							<ExtendedTooltip name="ПолеКартинки_ФлагУстановленРасширеннаяПодсказка" id="142"/>
+						</PictureDecoration>
+						<Button name="Команда_СформироватьФайлРегистрации" id="11">
+							<Type>Hyperlink</Type>
+							<Width>30</Width>
+							<Height>2</Height>
+							<CommandName>Form.Command.Команда_СформироватьФайлРегистрации</CommandName>
+							<Font height="12" kind="AutoFont"/>
+							<ExtendedTooltip name="Команда_СформироватьФайлРегистрацииExtendedTooltip" id="99"/>
+						</Button>
+						<Button name="Команда_ЗагрузитьЛицензионныйКлюч" id="21">
+							<Type>Hyperlink</Type>
+							<Width>30</Width>
+							<Height>2</Height>
+							<CommandName>Form.Command.Команда_ЗагрузитьЛицензионныйКлюч</CommandName>
+							<Font height="12" kind="AutoFont"/>
+							<ExtendedTooltip name="Команда_ЗагрузитьЛицензионныйКлючExtendedTooltip" id="107"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="ПанельОсновная_СчетНаОплату" id="201">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счет на оплату</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Панель основная счет на оплату</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ПанельОсновная_СчетНаОплатуРасширеннаяПодсказка" id="202"/>
+					<ChildItems>
+						<UsualGroup name="Группа11" id="214">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="215"/>
+							<ChildItems>
+								<UsualGroup name="Группа13" id="216">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа13РасширеннаяПодсказка" id="217"/>
+									<ChildItems>
+										<InputField name="Организация1" id="203">
+											<DataPath>Объект.Организация</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>На какую организацию</v8:content>
+												</v8:item>
+											</Title>
+											<ChooseType>false</ChooseType>
+											<ContextMenu name="Организация1КонтекстноеМеню" id="204"/>
+											<ExtendedTooltip name="Организация1РасширеннаяПодсказка" id="205"/>
+										</InputField>
+										<InputField name="Р_ЭлПочтаПокупателя1" id="206">
+											<DataPath>Объект.Р_ЭлПочтаПокупателя</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Куда отправить счет (Ваш E-MAIL)</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Р_ЭлПочтаПокупателя1КонтекстноеМеню" id="207"/>
+											<ExtendedTooltip name="Р_ЭлПочтаПокупателя1РасширеннаяПодсказка" id="208"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<Button name="Команда_ОтправитьЗапросНаСчет" id="209">
+									<Type>UsualButton</Type>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Height>3</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.Команда_ОтправитьЗапросНаСчет</CommandName>
+									<BackColor>web:LemonChiffon</BackColor>
+									<BorderColor>web:Gold</BorderColor>
+									<Font ref="style:NormalTextFont" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<ExtendedTooltip name="Команда_ОтправитьЗапросНаСчетРасширеннаяПодсказка" id="210"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<LabelDecoration name="Декорация12" id="211">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<TextColor>web:LightSeaGreen</TextColor>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Укажите на какую организацию сформировать счет и на какую почту его отправить, и нажмите &lt;b&gt;ПОЛУЧИТЬ СЧЕТ&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация12КонтекстноеМеню" id="212"/>
+							<ExtendedTooltip name="Декорация12РасширеннаяПодсказка" id="213"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<LabelDecoration name="Надпись_СообщениеПользователю" id="152">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<Height>5</Height>
+			<AutoMaxHeight>false</AutoMaxHeight>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>true</VerticalStretch>
+			<ContextMenu name="Надпись_СообщениеПользователюКонтекстноеМеню" id="153"/>
+			<ExtendedTooltip name="Надпись_СообщениеПользователюРасширеннаяПодсказка" id="154"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.APPLIX_RU_СМ_Регистрация</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="РФ_РежимОткрытия" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Р ф режим открытия</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Команда_Подсказка" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда подсказка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подсказка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Команда_Подсказка</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Команда_СформироватьФайлРегистрации" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить код регистрации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать файл регистрации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Команда_СформироватьФайлРегистрации</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Команда_ЗагрузитьЛицензионныйКлюч" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить ключ активации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить лицензионный ключ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Команда_ЗагрузитьЛицензионныйКлюч</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Команда_Подсказка1" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда подсказка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подсказка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Команда_Подсказка1</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Команда_ОткрытьКаталог" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать в папке</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть каталог</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Команда_ОткрытьКаталог</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Команда_Подсказка2" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда подсказка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подсказка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Команда_Подсказка2</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Команда_Подсказка3" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда подсказка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подсказка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Команда_Подсказка3</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Команда_НачалоРегистрации" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПЕРЕЙТИ К РЕГИСТРАЦИИ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переходим к регистрации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Команда_НачалоРегистрации</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Команда_ОтправитьКодРегистрации" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОТПРАВИТЬ КОД РЕГИСТРАЦИИ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить код регистрации разработчику, для получения ключа активации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Объект_ОтправитьКлюч_Клиент</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Команда_ЗагрузитьКлючАктивации" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ЗАГРУЗИТЬ КЛЮЧ АКТИВАЦИИ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить ключ активации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Объект_ЗагрузитьКлюч</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Команда_ПодсказкаЗаказ" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда подсказка заказ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подсказка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Команда_ПодсказкаЗаказ</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Команда_ОтправитьЗапросНаСчет" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПОЛУЧИТЬ СЧЕТ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда отправить запрос на счет</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Объект_ОтправитьЗапросНаСчет</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

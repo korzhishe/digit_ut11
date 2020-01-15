@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Область" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст алгоритма</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Область</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОбластьРасширеннаяПодсказка" id="39"/>
+			<ChildItems>
+				<UsualGroup name="Группа3" id="2">
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа3ExtendedTooltip" id="40"/>
+					<ChildItems>
+						<Button name="АлгоритмПрименить" id="3">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Height>1</Height>
+							<CommandName>Form.Command.АлгоритмПрименить</CommandName>
+							<ExtendedTooltip name="АлгоритмПрименитьExtendedTooltip" id="41"/>
+						</Button>
+						<CommandBar name="Группа1" id="26">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Примеры алгоритмов</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="Группа1ExtendedTooltip" id="42"/>
+							<ChildItems>
+								<Popup name="Группа2" id="28">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Примеры алгоритмов</v8:content>
+										</v8:item>
+									</Title>
+									<Height>3</Height>
+									<ExtendedTooltip name="Группа2ExtendedTooltip" id="43"/>
+									<ChildItems>
+										<Button name="ИгнорИмпортаСтроки" id="32">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ИгнорИмпортаСтроки</CommandName>
+											<ExtendedTooltip name="ИгнорИмпортаСтрокиExtendedTooltip" id="45"/>
+										</Button>
+										<ButtonGroup name="Группа4" id="57">
+											<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="58"/>
+											<ChildItems>
+												<Button name="СложениеНаименования" id="30">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.СложениеНаименования</CommandName>
+													<ExtendedTooltip name="СложениеНаименованияExtendedTooltip" id="44"/>
+												</Button>
+												<Button name="АлгоритмУбратьСимволыСтроки" id="61">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.АлгоритмУбратьСимволыСтроки</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Убрать лишние символы</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="АлгоритмУбратьСимволыСтрокиРасширеннаяПодсказка" id="62"/>
+												</Button>
+												<Button name="УбратьДвойныеПробелы" id="55">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.УбратьДвойныеПробелы</CommandName>
+													<ExtendedTooltip name="УбратьДвойныеПробелыРасширеннаяПодсказка" id="56"/>
+												</Button>
+												<Button name="УдалитьВсеПослеСкобки" id="63">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.УдалитьВсеПослеСкобки</CommandName>
+													<ExtendedTooltip name="УдалитьВсеПослеСкобкиРасширеннаяПодсказка" id="64"/>
+												</Button>
+												<Button name="ДобавитьЛидирующийНули" id="34">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ДобавитьЛидирующийНули</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Добавить лидирующие нули</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ДобавитьЛидирующийНулиExtendedTooltip" id="46"/>
+												</Button>
+											</ChildItems>
+										</ButtonGroup>
+										<ButtonGroup name="Группа5" id="59">
+											<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="60"/>
+											<ChildItems>
+												<Button name="ПолучитьСловоПоПорядку" id="38">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.АлгоритмПолучитьСловоПоПорядку</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Получить слово по порядку</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ПолучитьСловоПоПорядкуРасширеннаяПодсказка" id="48"/>
+												</Button>
+												<Button name="УбратьПервоеСлово" id="36">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.УбратьПервоеСлово</CommandName>
+													<ExtendedTooltip name="УбратьПервоеСловоExtendedTooltip" id="47"/>
+												</Button>
+												<Button name="УбратьПереводСтроки" id="100">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.УбратьПереводСтроки</CommandName>
+													<ExtendedTooltip name="УбратьПереводСтрокиРасширеннаяПодсказка" id="101"/>
+												</Button>
+											</ChildItems>
+										</ButtonGroup>
+									</ChildItems>
+								</Popup>
+							</ChildItems>
+						</CommandBar>
+					</ChildItems>
+				</UsualGroup>
+				<Table name="АлгоритмыОбработки" id="65">
+					<Visible>false</Visible>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<BorderColor>web:Gainsboro</BorderColor>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="АлгоритмыОбработкиКонтекстноеМеню" id="66"/>
+					<AutoCommandBar name="АлгоритмыОбработкиКоманднаяПанель" id="67">
+						<ChildItems>
+							<Button name="АлгоритмыОбработкиЗаполнитьСтандартныеАлгоритмы" id="96">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ИгнорИмпортаСтроки</CommandName>
+								<ExtendedTooltip name="АлгоритмыОбработкиЗаполнитьСтандартныеАлгоритмыРасширеннаяПодсказка" id="97"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="АлгоритмыОбработкиРасширеннаяПодсказка" id="68"/>
+					<SearchStringAddition name="АлгоритмыОбработкиСтрокаПоиска" id="69">
+						<AdditionSource>
+							<Item>АлгоритмыОбработки</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="АлгоритмыОбработкиСтрокаПоискаКонтекстноеМеню" id="72"/>
+						<ExtendedTooltip name="АлгоритмыОбработкиСтрокаПоискаРасширеннаяПодсказка" id="73"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="АлгоритмыОбработкиСостояниеПросмотра" id="74">
+						<AdditionSource>
+							<Item>АлгоритмыОбработки</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="АлгоритмыОбработкиСостояниеПросмотраКонтекстноеМеню" id="77"/>
+						<ExtendedTooltip name="АлгоритмыОбработкиСостояниеПросмотраРасширеннаяПодсказка" id="78"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="АлгоритмыОбработкиУправлениеПоиском" id="79">
+						<AdditionSource>
+							<Item>АлгоритмыОбработки</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="АлгоритмыОбработкиУправлениеПоискомКонтекстноеМеню" id="82"/>
+						<ExtendedTooltip name="АлгоритмыОбработкиУправлениеПоискомРасширеннаяПодсказка" id="83"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="01d80ddd-dce5-4db3-beb5-f63c97cb05b9">АлгоритмыКлючевыхСловПриОкончанииРедактирования</Event>
+						<Event name="60edb81d-887b-478e-94ee-7fef2b13393d">АлгоритмыОбработкиПриАктивизацииСтроки</Event>
+					</Events>
+					<ChildItems>
+						<LabelField name="АлгоритмыКлючевыхСловНомерСтроки" id="84">
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="АлгоритмыКлючевыхСловНомерСтрокиКонтекстноеМеню" id="85"/>
+							<ExtendedTooltip name="АлгоритмыКлючевыхСловНомерСтрокиExtendedTooltip" id="86"/>
+						</LabelField>
+						<CheckBoxField name="АлгоритмыКлючевыхСловПометка" id="87">
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="АлгоритмыКлючевыхСловПометкаКонтекстноеМеню" id="88"/>
+							<ExtendedTooltip name="АлгоритмыКлючевыхСловПометкаExtendedTooltip" id="89"/>
+						</CheckBoxField>
+						<InputField name="АлгоритмыКлючевыхСловПредставление" id="90">
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="АлгоритмыКлючевыхСловПредставлениеКонтекстноеМеню" id="91"/>
+							<ExtendedTooltip name="АлгоритмыКлючевыхСловПредставлениеExtendedTooltip" id="92"/>
+						</InputField>
+						<InputField name="АлгоритмыКлючевыхСловТекстАлгоритма" id="93">
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="АлгоритмыКлючевыхСловТекстАлгоритмаКонтекстноеМеню" id="94"/>
+							<ExtendedTooltip name="АлгоритмыКлючевыхСловТекстАлгоритмаExtendedTooltip" id="95"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<UsualGroup name="ГруппаТекстАлгоритма" id="98">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст алгоритма</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст алгоритма</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаТекстАлгоритмаРасширеннаяПодсказка" id="99"/>
+					<ChildItems>
+						<TextDocumentField name="Алгоритм" id="4">
+							<DataPath>Алгоритм</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Width>80</Width>
+							<ContextMenu name="АлгоритмКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="АлгоритмExtendedTooltip" id="49"/>
+						</TextDocumentField>
+						<UsualGroup name="ГруппаПроверка" id="6">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Проверка для алгоритмов в которых используется только Значение</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа проверка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="ГруппаПроверкаExtendedTooltip" id="50"/>
+							<ChildItems>
+								<InputField name="АлгоритмЗначение" id="8">
+									<DataPath>АлгоритмЗначение</DataPath>
+									<ContextMenu name="АлгоритмЗначениеКонтекстноеМеню" id="9"/>
+									<ExtendedTooltip name="АлгоритмЗначениеExtendedTooltip" id="51"/>
+								</InputField>
+								<Button name="АлгоритмПроверить" id="7">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.АлгоритмПроверить</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Тест</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="АлгоритмПроверитьExtendedTooltip" id="52"/>
+								</Button>
+								<InputField name="АлгоритмРезультат" id="10">
+									<DataPath>АлгоритмРезультат</DataPath>
+									<ContextMenu name="АлгоритмРезультатКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="АлгоритмРезультатExtendedTooltip" id="53"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Алгоритм" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АлгоритмЗначение" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исходное значение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АлгоритмРезультат" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="АлгоритмПроверить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм проверить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>АлгоритмПроверить</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="АлгоритмПрименить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм применить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>АлгоритмПрименить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СложениеНаименования" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сложение наименования</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сложение наименования</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СложениеНаименования</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ИгнорИмпортаСтроки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Игнор импорта строки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Игнор импорта строки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИгнорИмпортаСтроки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДобавитьЛидирующийНули" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить лидирующий нули</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить лидирующий нули</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьЛидирующийНули</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УбратьПервоеСлово" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Убрать первое слово</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Убрать первое слово</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УбратьПервоеСлово</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="АлгоритмПолучитьСловоПоПорядку" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм получить слово по порядку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм получить слово по порядку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>АлгоритмПолучитьСловоПоПорядку</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УбратьДвойныеПробелы" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Убрать двойные пробелы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Убрать двойные пробелы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УбратьДвойныеПробелы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="АлгоритмУбратьСимволыСтроки" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм убрать символы строки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм убрать символы строки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>АлгоритмУбратьСимволыСтроки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УдалитьВсеПослеСкобки" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить все после скобки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить все после скобки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьВсеПослеСкобки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УбратьПереводСтроки" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Убрать перевод строки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Убрать перевод строки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УбратьПереводСтроки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

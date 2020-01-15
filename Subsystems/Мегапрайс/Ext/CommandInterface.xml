@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<CommandsVisibility>
+		<Command name="Document.мегапрайсИсторияПродаж.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:1280a8ac-41d8-4872-9697-4ed353502bb6">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Document.мегапрайсИсторияПродаж.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Document.мегапрайсИсторияПродаж.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="Document.мегапрайсИсторияПродаж.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.мегапрайсРабочийСтол.Command.МегапрайсРабочийСтол">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonForm.мегапрайсНастройкаПодсистемы.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:1280a8ac-41d8-4872-9697-4ed353502bb6">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.мегапрайсНовости">
+			<CommandGroup>CommandGroup.Информация</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.мегапрайсОбновлениеПодсистемы">
+			<CommandGroup>CommandGroup.Информация</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.мегапрайсПомощьПоАлгоритмам">
+			<CommandGroup>CommandGroup.Информация</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.мегапрайсПомощьПоРаботеСНоменклатурой">
+			<CommandGroup>CommandGroup.Информация</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.мегапрайсПомощьПоАнализатору">
+			<CommandGroup>CommandGroup.Информация</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.мегапрайсПомощьПоУстановкеЦен">
+			<CommandGroup>CommandGroup.Информация</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.мегапрайсПомощьПоПомощникуПродаж">
+			<CommandGroup>CommandGroup.Информация</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.мегапрайсПомощьПоМодулюЗакупок">
+			<CommandGroup>CommandGroup.Информация</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.мегапрайсПерейтиНаСайт">
+			<CommandGroup>CommandGroup.Информация</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem.Мегапрайс.Subsystem.ИмпортПрайсов</Subsystem>
+		<Subsystem>Subsystem.Мегапрайс.Subsystem.УправлениеНоменклатурой</Subsystem>
+		<Subsystem>Subsystem.Мегапрайс.Subsystem.Маркетинг</Subsystem>
+		<Subsystem>Subsystem.Мегапрайс.Subsystem.Продажи</Subsystem>
+		<Subsystem>Subsystem.Мегапрайс.Subsystem.Закупки</Subsystem>
+		<Subsystem>Subsystem.Мегапрайс.Subsystem.Склад</Subsystem>
+		<Subsystem>Subsystem.Мегапрайс.Subsystem.Дополнительно</Subsystem>
+		<Subsystem>Subsystem.Мегапрайс.Subsystem.Обмены</Subsystem>
+		<Subsystem>Subsystem.Мегапрайс.Subsystem.ТаблицыБазы</Subsystem>
+	</SubsystemsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelImportant</Group>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>CommandGroup.НовостиСервис</Group>
+		<Group>CommandGroup.мегапрайсНастройки</Group>
+		<Group>NavigationPanelSeeAlso</Group>
+		<Group>ActionsPanelCreate</Group>
+		<Group>ActionsPanelReports</Group>
+		<Group>ActionsPanelTools</Group>
+		<Group>CommandGroup.Информация</Group>
+	</GroupsOrder>
+</CommandInterface>

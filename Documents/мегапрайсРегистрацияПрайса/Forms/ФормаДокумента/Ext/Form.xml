@@ -1,0 +1,562 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<ScalingMode>Compact</ScalingMode>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="36">
+			<Group>Horizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1ExtendedTooltip" id="106"/>
+			<ChildItems>
+				<InputField name="ПрайсПартнера" id="11">
+					<DataPath>Объект.ПрайсПартнера</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<BorderColor>web:Gainsboro</BorderColor>
+					<ContextMenu name="ПрайсПартнераКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="ПрайсПартнераExtendedTooltip" id="107"/>
+				</InputField>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<BorderColor>web:Gainsboro</BorderColor>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерExtendedTooltip" id="108"/>
+				</InputField>
+				<InputField name="Дата" id="3">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<BorderColor>web:Gainsboro</BorderColor>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ДатаExtendedTooltip" id="109"/>
+				</InputField>
+				<CheckBoxField name="ЗагруженРоботом" id="5">
+					<DataPath>Объект.ЗагруженРоботом</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<BorderColor>web:Gainsboro</BorderColor>
+					<ContextMenu name="ЗагруженРоботомКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="ЗагруженРоботомExtendedTooltip" id="110"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ТаблицыДанныеПрайса" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблицы данные прайса</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблицы данные прайса</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ТаблицыДанныеПрайсаExtendedTooltip" id="113"/>
+			<Events>
+				<Event name="OnCurrentPageChange">ТаблицыПриСменеСтраницы</Event>
+			</Events>
+			<ChildItems>
+				<Page name="ТаблицаВсе" id="38">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Весь прайс</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица все</v8:content>
+						</v8:item>
+					</ToolTip>
+					<BackColor>web:WhiteSmoke</BackColor>
+					<ExtendedTooltip name="ТаблицаВсеExtendedTooltip" id="114"/>
+					<ChildItems>
+						<Table name="Товары" id="13">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Товары</DataPath>
+							<BorderColor>web:Gainsboro</BorderColor>
+							<TitleTextColor>#000000</TitleTextColor>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТоварыКонтекстноеМеню" id="14"/>
+							<AutoCommandBar name="ТоварыКоманднаяПанель" id="15"/>
+							<ExtendedTooltip name="ТоварыExtendedTooltip" id="116"/>
+							<SearchStringAddition name="ТоварыSearchString" id="153">
+								<AdditionSource>
+									<Item>Товары</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТоварыSearchStringContextMenu" id="154"/>
+								<ExtendedTooltip name="ТоварыSearchStringExtendedTooltip" id="155"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТоварыViewStatus" id="156">
+								<AdditionSource>
+									<Item>Товары</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТоварыViewStatusContextMenu" id="157"/>
+								<ExtendedTooltip name="ТоварыViewStatusExtendedTooltip" id="158"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТоварыSearchControl" id="159">
+								<AdditionSource>
+									<Item>Товары</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТоварыSearchControlContextMenu" id="160"/>
+								<ExtendedTooltip name="ТоварыSearchControlExtendedTooltip" id="161"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ТоварыНомерСтроки" id="16">
+									<DataPath>Объект.Товары.LineNumber</DataPath>
+									<TitleTextColor>#000000</TitleTextColor>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>1</Width>
+									<ContextMenu name="ТоварыНомерСтрокиКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="ТоварыНомерСтрокиExtendedTooltip" id="117"/>
+								</LabelField>
+								<ColumnGroup name="Партнер" id="98">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Партнер</v8:content>
+										</v8:item>
+									</Title>
+									<TitleTextColor>#FFFFFF</TitleTextColor>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Партнер</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<TitleBackColor>#3366FF</TitleBackColor>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="ПартнерExtendedTooltip" id="118"/>
+									<ChildItems>
+										<InputField name="ТоварыНоменклатураПоставщика" id="89">
+											<DataPath>Объект.Товары.НоменклатураПоставщика</DataPath>
+											<TitleTextColor>#FFFFFF</TitleTextColor>
+											<TitleBackColor>#3366FF</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<BackColor>web:WhiteSmoke</BackColor>
+											<ContextMenu name="ТоварыНоменклатураПоставщикаКонтекстноеМеню" id="90"/>
+											<ExtendedTooltip name="ТоварыНоменклатураПоставщикаExtendedTooltip" id="119"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="НашСправочник" id="101">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Наш справочник</v8:content>
+										</v8:item>
+									</Title>
+									<TitleTextColor>#FFFFFF</TitleTextColor>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Наш справочник</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<TitleBackColor>web:CornFlowerBlue</TitleBackColor>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="НашСправочникExtendedTooltip" id="124"/>
+									<ChildItems>
+										<InputField name="ТоварыНоменклатура" id="18">
+											<DataPath>Объект.Товары.Номенклатура</DataPath>
+											<TitleTextColor>#FFFFFF</TitleTextColor>
+											<TitleBackColor>web:CornFlowerBlue</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>20</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ТоварыНоменклатураКонтекстноеМеню" id="19"/>
+											<ExtendedTooltip name="ТоварыНоменклатураExtendedTooltip" id="125"/>
+										</InputField>
+										<InputField name="ТоварыХарактеристикаНоменклатуры" id="20">
+											<DataPath>Объект.Товары.ХарактеристикаНоменклатуры</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Характеристика</v8:content>
+												</v8:item>
+											</Title>
+											<TitleTextColor>#FFFFFF</TitleTextColor>
+											<TitleBackColor>web:CornFlowerBlue</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>10</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ТоварыХарактеристикаНоменклатурыКонтекстноеМеню" id="21"/>
+											<ExtendedTooltip name="ТоварыХарактеристикаНоменклатурыExtendedTooltip" id="126"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ДанныеПрайса" id="102">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Данные прайса</v8:content>
+										</v8:item>
+									</Title>
+									<TitleTextColor>#FFFFFF</TitleTextColor>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Данные прайса</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<TitleBackColor>web:Seagreen</TitleBackColor>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="ДанныеПрайсаExtendedTooltip" id="128"/>
+									<ChildItems>
+										<InputField name="ТоварыКоличество" id="26">
+											<DataPath>Объект.Товары.Количество</DataPath>
+											<TitleTextColor>#FFFFFF</TitleTextColor>
+											<TitleBackColor>web:Seagreen</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>10</Width>
+											<ContextMenu name="ТоварыКоличествоКонтекстноеМеню" id="27"/>
+											<ExtendedTooltip name="ТоварыКоличествоExtendedTooltip" id="131"/>
+										</InputField>
+										<InputField name="ТоварыЦенаБезСкидки" id="147">
+											<DataPath>Объект.Товары.ЦенаБезСкидки</DataPath>
+											<TitleTextColor>#FFFFFF</TitleTextColor>
+											<TitleBackColor>web:Seagreen</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>10</Width>
+											<ContextMenu name="ТоварыЦенаБезСкидкиКонтекстноеМеню" id="148"/>
+											<ExtendedTooltip name="ТоварыЦенаБезСкидкиРасширеннаяПодсказка" id="149"/>
+										</InputField>
+										<InputField name="ТоварыПроцентСкидки" id="150">
+											<DataPath>Объект.Товары.ПроцентСкидки</DataPath>
+											<TitleTextColor>#FFFFFF</TitleTextColor>
+											<TitleBackColor>web:Seagreen</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>10</Width>
+											<ContextMenu name="ТоварыПроцентСкидкиКонтекстноеМеню" id="151"/>
+											<ExtendedTooltip name="ТоварыПроцентСкидкиРасширеннаяПодсказка" id="152"/>
+										</InputField>
+										<InputField name="ТоварыЦена" id="22">
+											<DataPath>Объект.Товары.Цена</DataPath>
+											<TitleTextColor>#FFFFFF</TitleTextColor>
+											<TitleBackColor>web:Seagreen</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>10</Width>
+											<ContextMenu name="ТоварыЦенаКонтекстноеМеню" id="23"/>
+											<ExtendedTooltip name="ТоварыЦенаExtendedTooltip" id="129"/>
+										</InputField>
+										<InputField name="ТоварыВалюта" id="24">
+											<DataPath>Объект.Товары.Валюта</DataPath>
+											<TitleTextColor>#FFFFFF</TitleTextColor>
+											<TitleBackColor>web:Seagreen</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>5</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ТоварыВалютаКонтекстноеМеню" id="25"/>
+											<ExtendedTooltip name="ТоварыВалютаExtendedTooltip" id="130"/>
+										</InputField>
+										<InputField name="ТоварыСрокПоставки" id="34">
+											<DataPath>Объект.Товары.СрокПоставки</DataPath>
+											<TitleTextColor>#FFFFFF</TitleTextColor>
+											<TitleBackColor>web:Seagreen</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>10</Width>
+											<ContextMenu name="ТоварыСрокПоставкиКонтекстноеМеню" id="35"/>
+											<ExtendedTooltip name="ТоварыСрокПоставкиExtendedTooltip" id="132"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="БезСоответствий" id="40">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Без соответствий</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Без соответствий</v8:content>
+						</v8:item>
+					</ToolTip>
+					<BackColor>web:WhiteSmoke</BackColor>
+					<ExtendedTooltip name="БезСоответствийExtendedTooltip" id="133"/>
+					<ChildItems>
+						<Table name="ТоварыБезСоответствий" id="64">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Товары</DataPath>
+							<BorderColor>web:Gainsboro</BorderColor>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТоварыБезСоответствийКонтекстноеМеню" id="65"/>
+							<AutoCommandBar name="ТоварыБезСоответствийКоманднаяПанель" id="66"/>
+							<ExtendedTooltip name="ТоварыБезСоответствийExtendedTooltip" id="134"/>
+							<SearchStringAddition name="ТоварыБезСоответствийSearchString" id="162">
+								<AdditionSource>
+									<Item>ТоварыБезСоответствий</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТоварыБезСоответствийSearchStringContextMenu" id="163"/>
+								<ExtendedTooltip name="ТоварыБезСоответствийSearchStringExtendedTooltip" id="164"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТоварыБезСоответствийViewStatus" id="165">
+								<AdditionSource>
+									<Item>ТоварыБезСоответствий</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТоварыБезСоответствийViewStatusContextMenu" id="166"/>
+								<ExtendedTooltip name="ТоварыБезСоответствийViewStatusExtendedTooltip" id="167"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТоварыБезСоответствийSearchControl" id="168">
+								<AdditionSource>
+									<Item>ТоварыБезСоответствий</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТоварыБезСоответствийSearchControlContextMenu" id="169"/>
+								<ExtendedTooltip name="ТоварыБезСоответствийSearchControlExtendedTooltip" id="170"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ТоварыНомерСтроки2" id="67">
+									<DataPath>Объект.Товары.LineNumber</DataPath>
+									<TitleTextColor>#000000</TitleTextColor>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>1</Width>
+									<ContextMenu name="ТоварыНомерСтроки2КонтекстноеМеню" id="68"/>
+									<ExtendedTooltip name="ТоварыНомерСтроки2ExtendedTooltip" id="135"/>
+								</LabelField>
+								<ColumnGroup name="ПартнерНоменклатура" id="105">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Партнер номенклатура</v8:content>
+										</v8:item>
+									</Title>
+									<TitleTextColor>#FFFFFF</TitleTextColor>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Партнер номенклатура</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<TitleBackColor>#3366FF</TitleBackColor>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="ПартнерНоменклатураExtendedTooltip" id="136"/>
+									<ChildItems>
+										<InputField name="ТоварыБезСоответствийНоменклатураПоставщика" id="91">
+											<DataPath>Объект.Товары.НоменклатураПоставщика</DataPath>
+											<TitleTextColor>#FFFFFF</TitleTextColor>
+											<TitleBackColor>#3366FF</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<BackColor>web:WhiteSmoke</BackColor>
+											<ContextMenu name="ТоварыБезСоответствийНоменклатураПоставщикаКонтекстноеМеню" id="92"/>
+											<ExtendedTooltip name="ТоварыБезСоответствийНоменклатураПоставщикаExtendedTooltip" id="137"/>
+										</InputField>
+										<InputField name="ТоварыНаименование2" id="71">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Наименование поставщика</v8:content>
+												</v8:item>
+											</Title>
+											<TitleTextColor>#FFFFFF</TitleTextColor>
+											<TitleBackColor>#3366FF</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>30</Width>
+											<BackColor>web:AliceBlue</BackColor>
+											<ContextMenu name="ТоварыНаименование2КонтекстноеМеню" id="72"/>
+											<ExtendedTooltip name="ТоварыНаименование2ExtendedTooltip" id="138"/>
+										</InputField>
+										<InputField name="ТоварыАртикул2" id="69">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Артикул</v8:content>
+												</v8:item>
+											</Title>
+											<TitleTextColor>#FFFFFF</TitleTextColor>
+											<TitleBackColor>#3366FF</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>10</Width>
+											<BackColor>web:AliceBlue</BackColor>
+											<ContextMenu name="ТоварыАртикул2КонтекстноеМеню" id="70"/>
+											<ExtendedTooltip name="ТоварыАртикул2ExtendedTooltip" id="139"/>
+										</InputField>
+										<InputField name="ТоварыБезСоответствийПоле_Идентификатор" id="103">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Идентификатор</v8:content>
+												</v8:item>
+											</Title>
+											<TitleTextColor>#FFFFFF</TitleTextColor>
+											<TitleBackColor>#3366FF</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>10</Width>
+											<ContextMenu name="ТоварыБезСоответствийПоле_ИдентификаторКонтекстноеМеню" id="104"/>
+											<ExtendedTooltip name="ТоварыБезСоответствийПоле_ИдентификаторExtendedTooltip" id="140"/>
+										</InputField>
+										<InputField name="ТоварыБезСоответствийПоле_Код" id="95">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Код</v8:content>
+												</v8:item>
+											</Title>
+											<TitleTextColor>#FFFFFF</TitleTextColor>
+											<TitleBackColor>#3366FF</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>10</Width>
+											<BackColor>web:AliceBlue</BackColor>
+											<ContextMenu name="ТоварыБезСоответствийПоле_КодКонтекстноеМеню" id="96"/>
+											<ExtendedTooltip name="ТоварыБезСоответствийПоле_КодExtendedTooltip" id="141"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<InputField name="ТоварыЦена2" id="79">
+									<DataPath>Объект.Товары.Цена</DataPath>
+									<TitleTextColor>#FFFFFF</TitleTextColor>
+									<TitleBackColor>web:Seagreen</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>10</Width>
+									<ContextMenu name="ТоварыЦена2КонтекстноеМеню" id="80"/>
+									<ExtendedTooltip name="ТоварыЦена2ExtendedTooltip" id="142"/>
+								</InputField>
+								<InputField name="ТоварыВалюта2" id="81">
+									<DataPath>Объект.Товары.Валюта</DataPath>
+									<TitleTextColor>#FFFFFF</TitleTextColor>
+									<TitleBackColor>web:Seagreen</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>10</Width>
+									<ContextMenu name="ТоварыВалюта2КонтекстноеМеню" id="82"/>
+									<ExtendedTooltip name="ТоварыВалюта2ExtendedTooltip" id="143"/>
+								</InputField>
+								<InputField name="ТоварыКоличество2" id="83">
+									<DataPath>Объект.Товары.Количество</DataPath>
+									<TitleTextColor>#FFFFFF</TitleTextColor>
+									<TitleBackColor>web:Seagreen</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>10</Width>
+									<ContextMenu name="ТоварыКоличество2КонтекстноеМеню" id="84"/>
+									<ExtendedTooltip name="ТоварыКоличество2ExtendedTooltip" id="144"/>
+								</InputField>
+								<InputField name="ТоварыСрокПоставки2" id="85">
+									<DataPath>Объект.Товары.СрокПоставки</DataPath>
+									<TitleTextColor>#FFFFFF</TitleTextColor>
+									<TitleBackColor>web:Seagreen</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>10</Width>
+									<ContextMenu name="ТоварыСрокПоставки2КонтекстноеМеню" id="86"/>
+									<ExtendedTooltip name="ТоварыСрокПоставки2ExtendedTooltip" id="145"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="Дополнительно" id="171">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительно</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительно</v8:content>
+						</v8:item>
+					</ToolTip>
+					<BackColor>web:WhiteSmoke</BackColor>
+					<ExtendedTooltip name="ДополнительноРасширеннаяПодсказка" id="172"/>
+					<ChildItems>
+						<InputField name="ИдентификаторПрайса" id="173">
+							<DataPath>Объект.ИдентификаторПрайса</DataPath>
+							<ContextMenu name="ИдентификаторПрайсаКонтекстноеМеню" id="174"/>
+							<ExtendedTooltip name="ИдентификаторПрайсаРасширеннаяПодсказка" id="175"/>
+						</InputField>
+						<InputField name="Ответственный" id="9">
+							<DataPath>Объект.Ответственный</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОтветственныйКонтекстноеМеню" id="10"/>
+							<ExtendedTooltip name="ОтветственныйExtendedTooltip" id="111"/>
+						</InputField>
+						<InputField name="Комментарий" id="7">
+							<DataPath>Объект.Комментарий</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КомментарийКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="КомментарийExtendedTooltip" id="112"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<LabelDecoration name="Декорация1" id="87">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ хранит полный образ загрузки прайса. Заменяет штатный документ регистрации цен. 
+Производит движение по регистру цен и остатков поставщиков. 
+Автоматически создает номенклатуру поставщика (и делает привязку соответствий номенклатуры компании).</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="88"/>
+			<ExtendedTooltip name="Декорация1ExtendedTooltip" id="146"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.мегапрайсРегистрацияПрайса</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьНоменклатуруПоставщика" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить номенклатуру поставщика</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить номенклатуру поставщика</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьНоменклатуруПоставщика</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.6">
+	<Item id="34317efd-5079-4966-a191-1d2e74f55bea">
+		<Name>КонкурентыОптовые</Name>
+		<Code>000000003</Code>
+		<Description>Конкуренты (оптовые цены)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6b0722fe-5560-4b81-bc72-ac432e8b9c6a">
+		<Name>КонкурентыРозница</Name>
+		<Code>000000002</Code>
+		<Description>Конкуренты (розница)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a2282d70-cd21-451c-9596-b47f2f96cca4">
+		<Name>ПоставщикиОптовыеЦены</Name>
+		<Code>000000001</Code>
+		<Description>Поставщики (оптовые цены)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

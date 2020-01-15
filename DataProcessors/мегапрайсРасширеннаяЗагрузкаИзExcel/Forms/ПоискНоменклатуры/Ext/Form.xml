@@ -1,0 +1,1509 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Мегапрайс - установка соответствий</v8:content>
+		</v8:item>
+	</Title>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<ChildItemsWidth>Equal</ChildItemsWidth>
+	<Customizable>false</Customizable>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Команды" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команды</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команды</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="КомандыExtendedTooltip" id="303"/>
+			<ChildItems>
+				<Button name="УстановитьКлючевыеСловаВНаименованиях" id="78">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.КомандаЗаполнитьКлючевыеСлова</CommandName>
+					<Picture>
+						<xr:Abs>Picture.zip</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Разобрать слова</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="УстановитьКлючевыеСловаВНаименованияхExtendedTooltip" id="304"/>
+				</Button>
+				<Button name="ФормаАнализСоответствий" id="38">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.ПоискСоответствийВыполнитьАнализСоответствий</CommandName>
+					<Picture>
+						<xr:Abs>Picture.zip</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выполнить поиск</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ФормаАнализСоответствийExtendedTooltip" id="305"/>
+				</Button>
+				<Button name="ЗаписатьСоответствия1" id="475">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<CommandName>Form.Command.НоменклатураПоставщика_СоздатьЭлементы</CommandName>
+					<Picture>
+						<xr:Abs>Picture.zip</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Создать номенклатуру поставщика</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ЗаписатьСоответствия1РасширеннаяПодсказка" id="476"/>
+				</Button>
+				<Button name="ЗаполнитьИЗакрыть" id="29">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.ПоискСоответствийЗаполнитьИЗакрыть</CommandName>
+					<Picture>
+						<xr:Abs>Picture.zip</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перенести результат</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ЗаполнитьИЗакрытьExtendedTooltip" id="308"/>
+				</Button>
+				<Button name="ЗаписатьСоответствия" id="288">
+					<Type>Hyperlink</Type>
+					<Visible>false</Visible>
+					<Representation>PictureAndText</Representation>
+					<Width>23</Width>
+					<Height>3</Height>
+					<CommandName>Form.Command.КомандаЗаписатьСоответствия</CommandName>
+					<TextColor>#000000</TextColor>
+					<BorderColor>web:Gainsboro</BorderColor>
+					<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="true" strikeout="false" kind="WindowsFont"/>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Записать номенклатуру поставщика</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ЗаписатьСоответствияExtendedTooltip" id="307"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Закладки" id="166">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закладки</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="style:NormalTextFont" height="10" kind="StyleItem"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закладки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ЗакладкиExtendedTooltip" id="313"/>
+			<ChildItems>
+				<Page name="ЗакладкаНастройки" id="296">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Закладка настройки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<BackColor>web:WhiteSmoke</BackColor>
+					<ExtendedTooltip name="ЗакладкаНастройкиExtendedTooltip" id="363"/>
+					<ChildItems>
+						<Pages name="СтраницыНастроек" id="215">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы настроек</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы настроек</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="СтраницыНастроекРасширеннаяПодсказка" id="309"/>
+							<ChildItems>
+								<Page name="Опции" id="493">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Опции</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Опции</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ОпцииРасширеннаяПодсказка" id="494"/>
+									<ChildItems>
+										<InputField name="ПрайсПартнера" id="480">
+											<DataPath>Объект.ПрайсПартнера</DataPath>
+											<Enabled>false</Enabled>
+											<ContextMenu name="ПрайсПартнераКонтекстноеМеню" id="481"/>
+											<ExtendedTooltip name="ПрайсПартнераРасширеннаяПодсказка" id="482"/>
+										</InputField>
+										<InputField name="Партнер1" id="472">
+											<DataPath>Объект.Партнер</DataPath>
+											<ContextMenu name="Партнер1КонтекстноеМеню" id="473"/>
+											<ExtendedTooltip name="Партнер1РасширеннаяПодсказка" id="474"/>
+										</InputField>
+										<InputField name="ГруппаОтбор" id="55">
+											<DataPath>ГруппаОтбор</DataPath>
+											<ContextMenu name="ГруппаОтборКонтекстноеМеню" id="56"/>
+											<ExtendedTooltip name="ГруппаОтборExtendedTooltip" id="318"/>
+										</InputField>
+										<InputField name="ПроизводительОтбор" id="57">
+											<DataPath>ПроизводительОтбор</DataPath>
+											<ContextMenu name="ПроизводительОтборКонтекстноеМеню" id="58"/>
+											<ExtendedTooltip name="ПроизводительОтборExtendedTooltip" id="317"/>
+										</InputField>
+										<CheckBoxField name="ПоискТолькоЦелыеСлова" id="445">
+											<DataPath>ПоискТолькоЦелыеСлова</DataPath>
+											<TitleTextColor>#FF0000</TitleTextColor>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПоискТолькоЦелыеСловаКонтекстноеМеню" id="446"/>
+											<ExtendedTooltip name="ПоискТолькоЦелыеСловаРасширеннаяПодсказка" id="447"/>
+										</CheckBoxField>
+										<LabelDecoration name="Декорация6" id="454">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ТекстСправочнойНадписи</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Существенно влияет на результате поиска. Если вы уверены что отдельно взятые слова нужно искать в точности.
+Либо если раздельные слова в импорте у вас в базе могут быть слитно.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация6КонтекстноеМеню" id="455"/>
+											<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="456"/>
+										</LabelDecoration>
+										<CheckBoxField name="АртикулРасположенВНаименованииИмпорт" id="285">
+											<DataPath>АртикулРасположенВНаименованииИмпорт</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="АртикулРасположенВНаименованииИмпортКонтекстноеМеню" id="286"/>
+											<ExtendedTooltip name="АртикулРасположенВНаименованииИмпортExtendedTooltip" id="312"/>
+										</CheckBoxField>
+										<LabelDecoration name="Декорация5" id="451">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ТекстСправочнойНадписи</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Случай когда у вас в справочнике заполнены и выделены артикулы в отдельный реквизит.
+А в импорте отдельной колонки артикула нет, но он содержится в тексте наименования.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация5КонтекстноеМеню" id="452"/>
+											<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="453"/>
+										</LabelDecoration>
+										<CheckBoxField name="ПоАртикулам" id="216">
+											<DataPath>ГлобальныйПоискПоАртикулам</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Поиск по артикулам</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПоАртикуламКонтекстноеМеню" id="217"/>
+											<ExtendedTooltip name="ПоАртикуламExtendedTooltip" id="311"/>
+										</CheckBoxField>
+										<LabelDecoration name="Декорация4" id="448">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ТекстСправочнойНадписи</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Весь поиск будет полностью происходить по колонке Артикул из импорта и поиску по артикулам в справочнике.
+Вариант используется в случае отличий между артикулами.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация4КонтекстноеМеню" id="449"/>
+											<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="450"/>
+										</LabelDecoration>
+										<CheckBoxField name="ПоискСОтборомПоИерархии" id="293">
+											<DataPath>ПоискСОтборомПоИерархии</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Поиск с учетом отбора по группам</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПоискСОтборомПоИерархииКонтекстноеМеню" id="294"/>
+											<ExtendedTooltip name="ПоискСОтборомПоИерархииExtendedTooltip" id="364"/>
+										</CheckBoxField>
+										<CheckBoxField name="ПоискСОтборомПоПроизводителю" id="504">
+											<DataPath>ПоискСОтборомПоПроизводителю</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПоискСОтборомПоПроизводителюКонтекстноеМеню" id="505"/>
+											<ExtendedTooltip name="ПоискСОтборомПоПроизводителюРасширеннаяПодсказка" id="506"/>
+										</CheckBoxField>
+										<LabelDecoration name="Декорация2" id="298">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ТекстСправочнойНадписи</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дополнительные отборы, ограничивающие поиск. Данные о производителе и группе в строке имеют приоритет.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация2КонтекстноеМеню" id="299"/>
+											<ExtendedTooltip name="Декорация2ExtendedTooltip" id="365"/>
+										</LabelDecoration>
+										<CheckBoxField name="ИспользоватьХарактеристикиНоменклатуры" id="218">
+											<DataPath>ИспользоватьХарактеристикиНоменклатуры</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Установка характеристик</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ИспользоватьХарактеристикиНоменклатурыКонтекстноеМеню" id="219"/>
+											<ExtendedTooltip name="ИспользоватьХарактеристикиНоменклатурыExtendedTooltip" id="366"/>
+										</CheckBoxField>
+										<LabelDecoration name="Декорация3" id="301">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ТекстСправочнойНадписи</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Видимость колонки для ручной установки характеристики соответствия.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация3КонтекстноеМеню" id="302"/>
+											<ExtendedTooltip name="Декорация3ExtendedTooltip" id="367"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="Алгоритмы" id="201">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Алгоритмы и замены</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Алгоритмы</v8:content>
+										</v8:item>
+									</ToolTip>
+									<BackColor>web:WhiteSmoke</BackColor>
+									<ExtendedTooltip name="АлгоритмыExtendedTooltip" id="342"/>
+									<ChildItems>
+										<Button name="КомандаСохранитьПрофильЗагрузки" id="464">
+											<Type>UsualButton</Type>
+											<Height>1</Height>
+											<CommandName>Form.Command.АвтосохранениеНастройкиПрайса</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сохранить профиль</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="КомандаСохранитьПрофильЗагрузкиРасширеннаяПодсказка" id="465"/>
+										</Button>
+										<Table name="АлгоритмыКлючевыхСлов" id="178">
+											<Representation>List</Representation>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>Объект.АлгоритмыКлючевыхСлов</DataPath>
+											<SearchStringLocation>None</SearchStringLocation>
+											<ViewStatusLocation>None</ViewStatusLocation>
+											<SearchControlLocation>None</SearchControlLocation>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="АлгоритмыКлючевыхСловКонтекстноеМеню" id="179"/>
+											<AutoCommandBar name="АлгоритмыКлючевыхСловКоманднаяПанель" id="180"/>
+											<ExtendedTooltip name="АлгоритмыКлючевыхСловРасширеннаяПодсказка" id="343"/>
+											<SearchStringAddition name="АлгоритмыКлючевыхСловСтрокаПоиска" id="427">
+												<AdditionSource>
+													<Item>АлгоритмыКлючевыхСлов</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="АлгоритмыКлючевыхСловСтрокаПоискаКонтекстноеМеню" id="428"/>
+												<ExtendedTooltip name="АлгоритмыКлючевыхСловСтрокаПоискаРасширеннаяПодсказка" id="429"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="АлгоритмыКлючевыхСловСостояниеПросмотра" id="430">
+												<AdditionSource>
+													<Item>АлгоритмыКлючевыхСлов</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="АлгоритмыКлючевыхСловСостояниеПросмотраКонтекстноеМеню" id="431"/>
+												<ExtendedTooltip name="АлгоритмыКлючевыхСловСостояниеПросмотраРасширеннаяПодсказка" id="432"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="АлгоритмыКлючевыхСловУправлениеПоиском" id="433">
+												<AdditionSource>
+													<Item>АлгоритмыКлючевыхСлов</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="АлгоритмыКлючевыхСловУправлениеПоискомКонтекстноеМеню" id="434"/>
+												<ExtendedTooltip name="АлгоритмыКлючевыхСловУправлениеПоискомРасширеннаяПодсказка" id="435"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<LabelField name="АлгоритмыКлючевыхСловНомерСтроки" id="181">
+													<DataPath>Объект.АлгоритмыКлючевыхСлов.LineNumber</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="АлгоритмыКлючевыхСловНомерСтрокиКонтекстноеМеню" id="182"/>
+													<ExtendedTooltip name="АлгоритмыКлючевыхСловНомерСтрокиExtendedTooltip" id="344"/>
+												</LabelField>
+												<CheckBoxField name="АлгоритмыКлючевыхСловПометка" id="183">
+													<EditMode>EnterOnInput</EditMode>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="АлгоритмыКлючевыхСловПометкаКонтекстноеМеню" id="184"/>
+													<ExtendedTooltip name="АлгоритмыКлючевыхСловПометкаExtendedTooltip" id="345"/>
+												</CheckBoxField>
+												<InputField name="АлгоритмыКлючевыхСловПредставление" id="185">
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="АлгоритмыКлючевыхСловПредставлениеКонтекстноеМеню" id="186"/>
+													<ExtendedTooltip name="АлгоритмыКлючевыхСловПредставлениеExtendedTooltip" id="346"/>
+												</InputField>
+												<InputField name="АлгоритмыКлючевыхСловТекстАлгоритма" id="187">
+													<DataPath>Объект.АлгоритмыКлючевыхСлов.Алгоритм</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ChoiceButton>true</ChoiceButton>
+													<ContextMenu name="АлгоритмыКлючевыхСловТекстАлгоритмаКонтекстноеМеню" id="188"/>
+													<ExtendedTooltip name="АлгоритмыКлючевыхСловТекстАлгоритмаExtendedTooltip" id="347"/>
+													<Events>
+														<Event name="StartChoice">АлгоритмыКлючевыхСловТекстАлгоритмаНачалоВыбора</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="Группа1" id="212">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Замены слов</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<ExtendedTooltip name="Группа1ExtendedTooltip" id="356"/>
+									<ChildItems>
+										<Table name="ЗаменаКлючевыхСлов" id="203">
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>Объект.ЗаменаКлючевыхСлов</DataPath>
+											<SearchStringLocation>None</SearchStringLocation>
+											<ViewStatusLocation>None</ViewStatusLocation>
+											<SearchControlLocation>None</SearchControlLocation>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="ЗаменаКлючевыхСловКонтекстноеМеню" id="204"/>
+											<AutoCommandBar name="ЗаменаКлючевыхСловКоманднаяПанель" id="205"/>
+											<ExtendedTooltip name="ЗаменаКлючевыхСловExtendedTooltip" id="357"/>
+											<SearchStringAddition name="ЗаменаКлючевыхСловSearchString" id="436">
+												<AdditionSource>
+													<Item>ЗаменаКлючевыхСлов</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ЗаменаКлючевыхСловSearchStringContextMenu" id="437"/>
+												<ExtendedTooltip name="ЗаменаКлючевыхСловSearchStringExtendedTooltip" id="438"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ЗаменаКлючевыхСловViewStatus" id="439">
+												<AdditionSource>
+													<Item>ЗаменаКлючевыхСлов</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ЗаменаКлючевыхСловViewStatusContextMenu" id="440"/>
+												<ExtendedTooltip name="ЗаменаКлючевыхСловViewStatusExtendedTooltip" id="441"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ЗаменаКлючевыхСловSearchControl" id="442">
+												<AdditionSource>
+													<Item>ЗаменаКлючевыхСлов</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ЗаменаКлючевыхСловSearchControlContextMenu" id="443"/>
+												<ExtendedTooltip name="ЗаменаКлючевыхСловSearchControlExtendedTooltip" id="444"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<LabelField name="ЗаменаКлючевыхСловНомерСтроки" id="206">
+													<DataPath>Объект.ЗаменаКлючевыхСлов.LineNumber</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ЗаменаКлючевыхСловНомерСтрокиКонтекстноеМеню" id="207"/>
+													<ExtendedTooltip name="ЗаменаКлючевыхСловНомерСтрокиExtendedTooltip" id="358"/>
+												</LabelField>
+												<InputField name="ЗаменаКлючевыхСловЧтоЗаменить" id="208">
+													<DataPath>Объект.ЗаменаКлючевыхСлов.ЧтоЗаменить</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ЗаменаКлючевыхСловЧтоЗаменитьКонтекстноеМеню" id="209"/>
+													<ExtendedTooltip name="ЗаменаКлючевыхСловЧтоЗаменитьExtendedTooltip" id="359"/>
+												</InputField>
+												<InputField name="ЗаменаКлючевыхСловЗамена" id="210">
+													<DataPath>Объект.ЗаменаКлючевыхСлов.Замена</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ЗаменаКлючевыхСловЗаменаКонтекстноеМеню" id="211"/>
+													<ExtendedTooltip name="ЗаменаКлючевыхСловЗаменаExtendedTooltip" id="360"/>
+												</InputField>
+												<InputField name="ЗаменаКлючевыхСловХарактеристикаНоменклатуры" id="222">
+													<DataPath>Объект.ЗаменаКлючевыхСлов.ХарактеристикаНоменклатуры</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ЗаменаКлючевыхСловХарактеристикаНоменклатурыКонтекстноеМеню" id="223"/>
+													<ExtendedTooltip name="ЗаменаКлючевыхСловХарактеристикаНоменклатурыExtendedTooltip" id="361"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+										<LabelDecoration name="Декорация1" id="213">
+											<Width>25</Width>
+											<TextColor>style:ТекстСправочнойНадписи</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Список замен ключевых слов. 
+Заменяет одни ключевые слова на другие;
+
+Например ДИН на DIN, САМСУНГ на Samsung.  
+
+Также можно заменять и любые символы.
+
+Для удаления лишних слов укажите Что заменить, а поле Замена оставьте пустым.</v8:content>
+												</v8:item>
+											</Title>
+											<BorderColor>web:Gainsboro</BorderColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Double</v8ui:style>
+											</Border>
+											<ContextMenu name="Декорация1КонтекстноеМеню" id="214"/>
+											<ExtendedTooltip name="Декорация1ExtendedTooltip" id="362"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+				<Page name="ЗакладкаПоискСоответствий" id="167">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поиск соответствий</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Закладка поиск соответствий</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЗакладкаПоискСоответствийExtendedTooltip" id="314"/>
+					<ChildItems>
+						<UsualGroup name="ОпцииОтбора" id="81">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Опции отбора</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Опции отбора</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ОпцииОтбораExtendedTooltip" id="315"/>
+						</UsualGroup>
+						<Table name="ТаблицаСоответствий" id="105">
+							<Representation>List</Representation>
+							<HeightInTableRows>1</HeightInTableRows>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ПоискСоответствий</DataPath>
+							<TextColor>#000000</TextColor>
+							<TitleTextColor>#000000</TitleTextColor>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаСоответствийКонтекстноеМеню" id="106"/>
+							<AutoCommandBar name="ТаблицаСоответствийКоманднаяПанель" id="107">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ТаблицаСоответствийНайти" id="483">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ТаблицаСоответствий.StandardCommand.Find</CommandName>
+										<ExtendedTooltip name="ТаблицаСоответствийНайтиРасширеннаяПодсказка" id="484"/>
+									</Button>
+									<Button name="ТаблицаСоответствийОтменитьПоиск" id="485">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ТаблицаСоответствий.StandardCommand.CancelSearch</CommandName>
+										<ExtendedTooltip name="ТаблицаСоответствийОтменитьПоискРасширеннаяПодсказка" id="486"/>
+									</Button>
+									<Button name="ТаблицаСоответствийВывестиСписок" id="487">
+										<Type>CommandBarButton</Type>
+										<OnlyInAllActions>true</OnlyInAllActions>
+										<CommandName>Form.Item.ТаблицаСоответствий.StandardCommand.OutputList</CommandName>
+										<ExtendedTooltip name="ТаблицаСоответствийВывестиСписокРасширеннаяПодсказка" id="488"/>
+									</Button>
+									<Button name="ТаблицаСоответствийВыделитьВсе" id="489">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ТаблицаСоответствий.StandardCommand.SelectAll</CommandName>
+										<ExtendedTooltip name="ТаблицаСоответствийВыделитьВсеРасширеннаяПодсказка" id="490"/>
+									</Button>
+									<Button name="ТаблицаСоответствийУдалить" id="491">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ТаблицаСоответствий.StandardCommand.Delete</CommandName>
+										<ExtendedTooltip name="ТаблицаСоответствийУдалитьРасширеннаяПодсказка" id="492"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТаблицаСоответствийExtendedTooltip" id="319"/>
+							<SearchStringAddition name="ТаблицаСоответствийSearchString" id="409">
+								<AdditionSource>
+									<Item>ТаблицаСоответствий</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаСоответствийSearchStringContextMenu" id="410"/>
+								<ExtendedTooltip name="ТаблицаСоответствийSearchStringExtendedTooltip" id="411"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаСоответствийViewStatus" id="412">
+								<AdditionSource>
+									<Item>ТаблицаСоответствий</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаСоответствийViewStatusContextMenu" id="413"/>
+								<ExtendedTooltip name="ТаблицаСоответствийViewStatusExtendedTooltip" id="414"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаСоответствийSearchControl" id="415">
+								<AdditionSource>
+									<Item>ТаблицаСоответствий</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаСоответствийSearchControlContextMenu" id="416"/>
+								<ExtendedTooltip name="ТаблицаСоответствийSearchControlExtendedTooltip" id="417"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnEditEnd">ТаблицаСоответствийПриОкончанииРедактирования</Event>
+								<Event name="OnActivateRow">ПоискСоответствийПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ПоискСоответствийНомерСтроки1" id="109">
+									<DataPath>Объект.ПоискСоответствий.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>1</Width>
+									<ContextMenu name="ПоискСоответствийНомерСтроки1КонтекстноеМеню" id="110"/>
+									<ExtendedTooltip name="ПоискСоответствийНомерСтроки1ExtendedTooltip" id="320"/>
+								</LabelField>
+								<InputField name="ТаблицаСоответствийКлючСтроки" id="466">
+									<DataPath>Объект.ПоискСоответствий.КлючСтроки</DataPath>
+									<Enabled>false</Enabled>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>5</Width>
+									<ContextMenu name="ТаблицаСоответствийКлючСтрокиКонтекстноеМеню" id="467"/>
+									<ExtendedTooltip name="ТаблицаСоответствийКлючСтрокиРасширеннаяПодсказка" id="468"/>
+								</InputField>
+								<ColumnGroup name="ДанныеЗагрузки1" id="108">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Номенклатура партнера</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Данные загрузки</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="ДанныеЗагрузки1ExtendedTooltip" id="321"/>
+									<ChildItems>
+										<InputField name="ПоискСоответствийАртикулЗагрузка1" id="111">
+											<DataPath>Объект.ПоискСоответствий.Поле_Артикул</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Артикул</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>10</Width>
+											<ContextMenu name="ПоискСоответствийАртикулЗагрузка1КонтекстноеМеню" id="112"/>
+											<ExtendedTooltip name="ПоискСоответствийАртикулЗагрузка1ExtendedTooltip" id="322"/>
+										</InputField>
+										<InputField name="ПоискСоответствийПоле_Наименование1" id="113">
+											<DataPath>Объект.ПоискСоответствий.Поле_Наименование</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Наименование</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoCellHeight>true</AutoCellHeight>
+											<Width>30</Width>
+											<ContextMenu name="ПоискСоответствийПоле_Наименование1КонтекстноеМеню" id="114"/>
+											<ExtendedTooltip name="ПоискСоответствийПоле_Наименование1ExtendedTooltip" id="323"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="КлючевыеСлова1" id="115">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Поисковая строка</v8:content>
+										</v8:item>
+									</Title>
+									<TitleTextColor>#FFFFFF</TitleTextColor>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ключевые слова</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<TitleBackColor>#808080</TitleBackColor>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="КлючевыеСлова1ExtendedTooltip" id="324"/>
+									<ChildItems>
+										<InputField name="ТаблицаСоответствийКлючевоеСлово1" id="116">
+											<DataPath>Объект.ПоискСоответствий.КлючевыеСлова</DataPath>
+											<TitleTextColor>#FFFFFF</TitleTextColor>
+											<TitleBackColor>#808080</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>25</Width>
+											<ContextMenu name="ТаблицаСоответствийКлючевоеСлово1КонтекстноеМеню" id="117"/>
+											<ExtendedTooltip name="ТаблицаСоответствийКлючевоеСлово1ExtendedTooltip" id="325"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ПредварительныйРезультат1" id="120">
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Данные по словам</v8:content>
+										</v8:item>
+									</Title>
+									<TitleTextColor>#FFFFFF</TitleTextColor>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Предварительный результат</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<TitleBackColor>#800080</TitleBackColor>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="ПредварительныйРезультат1ExtendedTooltip" id="327"/>
+									<ChildItems>
+										<InputField name="ПоискСоответствийКоличествоСлов1" id="118">
+											<DataPath>Объект.ПоискСоответствий.КоличествоКлючевыхСлов</DataPath>
+											<Enabled>false</Enabled>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Слов</v8:content>
+												</v8:item>
+											</Title>
+											<TitleTextColor>#FFFFFF</TitleTextColor>
+											<TitleBackColor>#800080</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>7</Width>
+											<ContextMenu name="ПоискСоответствийКоличествоСлов1КонтекстноеМеню" id="119"/>
+											<ExtendedTooltip name="ПоискСоответствийКоличествоСлов1ExtendedTooltip" id="326"/>
+										</InputField>
+										<InputField name="ТаблицаСоответствийКоличествоСоответствий1" id="121">
+											<DataPath>Объект.ПоискСоответствий.КоличествоСоответствий</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Найдено</v8:content>
+												</v8:item>
+											</Title>
+											<TitleTextColor>#FFFFFF</TitleTextColor>
+											<TitleBackColor>#800080</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>7</Width>
+											<ContextMenu name="ТаблицаСоответствийКоличествоСоответствий1КонтекстноеМеню" id="122"/>
+											<ExtendedTooltip name="ТаблицаСоответствийКоличествоСоответствий1ExtendedTooltip" id="328"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="Результат1" id="125">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Итоговый результат</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Результат</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="Результат1ExtendedTooltip" id="330"/>
+									<ChildItems>
+										<InputField name="ПоискСоответствийАртикулНоменклатуры1" id="126">
+											<DataPath>Объект.ПоискСоответствий.Номенклатура.Артикул</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Артикул</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>10</Width>
+											<ContextMenu name="ПоискСоответствийАртикулНоменклатуры1КонтекстноеМеню" id="127"/>
+											<ExtendedTooltip name="ПоискСоответствийАртикулНоменклатуры1ExtendedTooltip" id="331"/>
+										</InputField>
+										<InputField name="ПоискСоответствийНоменклатура1" id="128">
+											<DataPath>Объект.ПоискСоответствий.Номенклатура</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoCellHeight>true</AutoCellHeight>
+											<Height>2</Height>
+											<ContextMenu name="ПоискСоответствийНоменклатура1КонтекстноеМеню" id="129"/>
+											<ExtendedTooltip name="ПоискСоответствийНоменклатура1ExtendedTooltip" id="332"/>
+										</InputField>
+										<InputField name="ТаблицаСоответствийХарактеристикаНоменклатуры" id="220">
+											<DataPath>Объект.ПоискСоответствий.ХарактеристикаНоменклатуры</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Характеристика</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>7</Width>
+											<ChoiceParameterLinks>
+												<xr:Link>
+													<xr:Name>Номенклатура</xr:Name>
+													<xr:DataPath xsi:type="xs:string">Items.ТаблицаСоответствий.CurrentData.Номенклатура</xr:DataPath>
+													<xr:ValueChange>Clear</xr:ValueChange>
+												</xr:Link>
+											</ChoiceParameterLinks>
+											<ContextMenu name="ТаблицаСоответствийХарактеристикаНоменклатурыКонтекстноеМеню" id="221"/>
+											<ExtendedTooltip name="ТаблицаСоответствийХарактеристикаНоменклатурыExtendedTooltip" id="333"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<InputField name="ТаблицаСоответствийНоменклатураПоставщика" id="477">
+									<DataPath>Объект.ПоискСоответствий.НоменклатураПоставщика</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСоответствийНоменклатураПоставщикаКонтекстноеМеню" id="478"/>
+									<ExtendedTooltip name="ТаблицаСоответствийНоменклатураПоставщикаРасширеннаяПодсказка" id="479"/>
+								</InputField>
+								<InputField name="ТаблицаСоответствийПоле_Производитель" id="495">
+									<DataPath>Объект.ПоискСоответствий.Поле_Производитель</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Производитель</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСоответствийПоле_ПроизводительКонтекстноеМеню" id="496"/>
+									<ExtendedTooltip name="ТаблицаСоответствийПоле_ПроизводительРасширеннаяПодсказка" id="497"/>
+								</InputField>
+								<InputField name="ТаблицаСоответствийГруппаСправочника" id="498">
+									<DataPath>Объект.ПоискСоответствий.ГруппаСправочника</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСоответствийГруппаСправочникаКонтекстноеМеню" id="499"/>
+									<ExtendedTooltip name="ТаблицаСоответствийГруппаСправочникаРасширеннаяПодсказка" id="500"/>
+								</InputField>
+								<InputField name="ТаблицаСоответствийПоле_Описание1" id="501">
+									<DataPath>Объект.ПоискСоответствий.Поле_Описание</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Описание</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСоответствийПоле_Описание1КонтекстноеМеню" id="502"/>
+									<ExtendedTooltip name="ТаблицаСоответствийПоле_Описание1РасширеннаяПодсказка" id="503"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<Table name="ПодборСоответствий" id="15">
+							<Representation>List</Representation>
+							<TitleLocation>Top</TitleLocation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ПодборСоответствий</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Двойной щелчок для заполнения в таблице соответствий</v8:content>
+								</v8:item>
+							</Title>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПодборСоответствийКонтекстноеМеню" id="16"/>
+							<AutoCommandBar name="ПодборСоответствийКоманднаяПанель" id="17">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПодборСоответствийРасширеннаяПодсказка" id="336"/>
+							<SearchStringAddition name="ПодборСоответствийСтрокаПоиска" id="418">
+								<AdditionSource>
+									<Item>ПодборСоответствий</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПодборСоответствийСтрокаПоискаКонтекстноеМеню" id="419"/>
+								<ExtendedTooltip name="ПодборСоответствийСтрокаПоискаРасширеннаяПодсказка" id="420"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПодборСоответствийСостояниеПросмотра" id="421">
+								<AdditionSource>
+									<Item>ПодборСоответствий</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПодборСоответствийСостояниеПросмотраКонтекстноеМеню" id="422"/>
+								<ExtendedTooltip name="ПодборСоответствийСостояниеПросмотраРасширеннаяПодсказка" id="423"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПодборСоответствийУправлениеПоиском" id="424">
+								<AdditionSource>
+									<Item>ПодборСоответствий</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПодборСоответствийУправлениеПоискомКонтекстноеМеню" id="425"/>
+								<ExtendedTooltip name="ПодборСоответствийУправлениеПоискомРасширеннаяПодсказка" id="426"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СоответствияВыбор</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="СоответствияГруппаСправочника" id="50">
+									<DataPath>ПодборСоответствий.Номенклатура.Parent</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>7</Width>
+									<ContextMenu name="СоответствияГруппаСправочникаКонтекстноеМеню" id="51"/>
+									<ExtendedTooltip name="СоответствияГруппаСправочникаExtendedTooltip" id="340"/>
+								</InputField>
+								<InputField name="СоответствияАртикул" id="40">
+									<DataPath>ПодборСоответствий.Номенклатура.Артикул</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>10</Width>
+									<ContextMenu name="СоответствияАртикулКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="СоответствияАртикулExtendedTooltip" id="338"/>
+								</InputField>
+								<InputField name="СоответствияНоменклатура" id="18">
+									<DataPath>ПодборСоответствий.Номенклатура</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СоответствияНоменклатураКонтекстноеМеню" id="19"/>
+									<ExtendedTooltip name="СоответствияНоменклатураExtendedTooltip" id="337"/>
+								</InputField>
+								<InputField name="СоответствияПроизводитель" id="52">
+									<DataPath>ПодборСоответствий.Номенклатура.Производитель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>7</Width>
+									<ContextMenu name="СоответствияПроизводительКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="СоответствияПроизводительExtendedTooltip" id="339"/>
+								</InputField>
+								<InputField name="СоответствияСовпадения" id="20">
+									<DataPath>ПодборСоответствий.КоличествоСовпадений</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Совпадений</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>3</Width>
+									<BackColor>web:Lavender</BackColor>
+									<ContextMenu name="СоответствияСовпаденияКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="СоответствияСовпаденияExtendedTooltip" id="341"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.мегапрайсРасширеннаяЗагрузкаИзExcel</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ПодборСоответствий" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор соответствий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Номенклатура" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КоличествоСовпадений" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество совпадений</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>5</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Артикул" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Артикул</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="АртикулИстина" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Артикул истина</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПоискПоСлову" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поиск по слову</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ГруппаСправочника" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа справочника</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Производитель" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Производитель</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="СловаСовпадений" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Слова совпадений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Слово" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Слово</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Совпадение" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Совпадение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПроизводительОтбор" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Производитель отбор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Производители</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ГруппаОтбор" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отбор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИнформацияОбАнализеПолучена" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация об анализе получена</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СегментОтбор" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сегмент отбор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВариантПоиска" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вариант поиска</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="МинимумОтображения" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Минимум отображения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаКлючевыхСлов" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица ключевых слов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Save>
+				<Field>ТаблицаКлючевыхСлов</Field>
+			</Save>
+			<Columns>
+				<Column name="КлючевоеСлово" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключевое слово</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>30</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Замена" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Замена</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>30</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="СписокНоменклатураПоставщиков" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список номенклатура поставщиков</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog.НоменклатураПоставщиков</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ГлобальныйПоискПоАртикулам" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Глобальный поиск по артикулам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Исполь" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исполь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьХарактеристикиНоменклатуры" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать характеристики номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АртикулРасположенВНаименованииИмпорт" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Артикул расположен в наименовании импорт</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоискСОтборомПоИерархии" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск с отбором по иерархии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ПоискСОтборомПоИерархии</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПоискТолькоЦелыеСлова" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск только целые слова</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоискСОтборомПоПроизводителю" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск с отбором по производителю</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПоискСоответствий</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>AndGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Объект.ПоискСоответствий.МаксимальноСовпадений</dcsset:left>
+							<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:Field">Объект.ПоискСоответствий.КоличествоКлючевыхСлов</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Объект.ПоискСоответствий.МаксимальноСовпадений</dcsset:left>
+							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Azure</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ПоискСоответствийЗаполнитьИЗакрыть" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск соответствий заполнить и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск соответствий заполнить и закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоискСоответствийЗаполнитьИЗакрыть</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоискСоответствийВыполнитьАнализСоответствий" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск соответствий выполнить анализ соответствий</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск соответствий выполнить анализ соответствий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоискСоответствийВыполнитьАнализСоответствий</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаЗаполнитьКлючевыеСлова" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда заполнить ключевые слова</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда заполнить ключевые слова</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаЗаполнитьКлючевыеСлова</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаЗаписатьСоответствия" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда записать соответствия</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда записать соответствия</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаЗаписатьСоответствия</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="АвтосохранениеНастройкиПрайса" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автосохранение настройки прайса</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автосохранение настройки прайса</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>АвтосохранениеНастройкиПрайса</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="НоменклатураПоставщика_СоздатьЭлементы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура поставщика создать элементы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура поставщика создать элементы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Справочники_СоздатьНоменклатуруПоставщикаКнопка</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

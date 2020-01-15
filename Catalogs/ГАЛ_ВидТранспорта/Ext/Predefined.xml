@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.6">
+	<Item id="bc63f99a-a53d-4e73-9df3-0bf9213acee2">
+		<Name>Авиционный</Name>
+		<Code>00003</Code>
+		<Description>Авиционный</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0531fd6e-e2fb-4b84-af74-6321486ec39b">
+		<Name>Автомобильный</Name>
+		<Code>00001</Code>
+		<Description>Автомобильный</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7641cae8-7965-4198-9e85-6367fc428d71">
+		<Name>Железнодорожный</Name>
+		<Code>00002</Code>
+		<Description>Железнодорожный</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

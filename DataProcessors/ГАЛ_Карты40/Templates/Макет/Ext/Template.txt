@@ -1,0 +1,494 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<META http-equiv="X-UA-Compatible" content="IE=9">  
+
+<style type="text/css">
+	  html { height: 100% }
+	  body { height: 100%; margin: 0px; padding: 0px }
+	  #map { height: 100% }
+	</style>
+
+<!-- <script type="text/javascript" src="http://api-maps.yandex.ru/2.0.27/?load=package.full&mode=debug&lang=ru-RU"></script>  -->
+
+<!-- <script type="text/javascript" src="http://api-maps.yandex.ru/2.1.42/?load=package.full&lang=ru-RU"></script>   -->
+<script type="text/javascript" src="http://api-maps.yandex.ru/2.1.44/?load=package.full&mode=debug&lang=ru-RU"> </script>
+
+<script type="text/javascript">
+// Как только будет загружен API и готов DOM, выполняем инициализацию (с) Yandex
+ymaps.ready(CreateMap);
+
+var collection; //коллекция точек
+var collectionGEO; //коллекция полигонов
+var OurYandexMap;
+
+function CreateMap() {
+	// создаём экземпляр объекта-карты и привязываем к контейнеру с заданным id (именем)
+	// чтобы иметь возможность командовать ею извне, глобализуем
+	OurYandexMap = new ymaps.Map('OurYMap', { // таких объектов-карт можно создать сколько угодно
+	// При инициализации карты обязательно нужно указать ее центр и коэффициент масштабирования
+	center: #КоординатыЦентра#,
+	zoom: #Увеличение#,			
+	type: 'yandex#map', // Возможные значения типа карты см. в модуле обработки
+	behaviors: ['default', 'scrollZoom'], // масштабирование колесом мыши
+	controls: ['zoomControl', 'typeSelector',  'fullscreenControl']
+	}, // конец задания основных параметров
+	{// опции (только те, которые требуют явной переустановки)
+	maxZoom: 23, // максимальный уровень масштабирования карты (по умолчанию 23)
+	minZoom: 0, // минимальный уровень масштабирования карты (по умолчанию 0)
+	geoObjectDraggable: false,
+	balloonCloseButton: true
+	} // конец задания опций
+	);
+	
+	///Колекция Точек
+	collection = new ymaps.GeoObjectCollection({}, {
+	// preset: 'twirl#blueIcon', // все метки коллекции с пиктограммой "кафе"
+	// cursor: 'grab', // курсор на метках будет "рукой"
+	draggable: false // метки можно будет перемещать
+	});	
+	OurYandexMap.geoObjects.add(collection);
+	
+	///Колекция Полигонов
+	collectionGEO = new ymaps.GeoObjectCollection();
+	OurYandexMap.geoObjects.add(collectionGEO);
+	
+	
+	//////////////////////////////////////////////////////////////////////   СОБЫТИЯ 
+	
+	// При окночании перемещения.
+	collectionGEO.events.add('dragend', function (event) {
+		//    setActivePointsGEO(collection,collectionGEO);   
+		});
+		
+	// При окночании перемещения.
+	collectionGEO.events.add('drag', function (event) {
+		//   alert('ddd');
+		//  var myPolygon = event.get('target');
+		//        setActivePointsGEO(collection,collectionGEO);
+		//   alert(myPolygon.geometry.getCoordinates());
+		});
+		
+		
+	// При окночании перемещения njxrb
+	collection.events.add('dragend', function (event) {
+		  // alert('ddd');
+		  var myPlacemark = event.get('target');
+		//        setActivePointsGEO(collection,collectionGEO);
+		//   alert(myPolygon.geometry.getCoordinates());
+		  //myPlacemark.options.set('iconColor',#ЦветМеткиПоУмолчанию#);
+		  
+		});
+		
+		
+	// При клики на точку
+	collection.events.add('click', function (event) {
+		  // alert('ddd');
+		  var id;
+		  var myPlacemark = event.get('target');
+		//        setActivePointsGEO(collection,collectionGEO);
+		//   alert(myPolygon.geometry.getCoordinates());
+		  //myPlacemark.options.set('iconColor',#ЦветМеткиПоУмолчанию#);
+		      //alert(myPlacemark.geometry.getCoordinates());
+			  id = myPlacemark.properties.get('id');
+			  document.getElementById('IDPlacemark').value = id;
+		});
+	
+		
+	// Обработка события, возникающего при щелчке
+    // левой кнопкой мыши в любой точке карты.
+    // При возникновении такого события откроем балун.
+    OurYandexMap.events.add('click', function (e) {
+         if (document.getElementById('AddPlacemark').value ==1) {
+            var coords = e.get('coords');
+			var id =document.getElementById('IDPlacemark').value;
+			
+			AddPlacemark(coords[0].toPrecision(6),coords[1].toPrecision(6),id,'','','','',id,'');
+			document.getElementById('AddPlacemark').value = 0;
+			SetDraggablePlacemark(id);
+			//OurYandexMap.balloon.open(coords, {
+			//    contentHeader:'Событие!',
+			//    contentBody:'<p>Кто-то щелкнул по карте.</p>' +
+			//        '<p>Координаты щелчка: ' + [
+			//        coords[0].toPrecision(6),
+			//        coords[1].toPrecision(6)
+			//        ].join(', ') + '</p>',
+			//    contentFooter:'<sup>Щелкните еще раз</sup>'
+			//});
+         }
+      });	
+	
+		
+  return window.OurYandexMap;
+ } // конец функции CreateMap
+			
+			
+	//////////////////////////////////////////////////////////////// удаление карты		
+	function RemoveMap(MapObject) {	
+    	MapObject.destroy(); // Удаление карты
+    	MapObject = null; // полный сброс, после которого if (!MapObject) вернёт истину.
+	} // конец функции RemoveMap 
+			
+	
+	
+	//////////////////////////////////////////////////////////////// Установить координаты карты		
+	function MapSetCoordinates(X,Y) {
+		OurYandexMap.setCenter([X,Y]);
+	} // конец функции 
+			
+			
+	//Функция добавляет точку на карту
+	function AddPlacemark(X,Y,p_iconContent,p_balloonContentHeader,p_balloonContentBody,p_balloonContentFooter,p_hintContent,p_id,p_preset) {
+		Placemark = new ymaps.Placemark( [X, Y] ,
+		// спецификация
+		
+		{ 
+		
+		iconContent: p_iconContent,  		
+		balloonContentHeader: p_balloonContentHeader,
+		balloonContentBody:  p_balloonContentBody ,
+		balloonContentFooter: p_balloonContentFooter, 
+		hintContent: p_hintContent,
+		metro: '',
+		metro_Coordinates: '',
+		id: p_id
+		},
+		{ preset: p_preset,
+		draggable: false,
+		iconColor: #ЦветМеткиПоУмолчанию#,
+		openBalloonOnClick: false
+		}                 );
+		
+		collection.add(Placemark);
+		
+		
+		
+		return Placemark;
+		} // конец функции AddPlacemark
+		
+		
+		// Удаление всех элементов коллекции.
+		function RemoveAllPlacemark() {
+			collection.removeAll();
+			} // конец функции RemoveAllPlacemark
+			
+			// Удаление метки по ID элементов коллекции.
+			function RemoveIDPlacemark(id) {
+				collection.each(function (obj) {
+					if(obj.properties.get('id') == id) {
+						collection.remove(obj);
+						}
+						});	 
+	} // конец функции RemoveIDPlacemark		
+			
+	
+	 //////////////////////////////////////////////////////////////// Добавление нового полигона	
+	function AddPolygon_New(p_hintContent ,p_id,p_name,p_fillColor) {
+           
+	   	      
+					// Создаем многоугольник
+					myPolygon  = new ymaps.GeoObject({
+					
+					geometry: {
+					// Тип геометрии - полигон.
+					type: "Polygon",
+					// Координаты.
+					coordinates:  []   
+					},
+					
+					properties: {
+    		                    
+    		         hintContent: p_hintContent,
+    		         id: p_id,
+    		         name: p_name
+    		                    }
+                    }, {
+                    // Опции.
+    				editorDrawingCursor: "crosshair",
+                    // Цвет заливки (зеленый)
+                    fillColor: p_fillColor,
+                    // Цвет границ (синий)
+                    strokeColor: '#0000FF',
+                    // Прозрачность (полупрозрачная заливка)
+                    opacity: 0.4,
+                    // Ширина линии
+                    strokeWidth: 3,
+                    // Стиль линии
+					//strokeStyle: 'shortdash',
+					draggable: true
+					});
+					
+					collectionGEO.add(myPolygon);
+					
+					//             ///Даем возможность редактировать полигон
+					//myPolygon.editor.startEditing();
+					// Включаем режим редактирования с возможностью добавления новых вершин.
+					myPolygon.editor.startDrawing();
+
+         	return myPolygon;   
+           }  // конец функции AddPolygon
+
+		   
+		   	 //////////////////////////////////////////////////////////////// Добавление  полигона	
+	    function AddPolygon( p_coordinates  ,p_hintContent ,p_id,p_name,p_fillColor) {
+           
+ 	      var STR;
+	      STR = p_coordinates;
+	      for (var ARR = STR.replace (/\s/g, '').split ('],['), j = 0, lj = ARR.length; j < lj; j++)
+	      {
+	      var t = ARR [j].replace (/[\[\]]/, ''); 
+	      ARR[j] = t.split (',');
+	      }
+          
+	      var AarrNew = new Array();
+	      for(var i=0; i<=ARR.length - 1; i++) 
+	      {
+          AarrNew[i] = ARR[i];      
+	      } 
+	      
+                // Создаем многоугольник
+                myPolygon  = new ymaps.GeoObject({
+   
+                    geometry: {
+                        // Тип геометрии - полигон.
+                        type: "Polygon",
+                        // Координаты.
+                        coordinates:  [AarrNew]   
+                    },
+                    
+                    properties: {
+			                    
+			         hintContent: p_hintContent,
+			         id: p_id,
+			         name: p_name
+			                    }
+                    }, {
+                    // Опции.
+                    // Цвет заливки (зеленый)
+                    fillColor: p_fillColor,
+                    // Цвет границ (синий)
+                    strokeColor: '#0000FF',
+                    // Прозрачность (полупрозрачная заливка)
+                    opacity: 0.4,
+                    // Ширина линии
+                    strokeWidth: 3,
+                    // Стиль линии
+                    //strokeStyle: 'shortdash',
+                    draggable: false
+                });
+
+             collectionGEO.add(myPolygon);
+            
+             ///Даем возможность редактировать полигон
+             //myPolygon.editor.startEditing();
+             
+         	return myPolygon;   
+           }  // конец функции AddPolygon
+
+	   /////////////////////////---------------------Функция получает координаты по ID объекту 
+	     function GetCoordsGeometryGEO(id) {
+           var coords;
+           var i;
+           var strCoords ;
+           
+                i=0;
+                collectionGEO.each(function (objGEO) {
+                i=i+1;
+                if(objGEO.properties.get('id') == id) {
+                coords = objGEO.geometry.getCoordinates();
+                strCoords = coords[0].join(';');
+                }
+                });
+           
+                return strCoords;      
+         } // конец функции
+		 
+		 
+		 /////////////////////////////////////////////// Удаление всех элементов коллекции.
+		 function RemoveAllPolygon() {
+			 collectionGEO.removeAll();
+			} // конец функции RemoveAllPolygon
+			 
+			 
+			
+			/////////////////////////////////////////// Удаление полигона по ID элементов коллекции.
+		 function RemoveIDPolygon(id) {
+			 collectionGEO.each(function (obj) {
+				 if(obj.properties.get('id') == id) {
+					 collectionGEO.remove(obj);
+					 }
+					 });	 
+		 } // конец функции RemoveAllPolygon
+						 
+		 
+	////////////////////////////////////////---------- Отключает редактирование полигонов
+   		 function SetStopDraggablePoligon(id) {
+		 
+		    window.collectionGEO.each(function (obj) {      
+		     if(obj.properties.get('id') == id) {   
+		 		
+		 		   obj.options.set('draggable',false);
+				   
+				   obj.editor.stopDrawing();
+				   obj.editor.stopEditing();
+				   
+		     }
+		      })
+		       // return coords;
+		     }  // конец функции
+	 
+
+	////////////////////////////////////////---------- Включает редактирование полигонов
+   		 function SetStartDraggablePoligon(id) {
+		 
+		    window.collectionGEO.each(function (obj) {      
+		     if(obj.properties.get('id') == id) {   
+		 		
+		 		   obj.options.set('draggable',true);
+				   
+				  // obj.editor.startDrawing();
+				   obj.editor.startEditing();
+				   
+		     }
+		      })
+		       // return coords;
+		     }  // конец функции	
+	
+	  ////////////////////////////////////////---------- Устанавливает элементам коллекции станциии метро
+   		 function SetMetro() {
+		 var name;
+		 var coords;
+		 var strCoords;
+		 name = '';
+		    collection.each(function (obj) {		        
+		   //  if(obj.properties.get('id') == id) { 		          
+		       		
+		        var myGeocoder = ymaps.geocode(obj.geometry.getCoordinates(), {kind: 'metro',results: '1'});
+		        myGeocoder.then(
+		       
+		        function (res) {
+		  	       var nearest = res.geoObjects.get(0);
+		  	       //alert(nearest);
+		  	       if (nearest != null){
+		  	      name = nearest.properties.get('name');
+		          obj.properties.set('metro',name);
+		          
+		          var cGeoObject = res.geoObjects.get(0);
+                  coords = cGeoObject.geometry.getCoordinates();
+                  
+                  strCoords = coords.join(',');
+		          obj.properties.set('metro_Coordinates',strCoords);
+		        // alert(strCoords); 
+                  }                                                  	
+		  	    },
+		  	  function (err) {
+		  	alert('Ошибка');
+		    });	    
+		    //  }
+		      });
+		     } // конец функции
+
+
+         
+        //////////////////////////////////////////----------- Поиск станциии метро
+   		 function GetMetro(id) {
+		 var name;
+		    collection.each(function (obj) {      
+		     if(obj.properties.get('id') == id) {   
+		 		
+		 		  name = obj.properties.get('metro');
+		 		 //alert(typeof name);
+		         //return name;   
+		     }
+		      })
+		        return name;
+		     } // конец функции
+        
+         
+        //////////////////////////////////////////----------- Поиск координат метро
+   		 function GetMetroCoords(id) {
+		 var coords;
+		    collection.each(function (obj) {      
+		     if(obj.properties.get('id') == id) {   
+		 		
+		 		  coords = obj.properties.get('metro_Coordinates');   
+		     }
+		      })
+		        return coords;
+		     } // конец функции
+
+	
+	
+	     ////////////////////////////////////////---------- редактирования
+   		 function SetDraggablePlacemark(id) {
+		 
+		    collection.each(function (obj) {      
+		     if(obj.properties.get('id') == id) {   
+		 		
+		 		   obj.options.set('draggable',true);
+				   obj.options.set('iconColor','#ff1839');
+ 
+				   
+		     }
+		      }) 
+			}  // конец функции
+			
+			
+		 ////////////////////////////////////////---------- Цвет метки
+   		 function SetColorPlacemark(id,color) {
+		 
+		    window.collection.each(function (obj) {      
+		     if(obj.properties.get('id') == id) {   
+		 		
+		 		   obj.options.set('iconColor',color);   
+		     }
+		      })
+		       // return coords;
+		     }  // конец функции
+	
+			
+			
+
+		 ////////////////////////////////////////---------- получить координаты метки	
+		 function GetCoordinatesPlacemark(id) {
+		 var strCoords;
+		    collection.each(function (obj) {      
+		     if(obj.properties.get('id') == id) {   
+				 
+				  coords = obj.geometry.getCoordinates();
+                  
+                  strCoords = coords.join(',');
+
+				  obj.options.set('iconColor',#ЦветМеткиПоУмолчанию#);
+
+		 		 // name = obj.properties.get('metro');
+		 		 //alert(typeof name);
+		         //return name;   
+		     }
+		      })
+		        return strCoords;
+		     } // конец функции
+	
+	       
+			
+</script>
+
+</head>
+
+<body>
+<!-- здесь может быть всякий сопроводительный HTML-код -->
+
+
+<!-- простое размещение на самом HTML-документе -->
+<div id="OurYMap" style="width:100%; height:100%"></div>
+
+<input type="hidden" id="IDPlacemark" name="IDPlacemark" value="0"></input>
+<input type="hidden" id="AddPlacemark" name="AddPlacemark" value="0"></input>
+
+
+
+<!-- здесь может быть всякий сопроводительный HTML-код -->
+
+</body>
+</html>

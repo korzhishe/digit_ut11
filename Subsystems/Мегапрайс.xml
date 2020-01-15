@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<Subsystem uuid="5161ca07-bfef-4054-bd76-12b4937c8218">
+		<Properties>
+			<Name>Мегапрайс</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Мегапрайс</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>CommonPicture.мегапрайсКартинкаПодсистемы</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:TransparentPixel x="187" y="40"/>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Мегапрайс</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МегапрайсРег</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.мегапрайсРегистрационныйКлюч</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.мегапрайсНастройкаПодсистемы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.мегапрайсВидНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.мегапрайсГруппаНоменклатурыПоУмолчанию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.мегапрайсЕдиницаИзмеренияПоУмолчанию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.мегапрайсСтавкаНДС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.мегапрайсНастройки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.мегапрайсКартинкаПодсистемы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.МегапрайсПолныеПрава</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.мегапрайсРегОрганизация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.мегапрайсКонтрольУникальностиНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.мегапрайсКонтрольУникальностиНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.мегапрайсВариантКурсаВалютыКонтрагента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.мегапрайсВиртуальныйСкладНаличияТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.мегапрайсГенерацияОстатковПоставщиков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.мегапрайсИспользоватьВиртуальныеОстатки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.мегапрайсИспользоватьВебсервис</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МегапрайсРобот</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.мегапрайсРоботЗагрузкиПрайсов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.мегапрайсРабочийСтол</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.мегапрайсИспользоватьАвтоматическиеЦены</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.мегапрайсПриСозданииНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.мегапрайсПрямаяВыгрузкаОстатковНаСайт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.МегапрайсПомощникПродаж</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.мегапрайсГенерацияАртикуловНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.мегапрайсБитриксОбменРегистрацияИзменений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.МегапрайсПомощникЗакупок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.мегапрайсНовости</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.мегапрайсОбновлениеПодсистемы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.мегапрайсПерейтиНаСайт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.мегапрайсПомощьПоАлгоритмам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.мегапрайсПомощьПоАнализатору</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.мегапрайсПомощьПоМодулюЗакупок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.мегапрайсПомощьПоРаботеСНоменклатурой</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.мегапрайсПомощьПоПомощникуПродаж</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.мегапрайсПомощьПоУстановкеЦен</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.мегапрайсГенерацияПрайсов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.мегапрайсУстановкаЦен</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.мегапрайсАвтозаказ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.мегапрайсКаталогВыгрузкиПрайсов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.мегапрайсКоличествоДнейХранения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.мегапрайсТрансформацияПрайсов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.мегапрайсИмпортИндивидуальноеЗадание</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.мегапрайсГенерацияПрайсовИндивидуальноеЗадание</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.мегапрайсУстановкаЦенИндивидуальноеЗадание</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.МегапрайсЧтениеПрайсовПоставщиков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.мегапрайсРегистрироватьЗаписиБезНоменклатуры</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>ИмпортПрайсов</Subsystem>
+			<Subsystem>УправлениеНоменклатурой</Subsystem>
+			<Subsystem>Маркетинг</Subsystem>
+			<Subsystem>Служебные</Subsystem>
+			<Subsystem>Продажи</Subsystem>
+			<Subsystem>Закупки</Subsystem>
+			<Subsystem>Склад</Subsystem>
+			<Subsystem>Дополнительно</Subsystem>
+			<Subsystem>Обмены</Subsystem>
+			<Subsystem>ТаблицыБазы</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

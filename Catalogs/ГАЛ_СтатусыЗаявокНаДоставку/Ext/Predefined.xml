@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.6">
+	<Item id="126f330b-6099-4e98-8649-682ce34a1d0e">
+		<Name>Доставлен</Name>
+		<Code>00001</Code>
+		<Description>Доставлен</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a2c4cd6e-394f-41f4-a191-d46363ea3c11">
+		<Name>Доставляется</Name>
+		<Code>00010</Code>
+		<Description>Доставляется</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="53d78832-e688-4648-90a6-f6cbf2a28941">
+		<Name>КРаспределению</Name>
+		<Code>00007</Code>
+		<Description>К распределению</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a39a4cf0-096f-4c87-9e61-ac83be832bcc">
+		<Name>НеДоставлен</Name>
+		<Code>00009</Code>
+		<Description>Не доставлен</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="23593cf3-cec7-4552-b023-01b9f2cb5213">
+		<Name>Новый</Name>
+		<Code>00006</Code>
+		<Description>Новый</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f1dead4c-d7cb-461a-bcd9-312b91f98a3a">
+		<Name>Отменен</Name>
+		<Code>00005</Code>
+		<Description>Отменен</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="268a8ee6-014b-49f8-b4b8-16c90d043542">
+		<Name>ВДоставке</Name>
+		<Code>00008</Code>
+		<Description>Передан в доставку</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8f0f70cd-b895-4cac-8e49-0f7cf12a4255">
+		<Name>Распределен</Name>
+		<Code>00011</Code>
+		<Description>Распределен</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

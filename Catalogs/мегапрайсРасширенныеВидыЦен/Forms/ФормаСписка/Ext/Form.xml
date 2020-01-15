@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаОткрытьАнализаторПрайсов" id="74">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОткрытьАнализаторПрайсов</CommandName>
+				<ExtendedTooltip name="ФормаОткрытьАнализаторПрайсовРасширеннаяПодсказка" id="75"/>
+			</Button>
+			<Button name="ФормаВыполнитьРобот" id="79">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ВыполнитьРобот</CommandName>
+				<ExtendedTooltip name="ФормаВыполнитьРоботРасширеннаяПодсказка" id="80"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+		</UsualGroup>
+		<Pages name="Страницы" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="35"/>
+			<ChildItems>
+				<Page name="СписокВидовЦен" id="36">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список видов цен</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список видов цен</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СписокВидовЦенРасширеннаяПодсказка" id="37"/>
+					<ChildItems>
+						<Table name="Список" id="3">
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<InitialTreeView>ExpandTopLevel</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>Список</DataPath>
+							<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+							<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
+							<AutoCommandBar name="СписокКоманднаяПанель" id="5">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
+							<SearchStringAddition name="СписокСтрокаПоиска" id="7">
+								<AdditionSource>
+									<Item>Список</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="8"/>
+								<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокСостояниеПросмотра" id="10">
+								<AdditionSource>
+									<Item>Список</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="11"/>
+								<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокУправлениеПоиском" id="13">
+								<AdditionSource>
+									<Item>Список</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="14"/>
+								<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="Наименование" id="16">
+									<DataPath>Список.Description</DataPath>
+									<DefaultItem>true</DefaultItem>
+									<ContextMenu name="НаименованиеКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="18"/>
+								</LabelField>
+								<LabelField name="ВидЦенЗакупочная" id="28">
+									<DataPath>Список.ВидЦенЗакупочная</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вид цен базовая</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ВидЦенЗакупочнаяКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="ВидЦенЗакупочнаяРасширеннаяПодсказка" id="30"/>
+								</LabelField>
+								<LabelField name="ВидЦенПродажи" id="31">
+									<DataPath>Список.ВидЦенПродажи</DataPath>
+									<ContextMenu name="ВидЦенПродажиКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="ВидЦенПродажиРасширеннаяПодсказка" id="33"/>
+								</LabelField>
+								<CheckBoxField name="ИспользоватьРегламентноеЗадание" id="22">
+									<DataPath>Список.ИспользоватьРегламентноеЗадание</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Задание (общее)</v8:content>
+										</v8:item>
+									</Title>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспользоватьРегламентноеЗаданиеКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="ИспользоватьРегламентноеЗаданиеРасширеннаяПодсказка" id="24"/>
+								</CheckBoxField>
+								<CheckBoxField name="ИспользоватьИндивидуальноеРегламентноеЗадание" id="76">
+									<DataPath>Список.ИспользоватьИндивидуальноеРегламентноеЗадание</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Задание (инд.)</v8:content>
+										</v8:item>
+									</Title>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспользоватьИндивидуальноеРегламентноеЗаданиеКонтекстноеМеню" id="77"/>
+									<ExtendedTooltip name="ИспользоватьИндивидуальноеРегламентноеЗаданиеРасширеннаяПодсказка" id="78"/>
+								</CheckBoxField>
+								<LabelField name="Приоритет" id="25">
+									<DataPath>Список.Приоритет</DataPath>
+									<ContextMenu name="ПриоритетКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="ПриоритетРасширеннаяПодсказка" id="27"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СписокУстановкаЦен" id="38">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Установка цен (журнал)</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список установка цен</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СписокУстановкаЦенРасширеннаяПодсказка" id="39"/>
+					<ChildItems>
+						<Table name="УстановкаЦенСписок" id="40">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>УстановкаЦенСписок</DataPath>
+							<RowPictureDataPath>УстановкаЦенСписок.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="УстановкаЦенСписокКонтекстноеМеню" id="41"/>
+							<AutoCommandBar name="УстановкаЦенСписокКоманднаяПанель" id="42"/>
+							<ExtendedTooltip name="УстановкаЦенСписокРасширеннаяПодсказка" id="43"/>
+							<SearchStringAddition name="УстановкаЦенСписокСтрокаПоиска" id="44">
+								<AdditionSource>
+									<Item>УстановкаЦенСписок</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="УстановкаЦенСписокСтрокаПоискаКонтекстноеМеню" id="45"/>
+								<ExtendedTooltip name="УстановкаЦенСписокСтрокаПоискаРасширеннаяПодсказка" id="46"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="УстановкаЦенСписокСостояниеПросмотра" id="47">
+								<AdditionSource>
+									<Item>УстановкаЦенСписок</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="УстановкаЦенСписокСостояниеПросмотраКонтекстноеМеню" id="48"/>
+								<ExtendedTooltip name="УстановкаЦенСписокСостояниеПросмотраРасширеннаяПодсказка" id="49"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="УстановкаЦенСписокУправлениеПоиском" id="50">
+								<AdditionSource>
+									<Item>УстановкаЦенСписок</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="УстановкаЦенСписокУправлениеПоискомКонтекстноеМеню" id="51"/>
+								<ExtendedTooltip name="УстановкаЦенСписокУправлениеПоискомРасширеннаяПодсказка" id="52"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="УстановкаЦенСписокДата" id="53">
+									<DataPath>УстановкаЦенСписок.Date</DataPath>
+									<ContextMenu name="УстановкаЦенСписокДатаКонтекстноеМеню" id="54"/>
+									<ExtendedTooltip name="УстановкаЦенСписокДатаРасширеннаяПодсказка" id="55"/>
+								</LabelField>
+								<LabelField name="УстановкаЦенСписокНомер" id="56">
+									<DataPath>УстановкаЦенСписок.Number</DataPath>
+									<ContextMenu name="УстановкаЦенСписокНомерКонтекстноеМеню" id="57"/>
+									<ExtendedTooltip name="УстановкаЦенСписокНомерРасширеннаяПодсказка" id="58"/>
+								</LabelField>
+								<LabelField name="УстановкаЦенСписокОтветственный" id="59">
+									<DataPath>УстановкаЦенСписок.Ответственный</DataPath>
+									<ContextMenu name="УстановкаЦенСписокОтветственныйКонтекстноеМеню" id="60"/>
+									<ExtendedTooltip name="УстановкаЦенСписокОтветственныйРасширеннаяПодсказка" id="61"/>
+								</LabelField>
+								<LabelField name="УстановкаЦенСписокКомментарий" id="62">
+									<DataPath>УстановкаЦенСписок.Комментарий</DataPath>
+									<ContextMenu name="УстановкаЦенСписокКомментарийКонтекстноеМеню" id="63"/>
+									<ExtendedTooltip name="УстановкаЦенСписокКомментарийРасширеннаяПодсказка" id="64"/>
+								</LabelField>
+								<CheckBoxField name="УстановкаЦенСписокСогласован" id="65">
+									<DataPath>УстановкаЦенСписок.Согласован</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="УстановкаЦенСписокСогласованКонтекстноеМеню" id="66"/>
+									<ExtendedTooltip name="УстановкаЦенСписокСогласованРасширеннаяПодсказка" id="67"/>
+								</CheckBoxField>
+								<LabelField name="УстановкаЦенСписокДокументОснование" id="68">
+									<DataPath>УстановкаЦенСписок.ДокументОснование</DataPath>
+									<ContextMenu name="УстановкаЦенСписокДокументОснованиеКонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="УстановкаЦенСписокДокументОснованиеРасширеннаяПодсказка" id="70"/>
+								</LabelField>
+								<LabelField name="УстановкаЦенСписокСтатус" id="71">
+									<DataPath>УстановкаЦенСписок.Статус</DataPath>
+									<ContextMenu name="УстановкаЦенСписокСтатусКонтекстноеМеню" id="72"/>
+									<ExtendedTooltip name="УстановкаЦенСписокСтатусРасширеннаяПодсказка" id="73"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.Ref</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog.мегапрайсРасширенныеВидыЦен</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="УстановкаЦенСписок" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установка цен список</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Document.УстановкаЦенНоменклатуры</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОткрытьАнализаторПрайсов" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть анализатор прайсов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть анализатор прайсов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьАнализаторПрайсов</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыполнитьРобот" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить робот</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить робот</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьРобот</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

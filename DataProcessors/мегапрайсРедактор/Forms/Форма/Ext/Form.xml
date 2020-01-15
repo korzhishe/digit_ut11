@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Мегапрайс - редактор</v8:content>
+		</v8:item>
+	</Title>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<SaveDataInSettings>UseList</SaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="Разрезать" id="10">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Разрезать</CommandName>
+				<ExtendedTooltip name="РазрезатьРасширеннаяПодсказка" id="11"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<InputField name="ПутьИсходник" id="1">
+			<DataPath>Объект.ПутьИсходник</DataPath>
+			<ChoiceButton>true</ChoiceButton>
+			<ContextMenu name="ПутьИсходникКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПутьИсходникРасширеннаяПодсказка" id="3"/>
+			<Events>
+				<Event name="StartChoice">ПутьИсходникНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<InputField name="ПутьРезультат" id="46">
+			<DataPath>Объект.ПутьРезультат</DataPath>
+			<ChoiceButton>true</ChoiceButton>
+			<ContextMenu name="ПутьРезультатКонтекстноеМеню" id="47"/>
+			<ExtendedTooltip name="ПутьРезультатРасширеннаяПодсказка" id="48"/>
+			<Events>
+				<Event name="StartChoice">ПутьРезультатНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<InputField name="КоличествоСтрок" id="7">
+			<DataPath>Объект.КоличествоСтрок</DataPath>
+			<ContextMenu name="КоличествоСтрокКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="КоличествоСтрокРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<CheckBoxField name="ИспользоватьФильтр" id="12">
+			<DataPath>Объект.ФайлИспользоватьФильтр</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ИспользоватьФильтрКонтекстноеМеню" id="13"/>
+			<ExtendedTooltip name="ИспользоватьФильтрРасширеннаяПодсказка" id="14"/>
+		</CheckBoxField>
+		<CheckBoxField name="ИсключитьДанныеФильтра" id="15">
+			<DataPath>Объект.ФайлИсключитьДанныеФильтра</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ИсключитьДанныеФильтраКонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="ИсключитьДанныеФильтраРасширеннаяПодсказка" id="17"/>
+		</CheckBoxField>
+		<InputField name="КолонкаСЦеной" id="43">
+			<DataPath>Объект.КолонкаСЦеной</DataPath>
+			<ContextMenu name="КолонкаСЦенойКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="КолонкаСЦенойРасширеннаяПодсказка" id="45"/>
+		</InputField>
+		<Table name="НастройкаФильтров" id="18">
+			<Representation>List</Representation>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ФильтрацияДанныхФайла</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="НастройкаФильтровКонтекстноеМеню" id="19"/>
+			<AutoCommandBar name="НастройкаФильтровКоманднаяПанель" id="20"/>
+			<ExtendedTooltip name="НастройкаФильтровРасширеннаяПодсказка" id="21"/>
+			<SearchStringAddition name="НастройкаФильтровСтрокаПоиска" id="22">
+				<AdditionSource>
+					<Item>НастройкаФильтров</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="НастройкаФильтровСтрокаПоискаКонтекстноеМеню" id="23"/>
+				<ExtendedTooltip name="НастройкаФильтровСтрокаПоискаРасширеннаяПодсказка" id="24"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="НастройкаФильтровСостояниеПросмотра" id="25">
+				<AdditionSource>
+					<Item>НастройкаФильтров</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="НастройкаФильтровСостояниеПросмотраКонтекстноеМеню" id="26"/>
+				<ExtendedTooltip name="НастройкаФильтровСостояниеПросмотраРасширеннаяПодсказка" id="27"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="НастройкаФильтровУправлениеПоиском" id="28">
+				<AdditionSource>
+					<Item>НастройкаФильтров</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="НастройкаФильтровУправлениеПоискомКонтекстноеМеню" id="29"/>
+				<ExtendedTooltip name="НастройкаФильтровУправлениеПоискомРасширеннаяПодсказка" id="30"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="НастройкаФильтровНомерСтроки" id="31">
+					<DataPath>Объект.ФильтрацияДанныхФайла.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НастройкаФильтровНомерСтрокиКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="НастройкаФильтровНомерСтрокиРасширеннаяПодсказка" id="33"/>
+				</LabelField>
+				<InputField name="НастройкаФильтровНомерЗначения" id="34">
+					<DataPath>Объект.ФильтрацияДанныхФайла.НомерЗначения</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер колонки</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НастройкаФильтровНомерЗначенияКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="НастройкаФильтровНомерЗначенияРасширеннаяПодсказка" id="36"/>
+				</InputField>
+				<InputField name="НастройкаФильтровЗначение" id="37">
+					<DataPath>Объект.ФильтрацияДанныхФайла.ЗначениеФильтра</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>20</Width>
+					<ContextMenu name="НастройкаФильтровЗначениеКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="НастройкаФильтровЗначениеРасширеннаяПодсказка" id="39"/>
+				</InputField>
+				<InputField name="НастройкаФильтровПроцентНаценки" id="40">
+					<DataPath>Объект.ФильтрацияДанныхФайла.ПроцентНаценки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НастройкаФильтровПроцентНаценкиКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="НастройкаФильтровПроцентНаценкиРасширеннаяПодсказка" id="42"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.мегапрайсРедактор</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>1/0:d7f25945-708d-4439-b371-4bcbb01f9a57</Field>
+				<Field>Объект.КоличествоСтрок</Field>
+				<Field>Объект.КолонкаСЦеной</Field>
+				<Field>Объект.ПутьИсходник</Field>
+				<Field>Объект.ПутьРезультат</Field>
+				<Field>Объект.ФайлИсключитьДанныеФильтра</Field>
+				<Field>Объект.ФайлИспользоватьФильтр</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Разрезать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрезать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрезать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Разрезать</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="СкладЗаказчик" id="184">
+			<DataPath>Объект.СкладЗаказчик</DataPath>
+			<ContextMenu name="СкладЗаказчикКонтекстноеМеню" id="185"/>
+			<ExtendedTooltip name="СкладЗаказчикРасширеннаяПодсказка" id="186"/>
+		</InputField>
+		<InputField name="ГлавныйСклад1" id="187">
+			<DataPath>Объект.ГлавныйСклад</DataPath>
+			<ContextMenu name="ГлавныйСклад1КонтекстноеМеню" id="188"/>
+			<ExtendedTooltip name="ГлавныйСклад1РасширеннаяПодсказка" id="189"/>
+		</InputField>
+		<InputField name="ВариантАнализаИПланирования" id="7">
+			<DataPath>Объект.ВариантАнализаИПланирования</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ВариантАнализаИПланированияКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ВариантАнализаИПланированияРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Периодичность" id="16">
+			<DataPath>Объект.Периодичность</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПериодичностьКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ПериодичностьРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="РабочийКалендарь" id="19">
+			<DataPath>Объект.РабочийКалендарь</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="РабочийКалендарьКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="РабочийКалендарьРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<Pages name="Страницы" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="41"/>
+			<ChildItems>
+				<Page name="ГруппаПравилаРасчетаПотребностей" id="42">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Правила расчета потребностей</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаПравилаРасчетаПотребностейРасширеннаяПодсказка" id="43"/>
+					<ChildItems>
+						<InputField name="ГлавныйСклад" id="34">
+							<DataPath>Объект.ГлавныйСклад</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ГлавныйСкладКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="ГлавныйСкладРасширеннаяПодсказка" id="36"/>
+						</InputField>
+						<InputField name="ТочностьОкругления" id="22">
+							<DataPath>Объект.ТочностьОкругления</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТочностьОкругленияКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ТочностьОкругленияРасширеннаяПодсказка" id="24"/>
+						</InputField>
+						<Table name="ПравилаРасчетаПотребностей" id="44">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ПравилаРасчетаПотребностей</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПравилаРасчетаПотребностейКонтекстноеМеню" id="45"/>
+							<AutoCommandBar name="ПравилаРасчетаПотребностейКоманднаяПанель" id="46"/>
+							<ExtendedTooltip name="ПравилаРасчетаПотребностейРасширеннаяПодсказка" id="47"/>
+							<SearchStringAddition name="ПравилаРасчетаПотребностейСтрокаПоиска" id="48">
+								<AdditionSource>
+									<Item>ПравилаРасчетаПотребностей</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПравилаРасчетаПотребностейСтрокаПоискаКонтекстноеМеню" id="49"/>
+								<ExtendedTooltip name="ПравилаРасчетаПотребностейСтрокаПоискаРасширеннаяПодсказка" id="50"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПравилаРасчетаПотребностейСостояниеПросмотра" id="51">
+								<AdditionSource>
+									<Item>ПравилаРасчетаПотребностей</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПравилаРасчетаПотребностейСостояниеПросмотраКонтекстноеМеню" id="52"/>
+								<ExtendedTooltip name="ПравилаРасчетаПотребностейСостояниеПросмотраРасширеннаяПодсказка" id="53"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПравилаРасчетаПотребностейУправлениеПоиском" id="54">
+								<AdditionSource>
+									<Item>ПравилаРасчетаПотребностей</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПравилаРасчетаПотребностейУправлениеПоискомКонтекстноеМеню" id="55"/>
+								<ExtendedTooltip name="ПравилаРасчетаПотребностейУправлениеПоискомРасширеннаяПодсказка" id="56"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПравилаРасчетаПотребностейНомерСтроки" id="57">
+									<DataPath>Объект.ПравилаРасчетаПотребностей.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПравилаРасчетаПотребностейНомерСтрокиКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="ПравилаРасчетаПотребностейНомерСтрокиРасширеннаяПодсказка" id="59"/>
+								</LabelField>
+								<InputField name="ПравилаРасчетаПотребностейГруппаНоменклатуры" id="60">
+									<DataPath>Объект.ПравилаРасчетаПотребностей.ГруппаНоменклатуры</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПравилаРасчетаПотребностейГруппаНоменклатурыКонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="ПравилаРасчетаПотребностейГруппаНоменклатурыРасширеннаяПодсказка" id="62"/>
+								</InputField>
+								<InputField name="ПравилаРасчетаПотребностейТоварнаяКатегория" id="63">
+									<DataPath>Объект.ПравилаРасчетаПотребностей.ТоварнаяКатегория</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПравилаРасчетаПотребностейТоварнаяКатегорияКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="ПравилаРасчетаПотребностейТоварнаяКатегорияРасширеннаяПодсказка" id="65"/>
+								</InputField>
+								<InputField name="ПравилаРасчетаПотребностейПроизводитель" id="66">
+									<DataPath>Объект.ПравилаРасчетаПотребностей.Производитель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПравилаРасчетаПотребностейПроизводительКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="ПравилаРасчетаПотребностейПроизводительРасширеннаяПодсказка" id="68"/>
+								</InputField>
+								<InputField name="ПравилаРасчетаПотребностейКоличествоПериодовЗаказа" id="69">
+									<DataPath>Объект.ПравилаРасчетаПотребностей.КоличествоПериодовЗаказа</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПравилаРасчетаПотребностейКоличествоПериодовЗаказаКонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="ПравилаРасчетаПотребностейКоличествоПериодовЗаказаРасширеннаяПодсказка" id="71"/>
+								</InputField>
+								<InputField name="ПравилаРасчетаПотребностейПорогНормальнойЛиквидности" id="72">
+									<DataPath>Объект.ПравилаРасчетаПотребностей.ПорогНормальнойЛиквидности</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПравилаРасчетаПотребностейПорогНормальнойЛиквидностиКонтекстноеМеню" id="73"/>
+									<ExtendedTooltip name="ПравилаРасчетаПотребностейПорогНормальнойЛиквидностиРасширеннаяПодсказка" id="74"/>
+								</InputField>
+								<InputField name="ПравилаРасчетаПотребностейПорогНормальнойЛиквидностиВДнях" id="75">
+									<DataPath>Объект.ПравилаРасчетаПотребностей.ПорогНормальнойЛиквидностиВДнях</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПравилаРасчетаПотребностейПорогНормальнойЛиквидностиВДняхКонтекстноеМеню" id="76"/>
+									<ExtendedTooltip name="ПравилаРасчетаПотребностейПорогНормальнойЛиквидностиВДняхРасширеннаяПодсказка" id="77"/>
+								</InputField>
+								<InputField name="ПравилаРасчетаПотребностейКоэффициентСезонности" id="78">
+									<DataPath>Объект.ПравилаРасчетаПотребностей.КоэффициентСезонности</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПравилаРасчетаПотребностейКоэффициентСезонностиКонтекстноеМеню" id="79"/>
+									<ExtendedTooltip name="ПравилаРасчетаПотребностейКоэффициентСезонностиРасширеннаяПодсказка" id="80"/>
+								</InputField>
+								<InputField name="ПравилаРасчетаПотребностейАВСКлассификация" id="81">
+									<DataPath>Объект.ПравилаРасчетаПотребностей.АВСКлассификация</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПравилаРасчетаПотребностейАВСКлассификацияКонтекстноеМеню" id="82"/>
+									<ExtendedTooltip name="ПравилаРасчетаПотребностейАВСКлассификацияРасширеннаяПодсказка" id="83"/>
+								</InputField>
+								<CheckBoxField name="ПравилаРасчетаПотребностейНеЗаказывать" id="84">
+									<DataPath>Объект.ПравилаРасчетаПотребностей.НеЗаказывать</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПравилаРасчетаПотребностейНеЗаказыватьКонтекстноеМеню" id="85"/>
+									<ExtendedTooltip name="ПравилаРасчетаПотребностейНеЗаказыватьРасширеннаяПодсказка" id="86"/>
+								</CheckBoxField>
+								<InputField name="ПравилаРасчетаПотребностейТекстАлгоритма" id="87">
+									<DataPath>Объект.ПравилаРасчетаПотребностей.ТекстАлгоритма</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПравилаРасчетаПотребностейТекстАлгоритмаКонтекстноеМеню" id="88"/>
+									<ExtendedTooltip name="ПравилаРасчетаПотребностейТекстАлгоритмаРасширеннаяПодсказка" id="89"/>
+								</InputField>
+								<InputField name="ПравилаРасчетаПотребностейТочностьОкругления" id="90">
+									<DataPath>Объект.ПравилаРасчетаПотребностей.ТочностьОкругления</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПравилаРасчетаПотребностейТочностьОкругленияКонтекстноеМеню" id="91"/>
+									<ExtendedTooltip name="ПравилаРасчетаПотребностейТочностьОкругленияРасширеннаяПодсказка" id="92"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПравилаРасчетаТочекЗаказа" id="93">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Правила расчета точек заказа</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаПравилаРасчетаТочекЗаказаРасширеннаяПодсказка" id="94"/>
+					<ChildItems>
+						<CheckBoxField name="ВыполнитьРасчетМинимальныхОстатков" id="31">
+							<DataPath>Объект.ВыполнитьРасчетМинимальныхОстатков</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВыполнитьРасчетМинимальныхОстатковКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="ВыполнитьРасчетМинимальныхОстатковРасширеннаяПодсказка" id="33"/>
+						</CheckBoxField>
+						<Table name="ПравилаРасчетаТочекЗаказа" id="95">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ПравилаРасчетаТочекЗаказа</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПравилаРасчетаТочекЗаказаКонтекстноеМеню" id="96"/>
+							<AutoCommandBar name="ПравилаРасчетаТочекЗаказаКоманднаяПанель" id="97"/>
+							<ExtendedTooltip name="ПравилаРасчетаТочекЗаказаРасширеннаяПодсказка" id="98"/>
+							<SearchStringAddition name="ПравилаРасчетаТочекЗаказаСтрокаПоиска" id="99">
+								<AdditionSource>
+									<Item>ПравилаРасчетаТочекЗаказа</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПравилаРасчетаТочекЗаказаСтрокаПоискаКонтекстноеМеню" id="100"/>
+								<ExtendedTooltip name="ПравилаРасчетаТочекЗаказаСтрокаПоискаРасширеннаяПодсказка" id="101"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПравилаРасчетаТочекЗаказаСостояниеПросмотра" id="102">
+								<AdditionSource>
+									<Item>ПравилаРасчетаТочекЗаказа</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПравилаРасчетаТочекЗаказаСостояниеПросмотраКонтекстноеМеню" id="103"/>
+								<ExtendedTooltip name="ПравилаРасчетаТочекЗаказаСостояниеПросмотраРасширеннаяПодсказка" id="104"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПравилаРасчетаТочекЗаказаУправлениеПоиском" id="105">
+								<AdditionSource>
+									<Item>ПравилаРасчетаТочекЗаказа</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПравилаРасчетаТочекЗаказаУправлениеПоискомКонтекстноеМеню" id="106"/>
+								<ExtendedTooltip name="ПравилаРасчетаТочекЗаказаУправлениеПоискомРасширеннаяПодсказка" id="107"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПравилаРасчетаТочекЗаказаНомерСтроки" id="108">
+									<DataPath>Объект.ПравилаРасчетаТочекЗаказа.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПравилаРасчетаТочекЗаказаНомерСтрокиКонтекстноеМеню" id="109"/>
+									<ExtendedTooltip name="ПравилаРасчетаТочекЗаказаНомерСтрокиРасширеннаяПодсказка" id="110"/>
+								</LabelField>
+								<InputField name="ПравилаРасчетаТочекЗаказаГруппаНоменклатуры" id="111">
+									<DataPath>Объект.ПравилаРасчетаТочекЗаказа.ГруппаНоменклатуры</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПравилаРасчетаТочекЗаказаГруппаНоменклатурыКонтекстноеМеню" id="112"/>
+									<ExtendedTooltip name="ПравилаРасчетаТочекЗаказаГруппаНоменклатурыРасширеннаяПодсказка" id="113"/>
+								</InputField>
+								<InputField name="ПравилаРасчетаТочекЗаказаВидНоменклатуры" id="114">
+									<DataPath>Объект.ПравилаРасчетаТочекЗаказа.ВидНоменклатуры</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПравилаРасчетаТочекЗаказаВидНоменклатурыКонтекстноеМеню" id="115"/>
+									<ExtendedTooltip name="ПравилаРасчетаТочекЗаказаВидНоменклатурыРасширеннаяПодсказка" id="116"/>
+								</InputField>
+								<InputField name="ПравилаРасчетаТочекЗаказаТоварнаяКатегория" id="117">
+									<DataPath>Объект.ПравилаРасчетаТочекЗаказа.ТоварнаяКатегория</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПравилаРасчетаТочекЗаказаТоварнаяКатегорияКонтекстноеМеню" id="118"/>
+									<ExtendedTooltip name="ПравилаРасчетаТочекЗаказаТоварнаяКатегорияРасширеннаяПодсказка" id="119"/>
+								</InputField>
+								<InputField name="ПравилаРасчетаТочекЗаказаДнейПоставки" id="120">
+									<DataPath>Объект.ПравилаРасчетаТочекЗаказа.ДнейПоставки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПравилаРасчетаТочекЗаказаДнейПоставкиКонтекстноеМеню" id="121"/>
+									<ExtendedTooltip name="ПравилаРасчетаТочекЗаказаДнейПоставкиРасширеннаяПодсказка" id="122"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПрайсыПоставщиков" id="123">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прайсы поставщиков</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаПрайсыПоставщиковРасширеннаяПодсказка" id="124"/>
+					<ChildItems>
+						<Table name="ПрайсыПоставщиков" id="125">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ПрайсыПоставщиков</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПрайсыПоставщиковКонтекстноеМеню" id="126"/>
+							<AutoCommandBar name="ПрайсыПоставщиковКоманднаяПанель" id="127"/>
+							<ExtendedTooltip name="ПрайсыПоставщиковРасширеннаяПодсказка" id="128"/>
+							<SearchStringAddition name="ПрайсыПоставщиковСтрокаПоиска" id="129">
+								<AdditionSource>
+									<Item>ПрайсыПоставщиков</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПрайсыПоставщиковСтрокаПоискаКонтекстноеМеню" id="130"/>
+								<ExtendedTooltip name="ПрайсыПоставщиковСтрокаПоискаРасширеннаяПодсказка" id="131"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПрайсыПоставщиковСостояниеПросмотра" id="132">
+								<AdditionSource>
+									<Item>ПрайсыПоставщиков</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПрайсыПоставщиковСостояниеПросмотраКонтекстноеМеню" id="133"/>
+								<ExtendedTooltip name="ПрайсыПоставщиковСостояниеПросмотраРасширеннаяПодсказка" id="134"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПрайсыПоставщиковУправлениеПоиском" id="135">
+								<AdditionSource>
+									<Item>ПрайсыПоставщиков</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПрайсыПоставщиковУправлениеПоискомКонтекстноеМеню" id="136"/>
+								<ExtendedTooltip name="ПрайсыПоставщиковУправлениеПоискомРасширеннаяПодсказка" id="137"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПрайсыПоставщиковНомерСтроки" id="138">
+									<DataPath>Объект.ПрайсыПоставщиков.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПрайсыПоставщиковНомерСтрокиКонтекстноеМеню" id="139"/>
+									<ExtendedTooltip name="ПрайсыПоставщиковНомерСтрокиРасширеннаяПодсказка" id="140"/>
+								</LabelField>
+								<CheckBoxField name="ПрайсыПоставщиковПометка" id="141">
+									<DataPath>Объект.ПрайсыПоставщиков.Пометка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПрайсыПоставщиковПометкаКонтекстноеМеню" id="142"/>
+									<ExtendedTooltip name="ПрайсыПоставщиковПометкаРасширеннаяПодсказка" id="143"/>
+								</CheckBoxField>
+								<InputField name="ПрайсыПоставщиковПартнер" id="144">
+									<DataPath>Объект.ПрайсыПоставщиков.Партнер</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПрайсыПоставщиковПартнерКонтекстноеМеню" id="145"/>
+									<ExtendedTooltip name="ПрайсыПоставщиковПартнерРасширеннаяПодсказка" id="146"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаВариантыОпределенияПоставщиков" id="147">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Варианты определения поставщиков</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаВариантыОпределенияПоставщиковРасширеннаяПодсказка" id="148"/>
+					<ChildItems>
+						<InputField name="ВидОтбораПоПоставщику" id="10">
+							<DataPath>Объект.ВидОтбораПоПоставщику</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ВидОтбораПоПоставщикуКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ВидОтбораПоПоставщикуРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<InputField name="ОтборПоПоставщику" id="13">
+							<DataPath>Объект.ОтборПоПоставщику</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОтборПоПоставщикуКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ОтборПоПоставщикуРасширеннаяПодсказка" id="15"/>
+						</InputField>
+						<InputField name="ЦеныПоставщиковОграничениеПоДате" id="25">
+							<DataPath>Объект.ЦеныПоставщиковОграничениеПоДате</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ЦеныПоставщиковОграничениеПоДатеКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ЦеныПоставщиковОграничениеПоДатеРасширеннаяПодсказка" id="27"/>
+						</InputField>
+						<InputField name="ЦеныПоставщиковМинимальныйПорогНаценки" id="28">
+							<DataPath>Объект.ЦеныПоставщиковМинимальныйПорогНаценки</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ЦеныПоставщиковМинимальныйПорогНаценкиКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ЦеныПоставщиковМинимальныйПорогНаценкиРасширеннаяПодсказка" id="30"/>
+						</InputField>
+						<Table name="ВариантыОпределенияПоставщиков" id="149">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ВариантыОпределенияПоставщиков</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ВариантыОпределенияПоставщиковКонтекстноеМеню" id="150"/>
+							<AutoCommandBar name="ВариантыОпределенияПоставщиковКоманднаяПанель" id="151"/>
+							<ExtendedTooltip name="ВариантыОпределенияПоставщиковРасширеннаяПодсказка" id="152"/>
+							<SearchStringAddition name="ВариантыОпределенияПоставщиковСтрокаПоиска" id="153">
+								<AdditionSource>
+									<Item>ВариантыОпределенияПоставщиков</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВариантыОпределенияПоставщиковСтрокаПоискаКонтекстноеМеню" id="154"/>
+								<ExtendedTooltip name="ВариантыОпределенияПоставщиковСтрокаПоискаРасширеннаяПодсказка" id="155"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ВариантыОпределенияПоставщиковСостояниеПросмотра" id="156">
+								<AdditionSource>
+									<Item>ВариантыОпределенияПоставщиков</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВариантыОпределенияПоставщиковСостояниеПросмотраКонтекстноеМеню" id="157"/>
+								<ExtendedTooltip name="ВариантыОпределенияПоставщиковСостояниеПросмотраРасширеннаяПодсказка" id="158"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ВариантыОпределенияПоставщиковУправлениеПоиском" id="159">
+								<AdditionSource>
+									<Item>ВариантыОпределенияПоставщиков</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ВариантыОпределенияПоставщиковУправлениеПоискомКонтекстноеМеню" id="160"/>
+								<ExtendedTooltip name="ВариантыОпределенияПоставщиковУправлениеПоискомРасширеннаяПодсказка" id="161"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ВариантыОпределенияПоставщиковНомерСтроки" id="162">
+									<DataPath>Объект.ВариантыОпределенияПоставщиков.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВариантыОпределенияПоставщиковНомерСтрокиКонтекстноеМеню" id="163"/>
+									<ExtendedTooltip name="ВариантыОпределенияПоставщиковНомерСтрокиРасширеннаяПодсказка" id="164"/>
+								</LabelField>
+								<CheckBoxField name="ВариантыОпределенияПоставщиковПометка" id="165">
+									<DataPath>Объект.ВариантыОпределенияПоставщиков.Пометка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ВариантыОпределенияПоставщиковПометкаКонтекстноеМеню" id="166"/>
+									<ExtendedTooltip name="ВариантыОпределенияПоставщиковПометкаРасширеннаяПодсказка" id="167"/>
+								</CheckBoxField>
+								<InputField name="ВариантыОпределенияПоставщиковНаименование" id="168">
+									<DataPath>Объект.ВариантыОпределенияПоставщиков.Наименование</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВариантыОпределенияПоставщиковНаименованиеКонтекстноеМеню" id="169"/>
+									<ExtendedTooltip name="ВариантыОпределенияПоставщиковНаименованиеРасширеннаяПодсказка" id="170"/>
+								</InputField>
+								<InputField name="ВариантыОпределенияПоставщиковПредставление" id="171">
+									<DataPath>Объект.ВариантыОпределенияПоставщиков.Представление</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВариантыОпределенияПоставщиковПредставлениеКонтекстноеМеню" id="172"/>
+									<ExtendedTooltip name="ВариантыОпределенияПоставщиковПредставлениеРасширеннаяПодсказка" id="173"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="Задания" id="174">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задания</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задания</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЗаданияРасширеннаяПодсказка" id="175"/>
+					<ChildItems>
+						<CheckBoxField name="ИспользоватьРегламентноеЗадание" id="176">
+							<DataPath>Объект.ИспользоватьРегламентноеЗадание</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользоватьРегламентноеЗаданиеКонтекстноеМеню" id="177"/>
+							<ExtendedTooltip name="ИспользоватьРегламентноеЗаданиеРасширеннаяПодсказка" id="178"/>
+						</CheckBoxField>
+						<Button name="НастроитьРегламентноеЗадание" id="179">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.НастроитьРегламентноеЗадание</CommandName>
+							<ExtendedTooltip name="НастроитьРегламентноеЗаданиеРасширеннаяПодсказка" id="180"/>
+						</Button>
+						<InputField name="Приоритет1" id="181">
+							<DataPath>Объект.Приоритет</DataPath>
+							<ContextMenu name="Приоритет1КонтекстноеМеню" id="182"/>
+							<ExtendedTooltip name="Приоритет1РасширеннаяПодсказка" id="183"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.мегапрайсПравилаЗакупок</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="НастроитьРегламентноеЗадание" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить регламентное задание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить регламентное задание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастроитьРегламентноеЗадание</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

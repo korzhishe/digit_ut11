@@ -1,0 +1,669 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Автор Шекин Евгений Владимирович https://subsystems.ru/</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Закладки" id="42">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закладки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закладки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<VerticalStretch>true</VerticalStretch>
+			<PagesRepresentation>TabsOnLeftHorizontal</PagesRepresentation>
+			<ExtendedTooltip name="ЗакладкиExtendedTooltip" id="74"/>
+			<ChildItems>
+				<Page name="Активация" id="43">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Активация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Активация</v8:content>
+						</v8:item>
+					</ToolTip>
+					<BackColor>web:WhiteSmoke</BackColor>
+					<ExtendedTooltip name="АктивацияРасширеннаяПодсказка" id="75"/>
+					<ChildItems>
+						<Button name="ОбновитьОбъектыКонфигурации" id="103">
+							<Type>UsualButton</Type>
+							<Height>1</Height>
+							<CommandName>Form.Command.ОбновитьПодсистему</CommandName>
+							<TextColor>#FFFFFF</TextColor>
+							<BackColor>#008080</BackColor>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обновить объекты в конфигурации (при первой установке)</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ОбновитьОбъектыКонфигурацииРасширеннаяПодсказка" id="104"/>
+						</Button>
+						<UsualGroup name="Группа1" id="57">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1ExtendedTooltip" id="76"/>
+							<ChildItems>
+								<UsualGroup name="Группа2" id="58">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Данные о лицензии</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Representation>NormalSeparation</Representation>
+									<ExtendedTooltip name="Группа2ExtendedTooltip" id="78"/>
+									<ChildItems>
+										<InputField name="мегапрайсРегОрганизация" id="66">
+											<DataPath>НаборКонстант.мегапрайсРегОрганизация</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Организация</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Left</TitleLocation>
+											<ContextMenu name="мегапрайсРегОрганизацияКонтекстноеМеню" id="67"/>
+											<ExtendedTooltip name="мегапрайсРегОрганизацияExtendedTooltip" id="79"/>
+										</InputField>
+										<InputField name="мегапрайсРегистрационныйКлюч" id="19">
+											<DataPath>НаборКонстант.мегапрайсРегистрационныйКлюч</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Регистрационный ключ</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Left</TitleLocation>
+											<HorizontalAlign>Left</HorizontalAlign>
+											<EditMode>EnterOnInput</EditMode>
+											<Height>1</Height>
+											<ContextMenu name="мегапрайсРегистрационныйКлючКонтекстноеМеню" id="20"/>
+											<ExtendedTooltip name="мегапрайсРегистрационныйКлючExtendedTooltip" id="80"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="МодульИмпортаПрайсов" id="130">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Модуль импорта прайсов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Модуль импорта прайсов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="МодульИмпортаПрайсовРасширеннаяПодсказка" id="131"/>
+							<ChildItems>
+								<CheckBoxField name="мегапрайсИспользоватьВебсервис" id="119">
+									<DataPath>НаборКонстант.мегапрайсИспользоватьВебсервис</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Использовать веб-сервис для загрузки файлов в 1С</v8:content>
+										</v8:item>
+									</Title>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="мегапрайсИспользоватьВебсервисКонтекстноеМеню" id="120"/>
+									<ExtendedTooltip name="мегапрайсИспользоватьВебсервисРасширеннаяПодсказка" id="121"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="АвтоматическоеУдаление" id="150">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Автоматическое удаление данных</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Автоматическое удаление</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="АвтоматическоеУдалениеРасширеннаяПодсказка" id="151"/>
+							<ChildItems>
+								<InputField name="мегапрайсКоличествоДнейХранения" id="147">
+									<DataPath>НаборКонстант.мегапрайсКоличествоДнейХранения</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Количество дней хранения</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="мегапрайсКоличествоДнейХраненияКонтекстноеМеню" id="148"/>
+									<ExtendedTooltip name="мегапрайсКоличествоДнейХраненияРасширеннаяПодсказка" id="149"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ТрансформацияПрайсов" id="152">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Трансформация прайсов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Трансформация прайсов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="ТрансформацияПрайсовРасширеннаяПодсказка" id="153"/>
+							<ChildItems>
+								<CheckBoxField name="мегапрайсТрансформацияПрайсов" id="154">
+									<DataPath>НаборКонстант.мегапрайсТрансформацияПрайсов</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Трансформация прайсов</v8:content>
+										</v8:item>
+									</Title>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="мегапрайсТрансформацияПрайсовКонтекстноеМеню" id="155"/>
+									<ExtendedTooltip name="мегапрайсТрансформацияПрайсовРасширеннаяПодсказка" id="156"/>
+								</CheckBoxField>
+								<InputField name="мегапрайсКаталогВыгрузкиПрайсов" id="157">
+									<DataPath>НаборКонстант.мегапрайсКаталогВыгрузкиПрайсов</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Каталог выгрузки</v8:content>
+										</v8:item>
+									</Title>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="мегапрайсКаталогВыгрузкиПрайсовКонтекстноеМеню" id="158"/>
+									<ExtendedTooltip name="мегапрайсКаталогВыгрузкиПрайсовРасширеннаяПодсказка" id="159"/>
+									<Events>
+										<Event name="StartChoice">мегапрайсКаталогВыгрузкиПрайсовНачалоВыбора</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ОпцииСозданияНовойНоменклатуры" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Опции создания новой номенклатуры</v8:content>
+						</v8:item>
+					</ToolTip>
+					<BackColor>web:WhiteSmoke</BackColor>
+					<ExtendedTooltip name="ОпцииСозданияНовойНоменклатурыExtendedTooltip" id="84"/>
+					<ChildItems>
+						<CheckBoxField name="мегапрайсНеХранитьИсториюПрайсов" id="105">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Не хранить историю прайсов</v8:content>
+								</v8:item>
+							</Title>
+							<TitleTextColor>#000000</TitleTextColor>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<BorderColor>web:Gainsboro</BorderColor>
+							<ContextMenu name="мегапрайсНеХранитьИсториюПрайсовКонтекстноеМеню" id="106"/>
+							<ExtendedTooltip name="мегапрайсНеХранитьИсториюПрайсовРасширеннаяПодсказка" id="107"/>
+						</CheckBoxField>
+						<CheckBoxField name="мегапрайсРегистрироватьЗаписиБезНоменклатуры" id="163">
+							<DataPath>НаборКонстант.мегапрайсРегистрироватьЗаписиБезНоменклатуры</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Регистрировать записи без номенклатуры</v8:content>
+								</v8:item>
+							</Title>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="мегапрайсРегистрироватьЗаписиБезНоменклатурыКонтекстноеМеню" id="164"/>
+							<ExtendedTooltip name="мегапрайсРегистрироватьЗаписиБезНоменклатурыРасширеннаяПодсказка" id="165"/>
+						</CheckBoxField>
+						<CheckBoxField name="мегапрайсГенерациияАртикуловНоменклатуры" id="141">
+							<DataPath>НаборКонстант.мегапрайсГенерацияАртикуловНоменклатуры</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Генерировать артикулы номенклатуры</v8:content>
+								</v8:item>
+							</Title>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="мегапрайсГенерациияАртикуловНоменклатурыКонтекстноеМеню" id="142"/>
+							<ExtendedTooltip name="мегапрайсГенерациияАртикуловНоменклатурыРасширеннаяПодсказка" id="143"/>
+						</CheckBoxField>
+						<LabelDecoration name="Декорация5" id="144">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<TextColor>style:ТекстСправочнойНадписи</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Автоматическая генерация артикула из кода номенклатуры. Правые 7 символов.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация5КонтекстноеМеню" id="145"/>
+							<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="146"/>
+						</LabelDecoration>
+						<InputField name="мегапрайсКонтрольУникальностиНоменклатуры" id="68">
+							<DataPath>НаборКонстант.мегапрайсКонтрольУникальностиНоменклатуры</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Контроль уникальности номенклатуры</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="мегапрайсКонтрольУникальностиНоменклатурыКонтекстноеМеню" id="69"/>
+							<ExtendedTooltip name="мегапрайсКонтрольУникальностиНоменклатурыExtendedTooltip" id="85"/>
+						</InputField>
+						<LabelDecoration name="Декорация2" id="27">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<TextColor>style:ТекстСправочнойНадписи</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>При создании новой номенклатуры, осуществляется проверка на наличие одинаковых позиций в разных строках. Если они есть, номенклатура не создается дважды, а происходит поиск при каждом получении новой строки. </v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация2КонтекстноеМеню" id="28"/>
+							<ExtendedTooltip name="Декорация2ExtendedTooltip" id="86"/>
+						</LabelDecoration>
+						<LabelDecoration name="Декорация3" id="29">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<TextColor>style:ТекстСправочнойНадписи</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>а) без контроля (при загрузке номенклатуры вообще отсутствует какой либо контроль) 
+б) артикул (полный контроль уникальности артикулов в базе) 
+в) артикул и наименование (контроль по двум полям, если наименование отличается считается что это разная номенклатура) 
+г) артикул и производитель (жесткий контроль артикула в связке с производителем, если у разных производителей одинаковый артикул - это разные товары). При загрузке для каждой номенклатуры есть свой артикул в рамках производителя.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация3КонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="Декорация3ExtendedTooltip" id="87"/>
+						</LabelDecoration>
+						<UsualGroup name="ЗначенияПоУмолчанию" id="44">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Загрузка новой номенклатуры</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Значения по умолчанию</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="ЗначенияПоУмолчаниюExtendedTooltip" id="92"/>
+							<ChildItems>
+								<InputField name="мегапрайсГруппаНоменклатурыПоУмолчанию" id="45">
+									<DataPath>НаборКонстант.мегапрайсГруппаНоменклатурыПоУмолчанию</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа номенклатуры</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="мегапрайсГруппаНоменклатурыПоУмолчаниюКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="мегапрайсГруппаНоменклатурыПоУмолчаниюExtendedTooltip" id="95"/>
+								</InputField>
+								<LabelDecoration name="Декорация7" id="51">
+									<TextColor>style:ТекстСправочнойНадписи</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Номенклатура без групп будет записываться в группу по умолчанию
+</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация7КонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="Декорация7ExtendedTooltip" id="96"/>
+								</LabelDecoration>
+								<InputField name="мегапрайсВидНоменклатуры" id="47">
+									<DataPath>НаборКонстант.мегапрайсВидНоменклатуры</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вид номенклатуры</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="мегапрайсВидНоменклатурыКонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="мегапрайсВидНоменклатурыExtendedTooltip" id="97"/>
+								</InputField>
+								<InputField name="мегапрайсЕдиницаИзмеренияПоУмолчанию" id="53">
+									<DataPath>НаборКонстант.мегапрайсЕдиницаИзмеренияПоУмолчанию</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Единица измерения</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="мегапрайсЕдиницаИзмеренияПоУмолчаниюКонтекстноеМеню" id="54"/>
+									<ExtendedTooltip name="мегапрайсЕдиницаИзмеренияПоУмолчаниюExtendedTooltip" id="98"/>
+								</InputField>
+								<InputField name="мегапрайсСтавкаНДС" id="49">
+									<DataPath>НаборКонстант.мегапрайсСтавкаНДС</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ставка НДС</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="мегапрайсСтавкаНДСКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="мегапрайсСтавкаНДСExtendedTooltip" id="99"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ЗакладкаВиртуальныеОстатки" id="114">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Виртуальные остатки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Закладка виртуальные остатки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<BackColor>web:WhiteSmoke</BackColor>
+					<ExtendedTooltip name="ЗакладкаВиртуальныеОстаткиРасширеннаяПодсказка" id="115"/>
+					<ChildItems>
+						<CheckBoxField name="мегапрайсПрямаяВыгрузкаОстатковНаСайт" id="132">
+							<DataPath>НаборКонстант.мегапрайсПрямаяВыгрузкаОстатковНаСайт</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Прямая выгрузка остатков на сайт (вариант 1)</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="мегапрайсПрямаяВыгрузкаОстатковНаСайтКонтекстноеМеню" id="133"/>
+							<ExtendedTooltip name="мегапрайсПрямаяВыгрузкаОстатковНаСайтРасширеннаяПодсказка" id="134"/>
+						</CheckBoxField>
+						<CheckBoxField name="мегапрайсАвтоматическиОбновлятьВиртуальныеОстаткиПоставщиковНаСкладах" id="116">
+							<DataPath>НаборКонстант.мегапрайсИспользоватьВиртуальныеОстатки</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вести виртуальные остатки поставщиков на складах через оприходования (вариант 2)</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="мегапрайсАвтоматическиОбновлятьВиртуальныеОстаткиПоставщиковНаСкладахКонтекстноеМеню" id="117"/>
+							<ExtendedTooltip name="мегапрайсАвтоматическиОбновлятьВиртуальныеОстаткиПоставщиковНаСкладахРасширеннаяПодсказка" id="118"/>
+						</CheckBoxField>
+						<InputField name="мегапрайсВиртуальныйСкладНаличияТоваров" id="111">
+							<DataPath>НаборКонстант.мегапрайсВиртуальныйСкладНаличияТоваров</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Виртуальный склад</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="мегапрайсВиртуальныйСкладНаличияТоваровКонтекстноеМеню" id="112"/>
+							<ExtendedTooltip name="мегапрайсВиртуальныйСкладНаличияТоваровРасширеннаяПодсказка" id="113"/>
+						</InputField>
+						<LabelDecoration name="Декорация4" id="138">
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;color #0000ff&gt;Для прямой выгрузки на сайт, в профилях поставщиков необходимо заполнение поля Виртуальный склад. &lt;/&gt;Внимание! Опция работает только с внедрением измененного обмена 1С-Битрикс</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация4КонтекстноеМеню" id="139"/>
+							<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="140"/>
+						</LabelDecoration>
+						<LabelDecoration name="Декорация1" id="135">
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;color #ff0000&gt;Внимание!!!!! Выбранный склад не должен использоваться в реальном учете!  &lt;/&gt;По нему не должны вестись вакие либо реальные движения товара! Рекомендуем завести специальный склад для виртуальных остатков.
+</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="136"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="137"/>
+						</LabelDecoration>
+						<LabelDecoration name="Декорация6" id="160">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Третий вариант выгрузки на сайт - использование модуля Мультипрайс, который может выгружать данные из 1С в произвольный файл для передачи на сайт.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация6КонтекстноеМеню" id="161"/>
+							<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="162"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="Маркетинг" id="125">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Маркетинг</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Маркетинг</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="МаркетингРасширеннаяПодсказка" id="126"/>
+					<ChildItems>
+						<CheckBoxField name="мегапрайсИспользоватьАвтоматическиеЦены" id="127">
+							<DataPath>НаборКонстант.мегапрайсИспользоватьАвтоматическиеЦены</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Включить автоматическое ценообразование</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="мегапрайсИспользоватьАвтоматическиеЦеныКонтекстноеМеню" id="128"/>
+							<ExtendedTooltip name="мегапрайсИспользоватьАвтоматическиеЦеныРасширеннаяПодсказка" id="129"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+				<Page name="Логотип" id="166">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Логотип</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Логотип</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЛоготипРасширеннаяПодсказка" id="167"/>
+					<ChildItems>
+						<PictureDecoration name="Декорация8" id="168">
+							<Picture>
+								<xr:Abs>Picture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="Декорация8КонтекстноеМеню" id="169"/>
+							<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="170"/>
+						</PictureDecoration>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>НаборКонстант.мегапрайсКонтрольУникальностиНоменклатуры</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="Идентификатор" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="Расписание" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расписание</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="АдминистраторИБ" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя администратора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ДополнительноеПО" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительное ПО</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительное ПО</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДополнительноеПО</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОбновитьПодсистему" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить подсистему</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить подсистему</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьПодсистему</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="НастройкаРобота" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка робота</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка робота</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастройкаРобота</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьФоновыеЗадания" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть фоновые задания</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть фоновые задания</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьФоновыеЗадания</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="НастроитьЗаданиеМегапрайса" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить задание мегапрайса</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить задание мегапрайса</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РегламентноеЗаданиеОткрытие</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

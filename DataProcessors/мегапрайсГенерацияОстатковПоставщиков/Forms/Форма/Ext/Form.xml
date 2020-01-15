@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<ScalingMode>Normal</ScalingMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<Pages name="Группа1" id="3">
+			<TitleFont ref="style:NormalTextFont" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="4"/>
+			<ChildItems>
+				<Page name="ГенерацияВиртуальныхОстатков" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Генерация виртуальных остатков</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Генерация виртуальных остатков</v8:content>
+						</v8:item>
+					</ToolTip>
+					<BackColor>web:WhiteSmoke</BackColor>
+					<ExtendedTooltip name="ГенерацияВиртуальныхОстатковРасширеннаяПодсказка" id="6"/>
+					<ChildItems>
+						<UsualGroup name="Группа2" id="95">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="96"/>
+							<ChildItems>
+								<Button name="Сформировать" id="1">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Command.Сформировать</CommandName>
+									<TextColor>#FFFFFF</TextColor>
+									<BackColor>#008000</BackColor>
+									<ExtendedTooltip name="СформироватьРасширеннаяПодсказка" id="2"/>
+								</Button>
+								<LabelDecoration name="Декорация1" id="92">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Генерация виртуальных остатков выполняет запрос по загруженным прайсам поставщиков, получает остатки и создает в ИБ стандартные документы оприходования товаров, Остатки поставщиков суммируются, а также разбиваются на разные склады в зависимости от настроек профилей прайс-листов.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="93"/>
+									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="94"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="мегапрайсРегистрацияЦен" id="61">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>мегапрайсРегистрацияЦен</DataPath>
+							<RowPictureDataPath>мегапрайсРегистрацияЦен.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="мегапрайсРегистрацияЦенКонтекстноеМеню" id="62"/>
+							<AutoCommandBar name="мегапрайсРегистрацияЦенКоманднаяПанель" id="63">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="мегапрайсРегистрацияЦенРасширеннаяПодсказка" id="64"/>
+							<SearchStringAddition name="мегапрайсРегистрацияЦенСтрокаПоиска" id="65">
+								<AdditionSource>
+									<Item>мегапрайсРегистрацияЦен</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="мегапрайсРегистрацияЦенСтрокаПоискаКонтекстноеМеню" id="66"/>
+								<ExtendedTooltip name="мегапрайсРегистрацияЦенСтрокаПоискаРасширеннаяПодсказка" id="67"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="мегапрайсРегистрацияЦенСостояниеПросмотра" id="68">
+								<AdditionSource>
+									<Item>мегапрайсРегистрацияЦен</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="мегапрайсРегистрацияЦенСостояниеПросмотраКонтекстноеМеню" id="69"/>
+								<ExtendedTooltip name="мегапрайсРегистрацияЦенСостояниеПросмотраРасширеннаяПодсказка" id="70"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="мегапрайсРегистрацияЦенУправлениеПоиском" id="71">
+								<AdditionSource>
+									<Item>мегапрайсРегистрацияЦен</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="мегапрайсРегистрацияЦенУправлениеПоискомКонтекстноеМеню" id="72"/>
+								<ExtendedTooltip name="мегапрайсРегистрацияЦенУправлениеПоискомРасширеннаяПодсказка" id="73"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="мегапрайсРегистрацияЦенДата" id="74">
+									<DataPath>мегапрайсРегистрацияЦен.Date</DataPath>
+									<ContextMenu name="мегапрайсРегистрацияЦенДатаКонтекстноеМеню" id="75"/>
+									<ExtendedTooltip name="мегапрайсРегистрацияЦенДатаРасширеннаяПодсказка" id="76"/>
+								</LabelField>
+								<LabelField name="мегапрайсРегистрацияЦенНомер" id="77">
+									<DataPath>мегапрайсРегистрацияЦен.Number</DataPath>
+									<ContextMenu name="мегапрайсРегистрацияЦенНомерКонтекстноеМеню" id="78"/>
+									<ExtendedTooltip name="мегапрайсРегистрацияЦенНомерРасширеннаяПодсказка" id="79"/>
+								</LabelField>
+								<LabelField name="мегапрайсРегистрацияЦенПрайсПартнера" id="89">
+									<DataPath>мегапрайсРегистрацияЦен.ПрайсПартнера</DataPath>
+									<ContextMenu name="мегапрайсРегистрацияЦенПрайсПартнераКонтекстноеМеню" id="90"/>
+									<ExtendedTooltip name="мегапрайсРегистрацияЦенПрайсПартнераРасширеннаяПодсказка" id="91"/>
+								</LabelField>
+								<LabelField name="мегапрайсРегистрацияЦенКомментарий" id="83">
+									<DataPath>мегапрайсРегистрацияЦен.Комментарий</DataPath>
+									<ContextMenu name="мегапрайсРегистрацияЦенКомментарийКонтекстноеМеню" id="84"/>
+									<ExtendedTooltip name="мегапрайсРегистрацияЦенКомментарийРасширеннаяПодсказка" id="85"/>
+								</LabelField>
+								<LabelField name="мегапрайсРегистрацияЦенОтветственный" id="86">
+									<DataPath>мегапрайсРегистрацияЦен.Ответственный</DataPath>
+									<ContextMenu name="мегапрайсРегистрацияЦенОтветственныйКонтекстноеМеню" id="87"/>
+									<ExtendedTooltip name="мегапрайсРегистрацияЦенОтветственныйРасширеннаяПодсказка" id="88"/>
+								</LabelField>
+								<CheckBoxField name="мегапрайсРегистрацияЦенЗагруженРоботом" id="80">
+									<DataPath>мегапрайсРегистрацияЦен.ЗагруженРоботом</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="мегапрайсРегистрацияЦенЗагруженРоботомКонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="мегапрайсРегистрацияЦенЗагруженРоботомРасширеннаяПодсказка" id="82"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ЖурналВиртуальныхОстатков" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Журнал виртуальных остатков</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Журнал виртуальных остатков</v8:content>
+						</v8:item>
+					</ToolTip>
+					<BackColor>web:WhiteSmoke</BackColor>
+					<ExtendedTooltip name="ЖурналВиртуальныхОстатковРасширеннаяПодсказка" id="8"/>
+					<ChildItems>
+						<Table name="СписокОприходования" id="9">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>СписокОприходования</DataPath>
+							<RowPictureDataPath>СписокОприходования.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="СписокОприходованияКонтекстноеМеню" id="10"/>
+							<AutoCommandBar name="СписокОприходованияКоманднаяПанель" id="11"/>
+							<ExtendedTooltip name="СписокОприходованияРасширеннаяПодсказка" id="12"/>
+							<SearchStringAddition name="СписокОприходованияСтрокаПоиска" id="13">
+								<AdditionSource>
+									<Item>СписокОприходования</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокОприходованияСтрокаПоискаКонтекстноеМеню" id="14"/>
+								<ExtendedTooltip name="СписокОприходованияСтрокаПоискаРасширеннаяПодсказка" id="15"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокОприходованияСостояниеПросмотра" id="16">
+								<AdditionSource>
+									<Item>СписокОприходования</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокОприходованияСостояниеПросмотраКонтекстноеМеню" id="17"/>
+								<ExtendedTooltip name="СписокОприходованияСостояниеПросмотраРасширеннаяПодсказка" id="18"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокОприходованияУправлениеПоиском" id="19">
+								<AdditionSource>
+									<Item>СписокОприходования</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокОприходованияУправлениеПоискомКонтекстноеМеню" id="20"/>
+								<ExtendedTooltip name="СписокОприходованияУправлениеПоискомРасширеннаяПодсказка" id="21"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СписокОприходованияДата" id="22">
+									<DataPath>СписокОприходования.Date</DataPath>
+									<ContextMenu name="СписокОприходованияДатаКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="СписокОприходованияДатаРасширеннаяПодсказка" id="24"/>
+								</LabelField>
+								<LabelField name="СписокОприходованияНомер" id="25">
+									<DataPath>СписокОприходования.Number</DataPath>
+									<ContextMenu name="СписокОприходованияНомерКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="СписокОприходованияНомерРасширеннаяПодсказка" id="27"/>
+								</LabelField>
+								<LabelField name="СписокОприходованияОрганизация" id="34">
+									<DataPath>СписокОприходования.Организация</DataPath>
+									<ContextMenu name="СписокОприходованияОрганизацияКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="СписокОприходованияОрганизацияРасширеннаяПодсказка" id="36"/>
+								</LabelField>
+								<LabelField name="СписокОприходованияСклад" id="43">
+									<DataPath>СписокОприходования.Склад</DataPath>
+									<ContextMenu name="СписокОприходованияСкладКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="СписокОприходованияСкладРасширеннаяПодсказка" id="45"/>
+								</LabelField>
+								<LabelField name="СписокОприходованияКомментарий" id="31">
+									<DataPath>СписокОприходования.Комментарий</DataPath>
+									<ContextMenu name="СписокОприходованияКомментарийКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="СписокОприходованияКомментарийРасширеннаяПодсказка" id="33"/>
+								</LabelField>
+								<LabelField name="СписокОприходованияОтветственный" id="37">
+									<DataPath>СписокОприходования.Ответственный</DataPath>
+									<ContextMenu name="СписокОприходованияОтветственныйКонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="СписокОприходованияОтветственныйРасширеннаяПодсказка" id="39"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.мегапрайсГенерацияОстатковПоставщиков</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СписокОприходования" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список оприходования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Document.ОприходованиеИзлишковТоваров</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="мегапрайсРегистрацияЦен" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Мегапрайс регистрация цен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Document.мегапрайсРегистрацияПрайса</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Сформировать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

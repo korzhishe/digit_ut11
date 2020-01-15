@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<META http-equiv="X-UA-Compatible" content="IE=9">  
+
+<style type="text/css">
+	  html { height: 100% }
+	  body { height: 100%; margin: 0px; padding: 0px }
+	  #map { height: 100% }
+	</style>
+
+<!-- <script type="text/javascript" src="http://api-maps.yandex.ru/2.0.27/?load=package.full&mode=debug&lang=ru-RU"></script>  -->
+
+<!-- <script type="text/javascript" src="http://api-maps.yandex.ru/2.1.42/?load=package.full&lang=ru-RU"></script>   -->
+<script type="text/javascript" src="http://api-maps.yandex.ru/2.1.44/?load=package.full&mode=debug&lang=ru-RU"> </script>
+
+<script type="text/javascript">
+// Как только будет загружен API и готов DOM, выполняем инициализацию (с) Yandex
+ymaps.ready(CreateMap);
+
+var collection; //коллекция точек
+var collectionKyr; //коллекция точек
+
+//var collectionGEO; //коллекция полигонов
+var OurYandexMap;
+
+function CreateMap() {
+	// создаём экземпляр объекта-карты и привязываем к контейнеру с заданным id (именем)
+	// чтобы иметь возможность командовать ею извне, глобализуем
+	OurYandexMap = new ymaps.Map('OurYMap', { // таких объектов-карт можно создать сколько угодно
+	// При инициализации карты обязательно нужно указать ее центр и коэффициент масштабирования
+	center: #КоординатыЦентра#,
+	zoom: #Увеличение#,			
+	type: 'yandex#map', // Возможные значения типа карты см. в модуле обработки
+	behaviors: ['default', 'scrollZoom'], // масштабирование колесом мыши
+	controls: ['zoomControl', 'typeSelector',  'fullscreenControl']
+	}, // конец задания основных параметров
+	{// опции (только те, которые требуют явной переустановки)
+	maxZoom: 23, // максимальный уровень масштабирования карты (по умолчанию 23)
+	minZoom: 0, // минимальный уровень масштабирования карты (по умолчанию 0)
+	geoObjectDraggable: false,
+	balloonCloseButton: true
+	} // конец задания опций
+	);
+	
+	///Колекция Точек
+	collection = new ymaps.GeoObjectCollection({}, {
+	// preset: 'twirl#blueIcon', // все метки коллекции с пиктограммой "кафе"
+	// cursor: 'grab', // курсор на метках будет "рукой"
+	draggable: false // метки можно будет перемещать
+	});	
+	OurYandexMap.geoObjects.add(collection);
+	
+	
+	///Колекция Точек Курьеров
+	collectionKyr = new ymaps.GeoObjectCollection({}, {
+	// preset: 'twirl#blueIcon', // все метки коллекции с пиктограммой "кафе"
+	// cursor: 'grab', // курсор на метках будет "рукой"
+	draggable: false // метки можно будет перемещать
+	});	
+	OurYandexMap.geoObjects.add(collectionKyr);
+	
+	//////////////////////////////////////////////////////////////////////   СОБЫТИЯ 
+	
+		
+	// При окночании перемещения njxrb
+	collection.events.add('dragend', function (event) {
+		  // alert('ddd');
+		  var myPlacemark = event.get('target');
+		//        setActivePointsGEO(collection,collectionGEO);
+		//   alert(myPolygon.geometry.getCoordinates());
+		  //myPlacemark.options.set('iconColor',#ЦветМеткиПоУмолчанию#);
+		  
+		});
+		
+		
+	// При клики на точку
+	collection.events.add('click', function (event) {
+		  // alert('ddd');
+		  var id;
+		  var myPlacemark = event.get('target');
+		//        setActivePointsGEO(collection,collectionGEO);
+		//   alert(myPolygon.geometry.getCoordinates());
+		  //myPlacemark.options.set('iconColor',#ЦветМеткиПоУмолчанию#);
+		      //alert(myPlacemark.geometry.getCoordinates());
+			  id = myPlacemark.properties.get('id');
+			  document.getElementById('IDPlacemark').value = id;
+		});
+	
+		
+		
+	
+		
+  return window.OurYandexMap;
+ } // конец функции CreateMap
+			
+			
+	//////////////////////////////////////////////////////////////// удаление карты		
+	function RemoveMap(MapObject) {	
+    	MapObject.destroy(); // Удаление карты
+    	MapObject = null; // полный сброс, после которого if (!MapObject) вернёт истину.
+	} // конец функции RemoveMap 
+			
+			
+			
+	//Функция добавляет точку на карту
+	function AddPlacemark(X,Y,p_iconContent,p_balloonContentHeader,p_balloonContentBody,p_balloonContentFooter,p_hintContent,p_id,p_preset,p_Color) {
+		Placemark = new ymaps.Placemark( [X, Y] ,
+		// спецификация
+		
+		{ 
+		iconCaption: p_iconContent,
+		iconContent: p_iconContent,  		
+		balloonContentHeader: p_balloonContentHeader,
+		balloonContentBody:  p_balloonContentBody ,
+		balloonContentFooter: p_balloonContentFooter, 
+		hintContent: p_hintContent,
+		
+		id: p_id
+		},
+		{ preset: p_preset,
+		draggable: false,
+		iconColor: p_Color
+		}                 );
+		
+		collection.add(Placemark);
+		
+		
+		
+		return Placemark;
+		} // конец функции AddPlacemark
+		
+		
+		// Удаление всех элементов коллекции.
+		function RemoveAllPlacemark() {
+			collection.removeAll();
+			} // конец функции RemoveAllPlacemark
+			
+			// Удаление метки по ID элементов коллекции.
+			function RemoveIDPlacemark(id) {
+				collection.each(function (obj) {
+					if(obj.properties.get('id') == id) {
+						collection.remove(obj);
+						}
+						});	 
+	} // конец функции RemoveIDPlacemark		
+			
+	
+	
+
+//Функция добавляет точку на карту
+	function AddPlacemarkKyr(X,Y,p_iconContent,p_balloonContentHeader,p_balloonContentBody,p_balloonContentFooter,p_hintContent,p_id,p_preset,p_Color) {
+		Placemark = new ymaps.Placemark( [X, Y] ,
+		// спецификация
+		
+		{ 
+		
+		iconContent: p_iconContent,  		
+		balloonContentHeader: p_balloonContentHeader,
+		balloonContentBody:  p_balloonContentBody ,
+		balloonContentFooter: p_balloonContentFooter, 
+		hintContent: p_hintContent,
+		id: p_id
+		},
+		{ preset: p_preset,
+		draggable: false,
+		iconColor: p_Color,
+		openBalloonOnClick: false
+		}                 );
+		
+		collectionKyr.add(Placemark);
+		
+		
+		
+		return Placemark;
+		} // конец функции AddPlacemark
+		
+		
+		// Удаление всех элементов коллекции.
+		function RemoveAllPlacemarkKyr() {
+			collectionKyr.removeAll();
+			} // конец функции RemoveAllPlacemark
+			
+			// Удаление метки по ID элементов коллекции.
+			function RemoveIDPlacemarkKyr(id) {
+				collectionKyr.each(function (obj) {
+					if(obj.properties.get('id') == id) {
+						collectionKyr.remove(obj);
+						}
+						});	 
+	} // конец функции RemoveIDPlacemark		
+			
+	
+
+
+   
+	
+	
+	     ////////////////////////////////////////---------- редактирования
+   		 function SetDraggablePlacemark(id) {
+		 
+		    collection.each(function (obj) {      
+		     if(obj.properties.get('id') == id) {   
+		 		
+		 		   obj.options.set('draggable',true);
+				   obj.options.set('iconColor','#ff1839');
+ 
+				   
+		     }
+		      }) 
+			}  // конец функции
+			
+			
+		 ////////////////////////////////////////---------- Цвет метки
+   		 function SetColorPlacemark(id,color) {
+		 
+		    window.collection.each(function (obj) {      
+		     if(obj.properties.get('id') == id) {   
+		 		
+		 		   obj.options.set('iconColor',color);   
+		     }
+		      })
+		       // return coords;
+		     }  // конец функции
+	
+			
+			
+
+		 ////////////////////////////////////////---------- получить координаты метки	
+		 function GetCoordinatesPlacemark(id) {
+		 var strCoords;
+		    collection.each(function (obj) {      
+		     if(obj.properties.get('id') == id) {   
+				 
+				  coords = obj.geometry.getCoordinates();
+                  
+                  strCoords = coords.join(',');
+
+				  obj.options.set('iconColor',#ЦветМеткиПоУмолчанию#);
+
+		 		 // name = obj.properties.get('metro');
+		 		 //alert(typeof name);
+		         //return name;   
+		     }
+		      })
+		        return strCoords;
+		     } // конец функции
+	
+	       
+			
+</script>
+
+</head>
+
+<body>
+<!-- здесь может быть всякий сопроводительный HTML-код -->
+
+
+<!-- простое размещение на самом HTML-документе -->
+<div id="OurYMap" style="width:100%; height:100%"></div>
+
+<input type="hidden" id="IDPlacemark" name="IDPlacemark" value="0"></input>
+
+<!-- здесь может быть всякий сопроводительный HTML-код -->
+
+</body>
+</html>

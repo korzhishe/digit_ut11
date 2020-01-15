@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="40"/>
+			<ChildItems>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<LabelDecoration name="Декорация1" id="41">
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="Декорация1КонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="43"/>
+				</LabelDecoration>
+				<InputField name="Дата" id="16">
+					<DataPath>Объект.Дата</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="18"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Владелец" id="7">
+			<DataPath>Объект.Owner</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ВладелецКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Артикул" id="10">
+			<DataPath>Объект.Артикул</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="АртикулКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="АртикулРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Цена" id="13">
+			<DataPath>Объект.Цена</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ЦенаКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ЦенаРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="СсылкаНаМодель" id="19">
+			<DataPath>Объект.СсылкаНаМодель</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СсылкаНаМодельКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="СсылкаНаМодельРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="СсылкаНаГрафикМоделиЯМ" id="22">
+			<DataPath>Объект.СсылкаНаГрафикМоделиЯМ</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СсылкаНаГрафикМоделиЯМКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="СсылкаНаГрафикМоделиЯМРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="IDЯМ" id="25">
+			<DataPath>Объект.IDЯМ</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="IDЯМКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="IDЯМРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<UsualGroup name="Дополнительно" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительно</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительно</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ДополнительноРасширеннаяПодсказка" id="38"/>
+			<ChildItems>
+				<InputField name="Модель" id="28">
+					<DataPath>Объект.Модель</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="МодельКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="МодельРасширеннаяПодсказка" id="30"/>
+				</InputField>
+				<InputField name="ТипАппарата" id="34">
+					<DataPath>Объект.ТипАппарата</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТипАппаратаКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ТипАппаратаРасширеннаяПодсказка" id="36"/>
+				</InputField>
+				<InputField name="Бренд" id="31">
+					<DataPath>Объект.Бренд</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="БрендКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="БрендРасширеннаяПодсказка" id="33"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.МатрицаАппаратов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

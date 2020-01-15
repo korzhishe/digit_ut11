@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="УчетнаяЗапись" id="3">
+			<DataPath>Объект.УчетнаяЗапись</DataPath>
+			<ContextMenu name="УчетнаяЗаписьКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="УчетнаяЗаписьРасширеннаяПодсказка" id="5"/>
+		</InputField>
+		<InputField name="ОтборПослеДатыОтправления" id="74">
+			<DataPath>Объект.ОтборПослеДатыОтправления</DataPath>
+			<ContextMenu name="ОтборПослеДатыОтправленияКонтекстноеМеню" id="75"/>
+			<ExtendedTooltip name="ОтборПослеДатыОтправленияРасширеннаяПодсказка" id="76"/>
+		</InputField>
+		<CheckBoxField name="ОтборНовые" id="43">
+			<DataPath>Объект.ОтборНовые</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОтборНовыеКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="ОтборНовыеРасширеннаяПодсказка" id="45"/>
+		</CheckBoxField>
+		<CheckBoxField name="ОтборПрочитанные" id="46">
+			<DataPath>Объект.ОтборПрочитанные</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОтборПрочитанныеКонтекстноеМеню" id="47"/>
+			<ExtendedTooltip name="ОтборПрочитанныеРасширеннаяПодсказка" id="48"/>
+		</CheckBoxField>
+		<CheckBoxField name="ВыполнитьЗагрузкуФайлов" id="37">
+			<DataPath>Объект.ВыполнитьЗагрузкуФайлов</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВыполнитьЗагрузкуФайловКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="ВыполнитьЗагрузкуФайловРасширеннаяПодсказка" id="39"/>
+		</CheckBoxField>
+		<Button name="ФормаВыполнить" id="1">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Выполнить</CommandName>
+			<ExtendedTooltip name="ФормаВыполнитьРасширеннаяПодсказка" id="2"/>
+		</Button>
+		<Pages name="Группа1" id="49">
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="50"/>
+			<ChildItems>
+				<Page name="СписокПартнеров" id="51">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список партнеров</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список партнеров</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СписокПартнеровРасширеннаяПодсказка" id="52"/>
+					<ChildItems>
+						<Table name="ТаблицаОбработки" id="6">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ТаблицаПартнеров</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаОбработкиКонтекстноеМеню" id="7"/>
+							<AutoCommandBar name="ТаблицаОбработкиКоманднаяПанель" id="8">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТаблицаОбработкиРасширеннаяПодсказка" id="9"/>
+							<SearchStringAddition name="ТаблицаОбработкиСтрокаПоиска" id="10">
+								<AdditionSource>
+									<Item>ТаблицаОбработки</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаОбработкиСтрокаПоискаКонтекстноеМеню" id="11"/>
+								<ExtendedTooltip name="ТаблицаОбработкиСтрокаПоискаРасширеннаяПодсказка" id="12"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаОбработкиСостояниеПросмотра" id="13">
+								<AdditionSource>
+									<Item>ТаблицаОбработки</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаОбработкиСостояниеПросмотраКонтекстноеМеню" id="14"/>
+								<ExtendedTooltip name="ТаблицаОбработкиСостояниеПросмотраРасширеннаяПодсказка" id="15"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаОбработкиУправлениеПоиском" id="16">
+								<AdditionSource>
+									<Item>ТаблицаОбработки</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаОбработкиУправлениеПоискомКонтекстноеМеню" id="17"/>
+								<ExtendedTooltip name="ТаблицаОбработкиУправлениеПоискомРасширеннаяПодсказка" id="18"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ТаблицаОбработкиНомерСтроки" id="19">
+									<DataPath>Объект.ТаблицаПартнеров.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаОбработкиНомерСтрокиКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="ТаблицаОбработкиНомерСтрокиРасширеннаяПодсказка" id="21"/>
+								</LabelField>
+								<InputField name="ТаблицаОбработкиПартнер" id="22">
+									<DataPath>Объект.ТаблицаПартнеров.Партнер</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаОбработкиПартнерКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="ТаблицаОбработкиПартнерРасширеннаяПодсказка" id="24"/>
+								</InputField>
+								<InputField name="ТаблицаОбработкиПрофильПрайса" id="25">
+									<DataPath>Объект.ТаблицаПартнеров.ПрофильПрайса</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаОбработкиПрофильПрайсаКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="ТаблицаОбработкиПрофильПрайсаРасширеннаяПодсказка" id="27"/>
+								</InputField>
+								<InputField name="ТаблицаОбработкиАдресЭП" id="28">
+									<DataPath>Объект.ТаблицаПартнеров.АдресЭлектроннойПочты</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>25</Width>
+									<ContextMenu name="ТаблицаОбработкиАдресЭПКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="ТаблицаОбработкиАдресЭПРасширеннаяПодсказка" id="30"/>
+								</InputField>
+								<InputField name="ТаблицаОбработкиКаталогНаЛокальномДиске" id="34">
+									<DataPath>Объект.ТаблицаПартнеров.КаталогНаЛокальномДиске</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаОбработкиКаталогНаЛокальномДискеКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="ТаблицаОбработкиКаталогНаЛокальномДискеРасширеннаяПодсказка" id="36"/>
+								</InputField>
+								<InputField name="ТаблицаОбработкиПриоритет" id="31">
+									<DataPath>Объект.ТаблицаПартнеров.Приоритет</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаОбработкиПриоритетКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="ТаблицаОбработкиПриоритетРасширеннаяПодсказка" id="33"/>
+								</InputField>
+								<InputField name="ТаблицаОбработкиСообщение" id="40">
+									<DataPath>Объект.ТаблицаПартнеров.Сообщение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаОбработкиСообщениеКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="ТаблицаОбработкиСообщениеРасширеннаяПодсказка" id="42"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ПрочитанныеПисьма" id="53">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочитанные письма</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочитанные письма</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ПрочитанныеПисьмаРасширеннаяПодсказка" id="54"/>
+					<ChildItems>
+						<Table name="ТаблицаСообщений" id="55">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ТаблицаСообщений</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаСообщенийКонтекстноеМеню" id="56"/>
+							<AutoCommandBar name="ТаблицаСообщенийКоманднаяПанель" id="57">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТаблицаСообщенийРасширеннаяПодсказка" id="58"/>
+							<SearchStringAddition name="ТаблицаСообщенийСтрокаПоиска" id="59">
+								<AdditionSource>
+									<Item>ТаблицаСообщений</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаСообщенийСтрокаПоискаКонтекстноеМеню" id="60"/>
+								<ExtendedTooltip name="ТаблицаСообщенийСтрокаПоискаРасширеннаяПодсказка" id="61"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаСообщенийСостояниеПросмотра" id="62">
+								<AdditionSource>
+									<Item>ТаблицаСообщений</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаСообщенийСостояниеПросмотраКонтекстноеМеню" id="63"/>
+								<ExtendedTooltip name="ТаблицаСообщенийСостояниеПросмотраРасширеннаяПодсказка" id="64"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаСообщенийУправлениеПоиском" id="65">
+								<AdditionSource>
+									<Item>ТаблицаСообщений</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаСообщенийУправлениеПоискомКонтекстноеМеню" id="66"/>
+								<ExtendedTooltip name="ТаблицаСообщенийУправлениеПоискомРасширеннаяПодсказка" id="67"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ТаблицаСообщенийНомерСтроки" id="68">
+									<DataPath>Объект.ТаблицаСообщений.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСообщенийНомерСтрокиКонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="ТаблицаСообщенийНомерСтрокиРасширеннаяПодсказка" id="70"/>
+								</LabelField>
+								<InputField name="ТаблицаСообщенийТекстСообщения" id="71">
+									<DataPath>Объект.ТаблицаСообщений.ТекстСообщения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСообщенийТекстСообщенияКонтекстноеМеню" id="72"/>
+									<ExtendedTooltip name="ТаблицаСообщенийТекстСообщенияРасширеннаяПодсказка" id="73"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.мегапрайсЗагрузкаФайловИзПочты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Выполнить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьОбработку</Action>
+		</Command>
+	</Commands>
+</Form>

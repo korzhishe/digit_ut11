@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="36">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1ExtendedTooltip" id="37"/>
+			<ChildItems>
+				<InputField name="Наименование" id="3">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<BorderColor>web:Gainsboro</BorderColor>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="38"/>
+				</InputField>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<BorderColor>web:Gainsboro</BorderColor>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодExtendedTooltip" id="39"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ВидЦены" id="5">
+			<DataPath>Объект.ВидЦены</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<BorderColor>web:Gainsboro</BorderColor>
+			<ContextMenu name="ВидЦеныКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="ВидЦеныExtendedTooltip" id="40"/>
+		</InputField>
+		<Pages name="Страницы" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СтраницыExtendedTooltip" id="41"/>
+			<ChildItems>
+				<Page name="ГруппаПравилаРасчетаЦены" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Правила расчета цены</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаПравилаРасчетаЦеныExtendedTooltip" id="42"/>
+					<ChildItems>
+						<Table name="ПравилаРасчетаЦены" id="9">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ПравилаРасчетаЦены</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПравилаРасчетаЦеныКонтекстноеМеню" id="10"/>
+							<AutoCommandBar name="ПравилаРасчетаЦеныКоманднаяПанель" id="11"/>
+							<ExtendedTooltip name="ПравилаРасчетаЦеныExtendedTooltip" id="43"/>
+							<SearchStringAddition name="ПравилаРасчетаЦеныSearchString" id="44">
+								<AdditionSource>
+									<Item>ПравилаРасчетаЦены</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПравилаРасчетаЦеныSearchStringContextMenu" id="45"/>
+								<ExtendedTooltip name="ПравилаРасчетаЦеныSearchStringExtendedTooltip" id="46"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПравилаРасчетаЦеныViewStatus" id="47">
+								<AdditionSource>
+									<Item>ПравилаРасчетаЦены</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПравилаРасчетаЦеныViewStatusContextMenu" id="48"/>
+								<ExtendedTooltip name="ПравилаРасчетаЦеныViewStatusExtendedTooltip" id="49"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПравилаРасчетаЦеныSearchControl" id="50">
+								<AdditionSource>
+									<Item>ПравилаРасчетаЦены</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПравилаРасчетаЦеныSearchControlContextMenu" id="51"/>
+								<ExtendedTooltip name="ПравилаРасчетаЦеныSearchControlExtendedTooltip" id="52"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПравилаРасчетаЦеныНомерСтроки" id="12">
+									<DataPath>Объект.ПравилаРасчетаЦены.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПравилаРасчетаЦеныНомерСтрокиКонтекстноеМеню" id="13"/>
+									<ExtendedTooltip name="ПравилаРасчетаЦеныНомерСтрокиExtendedTooltip" id="53"/>
+								</LabelField>
+								<InputField name="ПравилаРасчетаЦеныПоставщик" id="14">
+									<DataPath>Объект.ПравилаРасчетаЦены.Поставщик</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПравилаРасчетаЦеныПоставщикКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="ПравилаРасчетаЦеныПоставщикExtendedTooltip" id="54"/>
+								</InputField>
+								<InputField name="ПравилаРасчетаЦеныПроизводитель" id="16">
+									<DataPath>Объект.ПравилаРасчетаЦены.Производитель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПравилаРасчетаЦеныПроизводительКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="ПравилаРасчетаЦеныПроизводительExtendedTooltip" id="55"/>
+								</InputField>
+								<InputField name="ПравилаРасчетаЦеныНаценка" id="18">
+									<DataPath>Объект.ПравилаРасчетаЦены.Наценка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПравилаРасчетаЦеныНаценкаКонтекстноеМеню" id="19"/>
+									<ExtendedTooltip name="ПравилаРасчетаЦеныНаценкаExtendedTooltip" id="56"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаОтборПоПроизводителям" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отбор по производителям</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаОтборПоПроизводителямExtendedTooltip" id="57"/>
+					<ChildItems>
+						<Table name="ОтборПоПроизводителям" id="21">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ОтборПоПроизводителям</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ОтборПоПроизводителямКонтекстноеМеню" id="22"/>
+							<AutoCommandBar name="ОтборПоПроизводителямКоманднаяПанель" id="23"/>
+							<ExtendedTooltip name="ОтборПоПроизводителямExtendedTooltip" id="58"/>
+							<SearchStringAddition name="ОтборПоПроизводителямSearchString" id="59">
+								<AdditionSource>
+									<Item>ОтборПоПроизводителям</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОтборПоПроизводителямSearchStringContextMenu" id="60"/>
+								<ExtendedTooltip name="ОтборПоПроизводителямSearchStringExtendedTooltip" id="61"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОтборПоПроизводителямViewStatus" id="62">
+								<AdditionSource>
+									<Item>ОтборПоПроизводителям</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОтборПоПроизводителямViewStatusContextMenu" id="63"/>
+								<ExtendedTooltip name="ОтборПоПроизводителямViewStatusExtendedTooltip" id="64"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОтборПоПроизводителямSearchControl" id="65">
+								<AdditionSource>
+									<Item>ОтборПоПроизводителям</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ОтборПоПроизводителямSearchControlContextMenu" id="66"/>
+								<ExtendedTooltip name="ОтборПоПроизводителямSearchControlExtendedTooltip" id="67"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ОтборПоПроизводителямНомерСтроки" id="24">
+									<DataPath>Объект.ОтборПоПроизводителям.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОтборПоПроизводителямНомерСтрокиКонтекстноеМеню" id="25"/>
+									<ExtendedTooltip name="ОтборПоПроизводителямНомерСтрокиExtendedTooltip" id="68"/>
+								</LabelField>
+								<InputField name="ОтборПоПроизводителямПроизводитель" id="26">
+									<DataPath>Объект.ОтборПоПроизводителям.Производитель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОтборПоПроизводителямПроизводительКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="ОтборПоПроизводителямПроизводительExtendedTooltip" id="69"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаОтборПоПоставщикам" id="28">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отбор по поставщикам</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаОтборПоПоставщикамExtendedTooltip" id="70"/>
+					<ChildItems>
+						<Table name="ОтборПоПоставщикам" id="29">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ОтборПоПоставщикам</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ОтборПоПоставщикамКонтекстноеМеню" id="30"/>
+							<AutoCommandBar name="ОтборПоПоставщикамКоманднаяПанель" id="31"/>
+							<ExtendedTooltip name="ОтборПоПоставщикамExtendedTooltip" id="71"/>
+							<SearchStringAddition name="ОтборПоПоставщикамSearchString" id="72">
+								<AdditionSource>
+									<Item>ОтборПоПоставщикам</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОтборПоПоставщикамSearchStringContextMenu" id="73"/>
+								<ExtendedTooltip name="ОтборПоПоставщикамSearchStringExtendedTooltip" id="74"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОтборПоПоставщикамViewStatus" id="75">
+								<AdditionSource>
+									<Item>ОтборПоПоставщикам</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОтборПоПоставщикамViewStatusContextMenu" id="76"/>
+								<ExtendedTooltip name="ОтборПоПоставщикамViewStatusExtendedTooltip" id="77"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОтборПоПоставщикамSearchControl" id="78">
+								<AdditionSource>
+									<Item>ОтборПоПоставщикам</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ОтборПоПоставщикамSearchControlContextMenu" id="79"/>
+								<ExtendedTooltip name="ОтборПоПоставщикамSearchControlExtendedTooltip" id="80"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ОтборПоПоставщикамНомерСтроки" id="32">
+									<DataPath>Объект.ОтборПоПоставщикам.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОтборПоПоставщикамНомерСтрокиКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="ОтборПоПоставщикамНомерСтрокиExtendedTooltip" id="81"/>
+								</LabelField>
+								<InputField name="ОтборПоПоставщикамПоставщик" id="34">
+									<DataPath>Объект.ОтборПоПоставщикам.Поставщик</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОтборПоПоставщикамПоставщикКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="ОтборПоПоставщикамПоставщикExtendedTooltip" id="82"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.мегапрайсПрайсыКомпании</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

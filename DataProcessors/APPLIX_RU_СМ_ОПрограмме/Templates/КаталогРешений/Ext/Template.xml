@@ -1,0 +1,2780 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://v8.1c.ru/8.2/data/spreadsheet" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<languageSettings>
+		<currentLanguage>ru</currentLanguage>
+		<defaultLanguage>ru</defaultLanguage>
+		<languageInfo>
+			<id>ru</id>
+			<code>Русский</code>
+			<description>Русский</description>
+		</languageInfo>
+		<languageInfo>
+			<id>uk</id>
+			<code>Украинский</code>
+			<description>Украинский</description>
+		</languageInfo>
+		<languageInfo>
+			<id>en</id>
+			<code>Английский</code>
+			<description>Английский</description>
+		</languageInfo>
+	</languageSettings>
+	<columns>
+		<size>14</size>
+		<columnsItem>
+			<index>0</index>
+			<column>
+				<formatIndex>1</formatIndex>
+			</column>
+		</columnsItem>
+		<columnsItem>
+			<index>7</index>
+			<column>
+				<formatIndex>2</formatIndex>
+			</column>
+		</columnsItem>
+	</columns>
+	<rowsItem>
+		<index>0</index>
+		<row>
+			<formatIndex>3</formatIndex>
+			<c>
+				<c>
+					<f>4</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>4</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
+				</c>
+			</c>
+			<c>
+				<i>8</i>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>7</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>1</index>
+		<row>
+			<formatIndex>4</formatIndex>
+			<c>
+				<c>
+					<f>4</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>8</f>
+					<detailParameter>ЭКСЕЛОН</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЭКСЕЛОН - ЗАГРУЗКА ИЗ EXCEL</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<i>8</i>
+				<c>
+					<f>9</f>
+					<detailParameter>ПРАЙС</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>7</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПРАЙС-ЛИСТЫ ИЗ 1С В EXCEL</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>2</index>
+		<row>
+			<formatIndex>4</formatIndex>
+			<c>
+				<i>2</i>
+				<c>
+					<f>10</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Мастер загрузки номенклатуры, характеристик, картинок, штрихкодов, свойств, цен, документов из EXCEL, CSV, XML</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<i>8</i>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Создание красивых продающих прайс-листов с формой заказа</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>3</index>
+		<row>
+			<c>
+				<i>8</i>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>4</index>
+		<row>
+			<formatIndex>4</formatIndex>
+			<c>
+				<i>2</i>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>подробнее...</v8:content>
+						</v8:item>
+					</tl>
+					<detailParameter>ЭКСЕЛОН</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+				</c>
+			</c>
+			<c>
+				<i>8</i>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>подробнее...</v8:content>
+						</v8:item>
+					</tl>
+					<detailParameter>ПРАЙС</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>5</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>0</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>17</f>
+				</c>
+			</c>
+			<c>
+				<i>8</i>
+				<c>
+					<f>18</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>6</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>19</f>
+					<detailParameter>ПАРСЕРЯМ</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>7</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПАРСЕР ЯНДЕКС.МАРКЕТ</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<i>8</i>
+				<c>
+					<f>20</f>
+					<detailParameter>СМС</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>7</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>РАССЫЛКА СМС И EMAIL</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>7</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загрузка товаров, картинок, характеристик, отзывов и цен из яндекс маркета. Мониторинг цен конкурентов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<i>8</i>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рассылка смс и email из 1С. Уведомления клиентов об изменениях статусов заказа, поздравления с праздниками и днями рождения.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>8</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<i>8</i>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>9</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>подробнее...</v8:content>
+						</v8:item>
+					</tl>
+					<detailParameter>ПАРСЕРЯМ</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<i>8</i>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>подробнее...</v8:content>
+						</v8:item>
+					</tl>
+					<detailParameter>СМС</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>10</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>18</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<i>8</i>
+				<c>
+					<f>18</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>11</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>21</f>
+					<detailParameter>БОНЛИОН</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>7</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>БОНЛИОН - БОНУСНАЯ СИСТЕМА</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<i>8</i>
+				<c>
+					<f>22</f>
+					<detailParameter>БЛАНКИ</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>7</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПЕЧАТЬ ПОЧТОВЫХ БЛАНКОВ ИЗ 1С</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>12</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начисление и оплата бонусами в розничной и оптовой торговле. Реферальная система. Обмен бонусами.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<i>8</i>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заполнение и печать бланков: ф.7, Ф.107, Ф.112эф, Ф.113эн, Ф.116, Ф.117, Ф.119, СN 23 - Таможенная декларация, СР 71</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>13</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<i>8</i>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>14</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>подробнее...</v8:content>
+						</v8:item>
+					</tl>
+					<detailParameter>БОНЛИОН</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<i>8</i>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>подробнее...</v8:content>
+						</v8:item>
+					</tl>
+					<detailParameter>БЛАНКИ</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>15</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>18</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<i>8</i>
+				<c>
+					<f>18</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>16</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>23</f>
+					<detailParameter>ЭВОДОК</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>7</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЭВОДОК - ПЕЧАТЬ ДОКУМЕНТОВ</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<i>8</i>
+				<c>
+					<f>24</f>
+					<detailParameter>АНАЛИЗЦЕН</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>7</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>АНАЛИЗ ЦЕН ПОСТАВЩИКОВ</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>17</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Мастер печати документов по шаблонам WORD.
+Создание договоров, коммерческих предложений, счетов с печатью и т.п.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<i>8</i>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Анализ прайс-листов поставщиков, поиск лучших цен. Оформление заказов поставщикам</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>18</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<i>8</i>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>19</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>подробнее...</v8:content>
+						</v8:item>
+					</tl>
+					<detailParameter>ЭВОДОК</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<i>8</i>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>подробнее...</v8:content>
+						</v8:item>
+					</tl>
+					<detailParameter>АНАЛИЗЦЕН</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>20</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>18</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<i>8</i>
+				<c>
+					<f>18</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>21</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>25</f>
+					<detailParameter>ЭКСПОТОР</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>7</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЭКСПОТОР - ВЫГРУЗКА НОМЕНКЛАТУРЫ</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<i>8</i>
+				<c>
+					<f>26</f>
+					<detailParameter>ХДВИ</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>7</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ХРАНЕНИЕ КАРТИНОК НА ВНЕШНЕМ ТОМЕ</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>22</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выгрузка номенклатуры, цен, остатков из 1С в EXCEL, Яндекс.Маркет, Авито, CSV</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<i>8</i>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подсистема 1С реализующая функционал хранения картинок номенклатуры во внешнем каталоге</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>23</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<i>8</i>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>24</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>подробнее...</v8:content>
+						</v8:item>
+					</tl>
+					<detailParameter>ЭКСПОТОР</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<i>8</i>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>подробнее...</v8:content>
+						</v8:item>
+					</tl>
+					<detailParameter>ХДВИ</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>25</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<i>8</i>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>27</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>27</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>СМОТРЕТЬ ВСЕ РАЗРАБОТКИ</v8:content>
+						</v8:item>
+					</tl>
+					<detailParameter>ВСЕРАЗРАБОТКИ</detailParameter>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>30</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>28</f>
+					<detailParameter>ИНСТАГРАМ</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>29</f>
+					<detailParameter>ВК</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>30</f>
+					<detailParameter>ЮТУБ</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>31</f>
+					<detailParameter>ФБ</detailParameter>
+				</c>
+			</c>
+			<c>
+				<i>6</i>
+				<c>
+					<f>32</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПОДПИШИТЕСЬ НА НАШИ ГРУППЫ В СОЦСЕТЯХ</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>31</index>
+		<row>
+			<c>
+				<i>5</i>
+				<c>
+					<f>33</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>&lt;&lt;&lt;</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>32</index>
+		<row>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<templateMode>true</templateMode>
+	<defaultFormatIndex>6</defaultFormatIndex>
+	<height>33</height>
+	<vgRows>33</vgRows>
+	<merge>
+		<r>1</r>
+		<c>1</c>
+		<h>3</h>
+	</merge>
+	<merge>
+		<r>1</r>
+		<c>8</c>
+		<h>3</h>
+	</merge>
+	<merge>
+		<r>2</r>
+		<c>2</c>
+		<h>1</h>
+		<w>4</w>
+	</merge>
+	<merge>
+		<r>2</r>
+		<c>9</c>
+		<h>1</h>
+		<w>4</w>
+	</merge>
+	<merge>
+		<r>6</r>
+		<c>1</c>
+		<h>3</h>
+	</merge>
+	<merge>
+		<r>6</r>
+		<c>8</c>
+		<h>3</h>
+	</merge>
+	<merge>
+		<r>7</r>
+		<c>2</c>
+		<h>1</h>
+		<w>4</w>
+	</merge>
+	<merge>
+		<r>7</r>
+		<c>9</c>
+		<h>1</h>
+		<w>4</w>
+	</merge>
+	<merge>
+		<r>11</r>
+		<c>1</c>
+		<h>3</h>
+	</merge>
+	<merge>
+		<r>11</r>
+		<c>8</c>
+		<h>3</h>
+	</merge>
+	<merge>
+		<r>12</r>
+		<c>2</c>
+		<h>1</h>
+		<w>4</w>
+	</merge>
+	<merge>
+		<r>12</r>
+		<c>9</c>
+		<h>1</h>
+		<w>4</w>
+	</merge>
+	<merge>
+		<r>16</r>
+		<c>1</c>
+		<h>3</h>
+	</merge>
+	<merge>
+		<r>16</r>
+		<c>8</c>
+		<h>3</h>
+	</merge>
+	<merge>
+		<r>17</r>
+		<c>2</c>
+		<h>1</h>
+		<w>4</w>
+	</merge>
+	<merge>
+		<r>17</r>
+		<c>9</c>
+		<h>1</h>
+		<w>4</w>
+	</merge>
+	<merge>
+		<r>21</r>
+		<c>1</c>
+		<h>3</h>
+	</merge>
+	<merge>
+		<r>21</r>
+		<c>8</c>
+		<h>3</h>
+	</merge>
+	<merge>
+		<r>22</r>
+		<c>2</c>
+		<h>1</h>
+		<w>4</w>
+	</merge>
+	<merge>
+		<r>22</r>
+		<c>9</c>
+		<h>1</h>
+		<w>4</w>
+	</merge>
+	<merge>
+		<r>27</r>
+		<c>1</c>
+		<w>12</w>
+	</merge>
+	<merge>
+		<r>30</r>
+		<c>1</c>
+		<h>2</h>
+	</merge>
+	<merge>
+		<r>30</r>
+		<c>2</c>
+		<h>2</h>
+	</merge>
+	<merge>
+		<r>30</r>
+		<c>3</c>
+		<h>2</h>
+	</merge>
+	<merge>
+		<r>30</r>
+		<c>4</c>
+		<h>2</h>
+	</merge>
+	<merge>
+		<r>30</r>
+		<c>6</c>
+		<h>2</h>
+		<w>7</w>
+	</merge>
+	<font faceName="Arial" height="11" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<font faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<font faceName="Arial" height="10" bold="false" italic="false" underline="true" strikeout="false" kind="Absolute" scale="100"/>
+	<font faceName="Arial" height="12" bold="true" italic="false" underline="true" strikeout="false" kind="Absolute" scale="100"/>
+	<font faceName="Arial" height="11" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<format>
+		<width>9</width>
+	</format>
+	<format>
+		<width>17</width>
+	</format>
+	<format>
+		<height>21</height>
+		<backColor xmlns:d3p1="http://v8.1c.ru/8.1/data/ui/colors/web">d3p1:WhiteSmoke</backColor>
+	</format>
+	<format>
+		<backColor xmlns:d3p1="http://v8.1c.ru/8.1/data/ui/colors/web">d3p1:WhiteSmoke</backColor>
+	</format>
+	<format>
+		<font>0</font>
+		<backColor xmlns:d3p1="http://v8.1c.ru/8.1/data/ui/colors/web">d3p1:WhiteSmoke</backColor>
+	</format>
+	<format>
+		<width>72</width>
+		<backColor xmlns:d3p1="http://v8.1c.ru/8.1/data/ui/colors/web">d3p1:WhiteSmoke</backColor>
+	</format>
+	<format>
+		<font>0</font>
+		<width>72</width>
+		<backColor xmlns:d3p1="http://v8.1c.ru/8.1/data/ui/colors/web">d3p1:WhiteSmoke</backColor>
+	</format>
+	<format>
+		<backColor xmlns:d3p1="http://v8.1c.ru/8.1/data/ui/colors/web">d3p1:WhiteSmoke</backColor>
+		<hyperLink>true</hyperLink>
+		<picIndex>1</picIndex>
+		<pictureSizeMode>RealSize</pictureSizeMode>
+		<picHorizontalAlignment>Center</picHorizontalAlignment>
+		<picVerticalAlignment>Top</picVerticalAlignment>
+	</format>
+	<format>
+		<width>72</width>
+		<backColor xmlns:d3p1="http://v8.1c.ru/8.1/data/ui/colors/web">d3p1:WhiteSmoke</backColor>
+		<hyperLink>true</hyperLink>
+		<picIndex>2</picIndex>
+		<pictureSizeMode>RealSize</pictureSizeMode>
+		<picHorizontalAlignment>Center</picHorizontalAlignment>
+		<picVerticalAlignment>Top</picVerticalAlignment>
+	</format>
+	<format>
+		<font>1</font>
+		<verticalAlignment>Top</verticalAlignment>
+		<textColor>#606060</textColor>
+		<backColor xmlns:d3p1="http://v8.1c.ru/8.1/data/ui/colors/web">d3p1:WhiteSmoke</backColor>
+		<textPlacement>Wrap</textPlacement>
+	</format>
+	<format>
+		<font>1</font>
+		<width>72</width>
+		<verticalAlignment>Top</verticalAlignment>
+		<textColor>#606060</textColor>
+		<backColor xmlns:d3p1="http://v8.1c.ru/8.1/data/ui/colors/web">d3p1:WhiteSmoke</backColor>
+		<textPlacement>Wrap</textPlacement>
+	</format>
+	<format>
+		<font>2</font>
+		<textColor>#3366FF</textColor>
+		<backColor xmlns:d3p1="http://v8.1c.ru/8.1/data/ui/colors/web">d3p1:WhiteSmoke</backColor>
+		<fillType>Text</fillType>
+		<protection>false</protection>
+		<hyperLink>true</hyperLink>
+	</format>
+	<format>
+		<font>1</font>
+		<backColor xmlns:d3p1="http://v8.1c.ru/8.1/data/ui/colors/web">d3p1:WhiteSmoke</backColor>
+	</format>
+	<format>
+		<font>2</font>
+		<width>72</width>
+		<textColor>#3366FF</textColor>
+		<backColor xmlns:d3p1="http://v8.1c.ru/8.1/data/ui/colors/web">d3p1:WhiteSmoke</backColor>
+		<fillType>Text</fillType>
+		<protection>false</protection>
+		<hyperLink>true</hyperLink>
+	</format>
+	<format>
+		<font>1</font>
+		<width>72</width>
+		<backColor xmlns:d3p1="http://v8.1c.ru/8.1/data/ui/colors/web">d3p1:WhiteSmoke</backColor>
+	</format>
+	<format>
+		<height>24</height>
+	</format>
+	<format>
+		<picVerticalAlignment>Top</picVerticalAlignment>
+	</format>
+	<format>
+		<width>72</width>
+		<backColor xmlns:d3p1="http://v8.1c.ru/8.1/data/ui/colors/web">d3p1:WhiteSmoke</backColor>
+		<picVerticalAlignment>Top</picVerticalAlignment>
+	</format>
+	<format>
+		<width>72</width>
+		<backColor xmlns:d3p1="http://v8.1c.ru/8.1/data/ui/colors/web">d3p1:WhiteSmoke</backColor>
+		<hyperLink>true</hyperLink>
+		<picIndex>3</picIndex>
+		<pictureSizeMode>RealSize</pictureSizeMode>
+		<picHorizontalAlignment>Center</picHorizontalAlignment>
+		<picVerticalAlignment>Top</picVerticalAlignment>
+	</format>
+	<format>
+		<width>72</width>
+		<backColor xmlns:d3p1="http://v8.1c.ru/8.1/data/ui/colors/web">d3p1:WhiteSmoke</backColor>
+		<hyperLink>true</hyperLink>
+		<picIndex>4</picIndex>
+		<pictureSizeMode>RealSize</pictureSizeMode>
+		<picHorizontalAlignment>Center</picHorizontalAlignment>
+		<picVerticalAlignment>Top</picVerticalAlignment>
+	</format>
+	<format>
+		<width>72</width>
+		<backColor xmlns:d3p1="http://v8.1c.ru/8.1/data/ui/colors/web">d3p1:WhiteSmoke</backColor>
+		<hyperLink>true</hyperLink>
+		<picIndex>5</picIndex>
+		<pictureSizeMode>RealSize</pictureSizeMode>
+		<picHorizontalAlignment>Center</picHorizontalAlignment>
+		<picVerticalAlignment>Top</picVerticalAlignment>
+	</format>
+	<format>
+		<width>72</width>
+		<backColor xmlns:d3p1="http://v8.1c.ru/8.1/data/ui/colors/web">d3p1:WhiteSmoke</backColor>
+		<hyperLink>true</hyperLink>
+		<picIndex>6</picIndex>
+		<pictureSizeMode>RealSize</pictureSizeMode>
+		<picHorizontalAlignment>Center</picHorizontalAlignment>
+		<picVerticalAlignment>Top</picVerticalAlignment>
+	</format>
+	<format>
+		<width>72</width>
+		<backColor xmlns:d3p1="http://v8.1c.ru/8.1/data/ui/colors/web">d3p1:WhiteSmoke</backColor>
+		<hyperLink>true</hyperLink>
+		<picIndex>7</picIndex>
+		<pictureSizeMode>RealSize</pictureSizeMode>
+		<picHorizontalAlignment>Center</picHorizontalAlignment>
+		<picVerticalAlignment>Top</picVerticalAlignment>
+	</format>
+	<format>
+		<width>72</width>
+		<backColor xmlns:d3p1="http://v8.1c.ru/8.1/data/ui/colors/web">d3p1:WhiteSmoke</backColor>
+		<hyperLink>true</hyperLink>
+		<picIndex>8</picIndex>
+		<pictureSizeMode>RealSize</pictureSizeMode>
+		<picHorizontalAlignment>Center</picHorizontalAlignment>
+		<picVerticalAlignment>Top</picVerticalAlignment>
+	</format>
+	<format>
+		<width>72</width>
+		<backColor xmlns:d3p1="http://v8.1c.ru/8.1/data/ui/colors/web">d3p1:WhiteSmoke</backColor>
+		<hyperLink>true</hyperLink>
+		<picIndex>9</picIndex>
+		<pictureSizeMode>RealSize</pictureSizeMode>
+		<picHorizontalAlignment>Center</picHorizontalAlignment>
+		<picVerticalAlignment>Top</picVerticalAlignment>
+	</format>
+	<format>
+		<width>72</width>
+		<backColor xmlns:d3p1="http://v8.1c.ru/8.1/data/ui/colors/web">d3p1:WhiteSmoke</backColor>
+		<hyperLink>true</hyperLink>
+		<picIndex>10</picIndex>
+		<pictureSizeMode>RealSize</pictureSizeMode>
+		<picHorizontalAlignment>Center</picHorizontalAlignment>
+		<picVerticalAlignment>Top</picVerticalAlignment>
+	</format>
+	<format>
+		<font>3</font>
+		<horizontalAlignment>Center</horizontalAlignment>
+		<textColor>#3366FF</textColor>
+		<hyperLink>true</hyperLink>
+	</format>
+	<format>
+		<hyperLink>true</hyperLink>
+		<picIndex>11</picIndex>
+		<pictureSizeMode>RealSize</pictureSizeMode>
+		<picHorizontalAlignment>Center</picHorizontalAlignment>
+		<picVerticalAlignment>Center</picVerticalAlignment>
+	</format>
+	<format>
+		<hyperLink>true</hyperLink>
+		<picIndex>12</picIndex>
+		<pictureSizeMode>RealSize</pictureSizeMode>
+		<picHorizontalAlignment>Center</picHorizontalAlignment>
+		<picVerticalAlignment>Center</picVerticalAlignment>
+	</format>
+	<format>
+		<hyperLink>true</hyperLink>
+		<picIndex>13</picIndex>
+		<pictureSizeMode>RealSize</pictureSizeMode>
+		<picHorizontalAlignment>Center</picHorizontalAlignment>
+		<picVerticalAlignment>Center</picVerticalAlignment>
+	</format>
+	<format>
+		<hyperLink>true</hyperLink>
+		<picIndex>14</picIndex>
+		<pictureSizeMode>RealSize</pictureSizeMode>
+		<picHorizontalAlignment>Center</picHorizontalAlignment>
+		<picVerticalAlignment>Center</picVerticalAlignment>
+	</format>
+	<format>
+		<font>4</font>
+		<width>72</width>
+		<verticalAlignment>Center</verticalAlignment>
+		<backColor xmlns:d3p1="http://v8.1c.ru/8.1/data/ui/colors/web">d3p1:WhiteSmoke</backColor>
+	</format>
+	<format>
+		<horizontalAlignment>Center</horizontalAlignment>
+		<textColor>#606060</textColor>
+	</format>
+	<picture>
+		<index>0</index>
+		<picture t="false">iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2Fy
+ZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA7dJREFUeNrUmU1oE0EUx6fpUoMWGvCj
+gtqmCK02mFahBU9tES9aIRdPekjwVoXaswf14MWLBKRX48GD9JKD9VKhKYKH9NC0
+oqJQm4pVYilNwWDQIs5/nF0nk93szHab1gfDbtiZnd++r3kzaSAe5fLMvV56idHW
+Q1uItkGpS4a2Im3ztKUnBm7lvMzToAkVppdR2uIcSkcAm6ItSWHzvgJSMMA84GB+
+CEDHKGhxy4AULs7hQsRfKXLIlGdACvfIR605apNCJrQAuUmnaesl9REE0JCdyQMO
+A+oJR/hc03YPAg5mrSecBcnndgbkAREnOydxzlDtg9zvlrYhWr1Ed4fpj4bwQDuV
+RELtZKD1FIm0tJODwZaKZ/nvBZIpLJCZwmtS2izrvNbMuQlLg3yFWFJ9wz4jSEa6
+hknf/k7XvoCbWH5Jnq/M6moSWsybPjiqOirc3Eoe9o8owZkfEz9+nn2QpoyKJlYK
+DJjxdvQKm1Q0JbQzu/bBMiU+Ah9w4Uif1XewNcrM/aa4rBwwWGkMXpUo+d71rksV
+cDAdmiyAhgBQlG/lopYvgs3gJZOrQAPdLW3/1qfFKUe/ggZlTY+/f0ZWyxu6Zo4Z
+vJ5zBzwcte7fbnyy4GDKi0f7mdYA7QSHiPYgPYaKeTGZqL3Jz1nrHnB4hgYfxdUn
+OGbmgE0lbGsyURAQdn4FbfoIxwwX0B0B84ryePGFFRSi+ABXs5pxlL2Ne6pSj7yK
+QLpDbb6se9qAsrnlgBCjXk4zGIukfafnatV7agFm3DrJJsTkYgCJqUfsK4PfP3ON
+QcuBVEMyjZHEOeTBE7V6/fq9yQoD05S4Tn2ds+C//FhjaQcrxavVd6y/mYpwL/ov
+AqkpYDDfFZ85VdoAPKkSySxKD/xdf0NNzQwS0Qw4TIyr+TH4jYZ7aCp27Cw5FAyx
+/vPrH0nxZ4nk6FVBniIPpuFKrrqmEYlkbeZD08zQhFM5BT8b6Ry2/C1fKjCN20W9
+g6TNcmtdJWFDa/Aj0X+wfE2uZJnGMLGZ1KFt0Vchdxee6BQLeVpudRjCRvqm2wjA
+YBIxcgGNyFSxgAYc4Za10kxS+bOolm5kxytWE7eCFdGNxK0pSXlPor1J36aSv2Iz
+L+5JxnjppbwvgclEs8HsHmBsj0SqVhK+ixrbypt9gCPyoVLFUscPclI7uOVMyYdJ
+TmczcztwupCjcKdVi4UhfqBTNzg+5/93/Faz3OIDEzyytuOII1ELzlWD0rnN7jwC
+lkDDZDceojvA1uVviD8CDAAukbKBD3mlmwAAAABJRU5ErkJggg==</picture>
+	</picture>
+	<picture>
+		<index>1</index>
+		<picture t="false">iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2Fy
+ZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAo1JREFUeNrMmTFPwlAQgK9NF10kcTbq
+wiqOughx1cTJ1bJonLTxB6i/QBl1EVcXMboqnWQUR13AMBuZXPEuvdZHafG9Z1t6
+yYUE+vq+3Lu7d3cYoCm7MCjhxxbqEmoBtRx6xEXto76iNi7BaOvsYyhCLeDHAarN
+UCpCsHXUGsJ2EwVEMII5Y7AkhEAdBO3/GxDhbIYrQLLSZ8i6NiDCXSVotVhrImRV
+CZCPtIlagmyEAqgSdeRmzIIs4YD3akb9YMYca5ZwASTvHQ/IAWHD5MRmhlEfZL/r
+pBCtOtG96PujJfwglUpmMVWvStj4G1/fQ9d/d5UB/ZxbDSzIN0RHZnURL7Sjpvxu
+BPpUA7g/UQYlK3Z9Cx7onMVn19M4S5NOoz02jgGmZgBuHKXXE5PjA2oFRut6vGXI
+2vu3HuT6ofd8T75kICbH5KoklcAg/xOttrKj5ovEZnLJlJq0hJt2Tj27bplcz+VV
+lsy0815JOJ+eeslaMCMq4cSEopgiOKgI7pRfUbZUnt7EiJ2dF6J0zfsuMoLXvCgW
+fVEjaYOBkTKQffhioGfJx3OAh1MvaauKlUZq8ZN4D9uldiM+mcsCurJ+uGcMX3Vk
+FY0rTEVci6sHKSE4MZeRPxbL0RZMqrKxuG+VStbhImHF9jRs5QTlldJMI8eJuuGX
+W18yCds/4u2z39TxfJ3aEXex3Fq0hEb6UDZCg3LrI3GfG7Ke2JPUcni8tXBPItWk
+iyX/m5uaBYNmPvdNU9B28hdODo52aKg01BfzIKc+Qbh6eJgUN5t5mcB0oY1wy7Kz
+mQoPdDKD4z1Hy61xq/IwfjPHreSFVZWCQjFaq+Pg/rRgKAXlcwQcAl2APA7RY2Az
++RviR4ABADDWz9dHbx3ZAAAAAElFTkSuQmCC</picture>
+	</picture>
+	<picture>
+		<index>2</index>
+		<picture t="false">iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2Fy
+ZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAnVJREFUeNrUmc1KAlEUx28XwYUU1i4J
+MoKENtnHpt34Bj7CuLGlSC/QAwjhtk2uXAs9gLNr04cuDSKD0KBFkhQEBZ0znhnG
+j1Hn3rnj9IfDiDp3fp5z77nnHpeYoK4PDtJwyYLtgcXBtJGvGGA9sCZY7fjuriHy
+nCWPUEm4FMB0gvIihK2AlQG27SsggCHMOYH5IQQtAmhPGhDgdIKLM3/VI8iKMCDA
+XfroNVdvAmTOEyCFtA6WZsEIF1BmUsi5yw1BwjF6Vn3SB9wlrEHC2ZD0bHdAWhA6
+W5x0YhifgzTvnhSsVpHVvWXNx4jjA+FUsnJ4yDZOTsyrU49nZ+zt6srrcFbOzdkh
+ph1CF4XbvbgYg0NFEwmZUCedHiyIjoSeQ70bButWq+brWCrFNk9PZUONTEULUMh7
+6CH03MftLWvJA415EQE5VSVCcy+6vm5eEVCB4sjGqWQKq7Kc6rmwao/L5L3vbtde
+yYoU5xMq4fkBOx1z/ll5MLK87DegFpEd4blUMvPgRj5vmt/isgN8PjyoSDG2In4M
+sg1bmrW1Ydh9StQ2oCEzD9c0zUzYLxBmgX13lgxO1YOwVrXBb3uv15VUNpzOrcLC
+FYxhxbmoQE0ErInejaFF+1IDh6pxOvH3RL2ncC9uIxt3HKQ9K7azMwC8uVHiPWce
+LAt58OjIzoUKVLYBqVfi2Ys//T57pSLVqV94H8P+1WrJHObb/+LQZG919EYxBCXW
+UFNpaC+mRk5lgXCV0WaSW2/mfgHdhQbA7c9bzWSooRMYHD1zTKFvv02tB+nGnGxB
+MWW15qbBzfTgSAoKZwt4BDTJwthEd4EN5G+IPwEGAIdr7MbuncihAAAAAElFTkSu
+QmCC</picture>
+	</picture>
+	<picture>
+		<index>3</index>
+		<picture t="false">iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2Fy
+ZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA1xJREFUeNrUWTFzElEQfndDCgsZxJlQ
+xBlxRgoLQ2hsLIQZKxvxF8j9AswvMPkFSX4B+A+wsQUKGwuBpLCIM6EwRTJjwmBh
+YaH78fbgOO64fQeBuDM7HNy9fd/t2/1238NSMeXvJ7VDH2XSPGmKtOh7pEU6IO2R
+NqxXqhtnHssQVJY+qqQVBmUiAFsnPSKw/aUCJGAAc8DAliEAuktABwsDJHAVBpdS
+y5UBg6zHBkjgakv0Wqg3CaRjBJCXtEm6o1YjSKBS0JLbIQNWCU7xXM2gG3bIsq4S
+3Bgkzx0OkBOiotYnFcYwG4Mcd2c3kK1xsvuRG48Jz434VHInq9Urv/tazcXlXGfs
+Qa4QZ8agslRUMuVZcF6QFw2l+kdxwMKLfdeDVaOhuT2lHr/X11ctDWDoK7VJyrPM
+a3qJd1q/7yt1umcyS3VE5OzBa9HybtAjz5p6cgA7dqI9A+9uU3Kmi/olvpSU+jMQ
+xSJ58J7FXUlH9E7POxrct13y2qHZgsGLTw40yM8F6aiCzS2TbFnjgoNgDMbCRk68
+1GWb+7nopX1Y5Xg7jE8gGAsbsLUhIoy8LYq9zbI2eLq/OMvBBmxtihYuZQd0wrNy
+/4UObLy9V0AxWC7XG1sVHWv4DsW9jA8IbMAWbEZL0RZz3q8AGgHVYLKnNQ0OkwIY
+rvEb7uGZpK+0w1YYdwq7GZl4q4U3ptzr+NXEECAmSfsiAXRx1dbeOXF0Agx7k2TA
+byO+bM+SOGwJgSd49zU/Dn+29bIhnlC6vFnpz9KphAigk63KxGa0tGzuHubLZUPH
+E4h2Uclx3F42RNXE5n3rfIFB1FK3bMUVjIUN2JKVux4ANsQke16fUImJIGm2OdNh
+Q072DZt3/KLXUT8+TDyKSdPRFDoChRrugjt2xHUH2BKejXS0W9A+eRsHLBeyEeSL
+DHazFdmbzE8qEJ75+mY6wQTeM29Y3W7GpZ5z8ujd/Gy1cAWALj5qz5nLqGG1xJt0
+eOLl9SQe/YHubfsXJ+jxZl6+aUIMPXirW6ZhV92gTG2arIBtZy20Hi9YtoTieM9r
+rDWdx4jPacLOZjprOF3oEriCtFko8YHOysDxnP/f8dvcdosHOuJKY56tzjxwkR70
+UdDtPAL2Ac2q23iIHgJ2JX9D/BNgAAVbRXqQjXmnAAAAAElFTkSuQmCC</picture>
+	</picture>
+	<picture>
+		<index>4</index>
+		<picture t="false">iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2Fy
+ZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABHVJREFUeNrUWU9IVEEc/u3b/0ahdtIi
+RJTIwBShAj2s4KUwSKRDUEEHpUNUe6rb4q1OanSqW3QLU0jqIriHPBSUIhREIh5M
+u5RSlLuuq803zjxnn/Nm9227Vj94vPX9mfne9/3+zeijP7DV67fr2AlHzOWRJDsW
+Kh/cWyh2Dl+RoG6y47wAV4gB4Bg7hr2C9XkA1sJOgwa2CjWwGmdAZ0oCkAGrZKcE
+O25RaW2IHQMM6GrRAAVrox6k9GqQu8fEpmUABx+bLCM4EmNPirkKZ1C8MEp7a2By
+LC9AISuYq8w3ov9wLQWbm8jfUE/WwSqyqqvo5/2H/Bw81UbZuXnKzH6g7OJSQXHI
+jk6n3D5NQEznkzXQWE/hM1387DQAlPelbXyap/TLCX4uwCdb1cAJOB5ImMD5olEK
+n+2icKzdk3YAHGjsp3RyitIvJmhrbc3kk8AQ38WgkHbaBG7fjX4ma03O9fXXb2mD
+yQjGcA8MgikOqvk4hZjUvmjEfj67uMyfMYAkweKMk8GEF3DwrdTIc9r8tsL/DjlY
+BUguLWMs3NluS44xMFYekCgInXaaEeXLNdQhqwouNTJOvx49tsGZDCBSDOQ2oJQN
+EmMaLCYw2QzeNAaEwg7ApZOv+G8wgfuYXBqubQNLMZbf8+cBEmzio+R9jLnB7hsC
+B5jiMlG71lc1GiGrBJe3hjK/g/9V9F3eFc26sTXGFQ2I1NLilufUVAKfczOVRcl8
+Rd8VfsY4MhdCbuRI5ErnPWdEQ2bLDRwMSViN1kJ8TmUL73CwDbn5cn1ySjuHDqRl
+ktevDIxU4tlElDqjFb6pm0MXLJbpLsrXTv5a8oQNqQlSSjZVgxIyotU5tEFqBFhd
+lTOoySK958h/qCbHBzmJT55q38UH4xl1Ds8AvRjA6Wozqon0xWLMCBBfLr8QkpnK
+U+rZeE5Jw3tIxgiCCDsjenXuk08Zow9ufl3ZJZmbQTJZ3mQEQ14eqcIXVf+UH67O
+4QYw6Trp3LwiVZNneWRwOP1MTS3qHLoFFgC6rgcySmoJMl/Cl3sxCUxGrFrbdXPo
++kNLNIczJtlk6Yr0drsESK3o+XYOVAjpZ2qaCcc6bOC4bkhffMEfUNaq2oqC2olm
+k7dUaOOVCrGTYrq18uJdsCfrL0Cr7Kl1WWNjahQPu617pcOHhKNHL12wS1/287I2
+QcvWDAGAGg2WAA6djIx03uialwDDzo561K0n1DWsbu075MWzmFw2EJAVzElwBXTV
+SSYvb1j98sqdkx0f2emaPhw3KPNulgLHjpJ1YP82kLojFOo4Tb5ggMu49f2Hnd/A
+Nq75gkGquHqRgm0n+HMeWv6eu2+mvuhWdYOmLQ4wCX8LOfKa3RuIsiabUqdBVtnA
+mrZEGHtxt0oyYNq1wsAAkWET6ZadYE9XGTwuOwfKsnDH73XWbQMEGlUERskX7v/i
+1oe2FosHe8RXldtW3cD939tvgkm82Co2G0ttQ+oOQqm2gBOmBf5f2QI2bKLHTCvC
+Pd9EN4CtozL+G+K3AAMAvMFK+ZvUd4MAAAAASUVORK5CYII=</picture>
+	</picture>
+	<picture>
+		<index>5</index>
+		<picture t="false">iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2Fy
+ZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABiJJREFUeNrcWQtMU2cU/vqgpbTQ8pKC
+iAWEoeJARdTMTJmKuLlN555myzBzyx5mjM1HtsxNE/dIRjQmiybuRTRx2UODMYuZ
+m8FolDDnRBDkIaKIVMqr2Ae0Rbpz/1uQaltuO8C4Q/72tr33/t/9zvnOOf+PCIGa
+qiiTXlfSyKChobHorjNO0DDSuECjBOYNFYFMI/ITlI5eC2jku0D5YxzYYhq7COzV
+0QWoKuLA7HQBGw3jgBYSUON/B6gqyneB02B0zegCWRw4QFXRD6PImnc2zRvW+geQ
+d2kpjUyMj3ECyvHkcrGXC8YTHFxzlXr6QezFreMJ7g5Ifm43k3gQxFbcP8uELPca
+7Mcq7o1BPu6axkCtgag7cTAeh7vYcyoRiwQPVajMr/Mh8qjRwZw7LAb5CuEznajD
+5HQ/71lJo5Fjy+Z5mDsn1ic9MRNChCS5fBemIQYLRuL96RXJ2L1zsdt3MzMmIGdh
+Al5Y/RDCQuWQBknwcHoUZqRHY/XKFKx5Ps3toTJmRGP/3uVCXV0wHKBP9p5YlgSL
+xYE5s7R4blXq0PdTUyNgMtnw1IopWLggHqWnrkOplOHJvCSEKIIgkYihjeEZ06jl
+2PBuFtrarVj36gwhAPN5gHxX4lMYKmUQvtr+KDq7erE0ZzJjjrOjfzQhb2kiO+bY
+qqnpgDIkCLNnxiB1Sji6jX3Q37QgOkqBze9nIzpSQcchQgFqOGwSkvWbHlqlIZsY
+FwprXz8MBiuCg6UIDw/GO69nwmLtR9lfetTUdqKsvBUyuQQLH4lHZ3cfTp65gZIj
+DfinwoD0aVHYs2MJoqNDoG+z4hYxvu3LMsTFqhh4OH2CbBO7+jmvdtNgwQfrZ+Pj
+jXOZm/v7ncRkH4u7zz5ZgJ5bNjReMbKJUoi1xRSTZ//Ws8nnZ8fh808XIIoY7Ojs
+xcCAE9PTIlG8J48xLcAyxCO5V0Gs0X1RcbGdfe6z9aOyuh12+21sKshiDK1YnkRi
+mcTiroHAbi7MRqJOjW0fzUesVommaz2wOwbgcNxGS6sZN/Qm8oZEkJvFvtzLmZlY
+27L9NK5c7YEuIYw9ee5jOgSRYmsbulFV3YFZmTEIDZHB2uuAUiFl8Scnlx86cpmJ
+IyU5HJMmqjCR3CqXSfDdvov4s7RZCMBFUiFnaWOUaL5uQmSEAucrDQw0N7Ghw4r2
+K2/hVPkNtNExJwpOxSaLHUcPPgOz2YFKEo7Ddpu9c/fRUixaKX65vNlFoTKSiYUA
+rL7UgQzKbWEqGRLiQ1k8sYupGtQ2dCFCHcyYsxJwp9OJCaRWLgSc9BdK19jIvbEE
+jktLNvo+LEwmCBzfLMhyfTcHlGgdNMHJ0y3Inq1FakoEjD19uN5iwvkqA7pItQd+
+rkVykhpSqYRVsG+KqxBP6j9HbF9u7IaDQE2fGona+i5UVrXj+/0X79zfOTJALgZ1
+vgByxin48G+N6CX3xMWpUEeT6RLUjMFKEpCcxJQ0Wc3SzI+/1NFnCcwmB4vbmrou
+nCnXU1pqxcHDDe739w3whNTVPQi2nw7VUUkTI42Y/HDrKSQnavA4VQ6WvOlZtKTa
+jYVZOE4i4FhPJNA7vliEvFUHA+psxK51q1+2qWAOEwhnr1FVMJvtOH6imTUU1Ze4
+xK2n1JM8pPow6nLmZ8cGAvCCmC2q/bTmllvksla8+GwaD47Y4m7EqzgIZ8/dRDm5
+85U10yGiH+opDLg4DsBKRK52q9trwhbf2xNlUa19+aVpLPi/3luB9W9ksvKWTkKo
+bzRSwpYyhddf7sbb6zJQdlaP3Xu9bCwMeA3Cq9S0JvLpXJarpdd5vkTiXv6srAE4
+R7W2gUBwNXnZEh2k1L1wjcU1ypm/ltTD0T/APh891kTKt3mG4fSxHLUf+30wUe+i
+8Z5Q3rmauu9AzTASnCxxc/lRQewFy/nnbmuzYM+3FxCg7bp7TeJ5kS4WYUzNs4uH
+FvPDK0mhx5RD7IzZ8AzO6MJyV6njV1GFHmNkrIZnc9tUcu95uPWoLFd3nxbug67d
+JmRv5vx9AFlB4GYK7WZyXBs64weOn/PB237z3Q/yF671t6HwY4tjrS9w/5Mt4Adi
+E90z2HH5N8S/AgwAfmuUPqqEKVUAAAAASUVORK5CYII=</picture>
+	</picture>
+	<picture>
+		<index>6</index>
+		<picture t="false">iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2Fy
+ZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA1hJREFUeNrUmU1oE1EQx2e3u42xtlbE
+CqWWxINQVJKCKJ5se24heCn0YnLSk6GeBMEiXsSDEj150ZwEPRU9Cm3Bg0iRtlgs
+KLZFi2hBjJU0TRoTZ7az6Wazm+xXkvqHIWmT3f115s28eVMBHOr4yz9hfImghdA6
+0QZ0X5lBS6EtoE0uj7TPO3mOYBMqgC9xtChD2RHBJtESCLvqKSCCEcx9BvNCBDqO
+oCnXgAgXZbhO8FYphkw6BkS4Jx56zdSbCBmzBcghnUYLQ2NECTRoFHLR5IJGwgE/
+a9roA9EkrI2EK0Hys80BOSGi0DxFmaFyDfK6W7GTrR2yAH0dIrz9+dfr7A6q61HS
+fFCzlHwePmDrSa++5+HmYhbWt4p2LlNrbqwUYt4hPA3txnYRXnzLw72wH26f3gdt
+kmA31AHtGox7CbeWKcKN91kY621VwE4dbIFHZ/wQbBPt3CauBfTMe0sbBbj6bqsE
+p4rekydtQCpMAnclc1auMFqDDz7myn5+/nUbLgV8cO5wi+E9VtIFuDaXsQrZL3HL
+5FgJHSDpztKW4rHRXhlGuuWyz8iDQ0clmPqRt3L7iMj9nGv17BchfqJVMfJeOl+E
+x8s5ePgpW/HdUQy/RYUkt12KNpQXj8nQ4xcgihk88joDa5sFxVMnMUmGunYrWpdP
+UDxJ4a5VciSDTtiWnp73GxbwuyEfjL3ZWWvPvuTKAEmU2RYAB0Sok8izFG4SFWoK
+uVZW62LdAEnt8i5E2uFuWDdAKtZqCSJv0bpzIolPX47XobYORoOysv5IV2YzynZH
+0peanXpoyaUzEncPrutghyacH3A3oR1FrXvD3VLFdYu/C1Zun5L43BpxG1Lylr5o
+U6Ze7/NVJMTUer4iaUy0QICTaBNOwdRM1W51F47IcBaz2GjfJTAqOxY1KXC79ctK
+wa7VD97C3i98SKraENDOYnGbW8WmNShqDtKu5DEccGRLZSZRT7j1bFFpIGzAlZiU
+O/KsJOk1HG1l5LXLs5t2zy1JdX7j6tBUJ5Udmkp/Nv9iHJqvsqFSWVx4kJNsIlxS
+P0wym83MNWG6MI9w/VabhUEe6DQMjp/5/43fqrZbfGHMbUNRJVtj1eBqelBXgvbm
+CFgHGoC9OEQ3gW3IvyH+CTAAfWpKTsTHj7oAAAAASUVORK5CYII=</picture>
+	</picture>
+	<picture>
+		<index>7</index>
+		<picture t="false">iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2Fy
+ZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAh5JREFUeNrMmTFLw1AQgC+PTroEHJyE
+Fgc3W1enFhQd6+aYqOAYij9A/AEiDo7a/ISu4tBOOrb9AdpCp4JCBnXVe3IJSZrX
+JjFJ7+AovOTlfdy9u3fvqkFK+Tk9qOFPE7WKqqPWQ6/0UB3UIWpHu38cpFlHSwhV
+xh8L1SCoJCJhbdRbhB1nCohgEuaGwLIQCdpCUOffgAhnEJwO2YpDkHZqQIRrZ2g1
+pTUR0kwESC7totagGJEB1IhyuVBMKBIOaK1u1AOhcGuRcB4kra12MQVEO/GnNzYB
+VlaDY99fAJPXNKCmP3C00L4bJY5WCXd5F/3s7DBtdFfc/VjyPUiXSsKWi5Kt7dmx
+yRta+TPqbTfnmh4gnRD5pJO9I4Dj89nx5yeAh2vVLAOZruSJ4waJldvWV1l4bX3R
+TMsfxQbwkz8mQVWJzhBQl2yCSiau0hRUz3GVqmDqXs/NIqIS5iR1AcylFOutkwuA
+3f3Z8TYm2vdproDxLKhKqouTbSaAPcYe7gmqHriKI+jeylWGErDDGLAj6MbP0c1j
+ySZ8F2m1yOJSNS71Y6qeo5rbf1loPa/kp4J1xMyCFa9gpV6JzQjOdvs3/kTdYrIX
+HWIJniR0i2oxAAw0lQJHHd1H7SW71o7Tm+kvobswQLiduMVCgxo6hcHRmjC39aHo
+0xgFuNVMVW7RRDOn6HaoD2POZYjzJdYt4BBoGTg20RWwhfwN8SvAANkEs+58aix2
+AAAAAElFTkSuQmCC</picture>
+	</picture>
+	<picture>
+		<index>8</index>
+		<picture t="false">iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2Fy
+ZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAxZJREFUeNrUmd1K40AUgKe1KIhCwAtR
+ENIbRUGs0Pu1b6BvkDxB7RPs7hNon6B9g+0btHsfaMULURALguKFbEARFGT3nPnR
+STpJZyZt6h6YJplkZj7n/MzMsUBsJQgq8HsIZQ+KA+Ug9kUPSgjlDEqHVKsDm2EK
+hlAu/NaheBzKRBC2DaUJsMPJAgYBwpxwsEkIgjYANMwOGAQeh3PIZCXkkG17wCBo
+TXDWkmezWvXNAJlKu1AqJB9BB6qpVF5MaJAnHOFjdVUviglqzRPuE5KNnQLIHMLa
+5py5OVoyiMcZFDbI7O7G1ltbrku8lRVm9Y+PxB8Os3h3WdijPIPWoQTBBJzq2VQR
+nEVSMVshrFXrLixo1Rmq2pVnsJ6lt97T00hdJwyzOk1dBvR0HODH+jrpbm7Sq+wM
+CHh0fU2Gb2+04P3g5UWrbeosUidhu5K+iRMkOQIOTq93d8ZtE2S/yLdMWo6Q9jyl
+toclvp8bK6g6d34+UnewvEzViyo7Xl0l39fWPt6dPjyQ8P2dfqPqS1P2UMVdxWZz
+9E9xHKoqhMGB0QmwDgEri4sj8AiBdoiA4lvRFtWr6UQ9BPxrslIgDA6MAyFUd2tr
+BE6GrF1e0mu8ra4UjUI8dIwzJgagXvv6mmwW8E6oM952KoCzECNAVBPalIhjqNq0
+FQPfCfXH2+pKiZ++MjmJgFU5SX9nJ7OT/NKJhTe7uyMQtasrZZj5eX8fCTO4gsTh
+y+fnOoCdEj+3jgVUeaqYPQSRVw/5XrVOJ3m9Qs6K9FCtc7KB5SnteUptOwW+3foz
+bi8o1PhtaYn8fn7+UKFsoycbG/S+cXsbsbFxbZOiFGxaywIQN4jH1ocJCMD97e3o
+Kn9xEdnRWMgpADZEmGlm6QlnT6fOUJqfcZDlStq2PalWk7QVRvMwP4wH6gY/sJj3
+BkYvG3782SoloswssCNfK8uxU4SdDOLL+ZrCjPIx2nmapNxMfwbZhQHA7etuFmo8
+oZMfHBvz/0u/pW+3WEPf1rs1vNVPgxs/g9G8zRdNAUdBXfIlk+hq2Fz+DfFPgAEA
+wW6L+8lq5dQAAAAASUVORK5CYII=</picture>
+	</picture>
+	<picture>
+		<index>9</index>
+		<picture t="false">iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2Fy
+ZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAqtJREFUeNpiZCATsAp5GgCpACDWB2IB
+IHZAU3IAiD8A8UUg3vD73fYL5NjDSKKjFIBUPhAnQB1FCgA5dgEQTwQ69gFVHQh0
+GMgx/VCHUQOAHFoIdOgHQgqZiXAcyFHbgdiCgXoAlDwymDlVX/77fucC2SEIdNx8
+KoYaztAEhmQiSQ6ERul+qE/pAUCh6IgtyplwaKCn42BRvh+bBBOOaKWn4+COhNqN
+O5NAM0QDw8ABA2DGeYiccRjR0t19Mso3agNQOlSEpUcWJIl+Qo6Li3RhkJcTp8j2
+h49eMixavgefEliZmwgPQWgNcR+frtyMAAZ9HSWGxfgNJwhigZ68eOUew+QZGwgp
+BYXiA1gI5hNSLcDPDXbcxSt3gQ5VZnjw+CU4NMgBdja6xCgDuakQlosTiA8BV3Ao
+zJ1SROu0CHYTE7RVQnTG+PjxC4O+rhI9MosAyG0s0CYT0QCUwBdRmA5JAAEs0PYc
+UbkvN8Of2PSDE4Ay2qZtx4lWzkRs9PLz81AtWEgwS4AFS0sYZy6ePGMjw8Gjlyhy
+nL21Himx4MBEqgWg8vD0wSkMezZ10iURMpGj6eLle3Sr91hI1QCqAUDRBCqo6eXA
+A8Skww8fv6LkYjsGXbJz8cGjl4lVfoAJ2noYrOADC7TfGkBKLoZFMTl1MYm5+CIo
+BDeQmovpVBeDwAYmaI+fpGimU138AOQ2FqSOdAGxuZiIthxVQg+5mJlIyIHouZiS
+upjIXDwRvU9CsJMOSuDUAERUl/DO/KDvNMGrOqhA4SAo+1AGlVD6xaD+KLBfqjBA
+HXdY1DYSMzZzfgAceQHoOENiWzOO0AEdujkOaicGGPTDb3jbg1CNiTRqUIDMTMTn
+OIxMgg1AM85MIFOCiukSVHN5Ah13gpDC4TGIjsOxdJmGAAgwAA/nAy0RYlm1AAAA
+AElFTkSuQmCC</picture>
+	</picture>
+	<picture>
+		<index>10</index>
+		<picture t="false">iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABHNCSVQICAgIfAhk
+iAAAAAlwSFlzAAALEwAACxMBAJqcGAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3Nj
+YXBlLm9yZ5vuPBoAAAUzSURBVFiF7ZjfbxRVFMc/Z2YWtlCg9ActsRBatqJBxSi/
+28IikcCLiID8A0SjYIBgJGIIECIEEgMEkUh4Mb4Ywo/ACwSDLlB+gwnGJsAubUMb
+KZSFYgvddmfm+NBu2VJwd1pqeOCbTDK595x7Prlz79xzD7xU7yTpGNUWTsloi5kz
+UcaqUCSQ3ZNgCvdEqUao7Od3jo+oO9vSK8Cr+dOKLFfXoroQGNATqP/QI1T3mj7f
++qL6UI1nwBu5pcsV2QxYohxwDfY6hnHJjLdGS+6d/6cnROHsSYMdX/8c03UmCLII
+5UPARnVlIHr6+7QBI3nlO1BdishZbOeTwP0zf/UEKJWqhpW/pa7uVpiEsj0QrVj+
+pI3xZEM4t3wFqkuBvTokc0ZfwQEU3zn1p5FpBUXZh7AsklO69EmbLjN4Pb+s2HC4
+KvCHkWkFi2pCsb6CS1b1qKDfabZPAW+alvVa8prsMoOmo+sBQx13cV/BKQvN6/ll
+xbWFUzISbUU1oZhhsBjwOY6zLtm+E7AyL5ipyAKQfX35Watybv1iONxojZmXw4E5
+/RPtxXcqrohyANWPr+TPGtgN0O/GZwF+Fd3fV3AAKszueH3dePBwZNc+2Q9kDLRb
+3k+0WYkXF8YIYJnWRS8BwwXleWLrPGAmSiEAIrXAcaefeXDM36G7XSBUN4rIOoV9
+oxtO3kjuc029YDgg6JhugIIUAOCnPh2w2sIpGW2t1hq1dRntP/EYQkMHxjvAIqvN
+3hrJKd1uDvJtSKzpkujpTcCmp42Z4XNutTomCsMTbY83ieCH9gWbCq46L1jQGrNO
+qOrXoOfUkNmaNSgrcLdiZOBuxUjNGpSFMEfhIiKr7Wb7RHVesCDVuJ1Hn9C5gaxn
+Wj8LblTQbzfbhwTeFpXPR0crdgFw57FNSeRIK3AUOBrOKVsiwjYH+2A4MCfY0Ze2
+uv2oU8lpiq8RmAj6xejoqV2p7EuiFTtVWY4yWRqbv/EazxNg1bBJ+YisEJFjgbun
+f0zXryRasRP0N9CV4YLyvD4DdF3fXCADly1e/ADU1c3AABz3Ay9+ngAVpgOP7kcf
+nfTiB9B270EIaBGV6V78PAEKvALUjudy3IsfwFgq24BaYIQXP4+AmlYG/jzlbQ0i
+dQKFl3jX5zVQJWP7ASMErfPi5/UTn1AYODRnwDRPdEC/7CFBIMMVQl78PAEaRvwQ
+0ILBV178AMSQVcAjTOOwp5hejIvvnL+N6lZVnRXJLf00Xb9wTtkSkPdAviupP9XQ
+Z4AA5iDfBoULIDtu5JR/lg6cCNsQzmlW5rde43k+i4tqQrHqvOBcR53DKvpDJLd0
+gRrGFgZnhhLnbDgwp788aJqBsgoIKlywsOYVeTyHIXkGlRi0JwMpIRtC9f399nQR
+2QQyWVw9Ko1NjZHcspuR3LKb0tjUiHJEYAKqG61Ma3pRQyhlGtd5DVA6L/SdM6ho
+vSAQowCoSTVYR2q0OlxQvvUpCesZ4LidSFijqUZrV0vcHG4AAre6ARpwTQHbsSek
+A5hQx6Lf3fH0SoYjE0FR5FoSV7tihu8YEBOV+b0N1FOJ6nyg5aGV8WuirRNwbEOo
+WdB9oAsiQ6e+8X/DVQ0rG6fCR4jsHXf72MNugACOKWsBV0xjTzqb5XmpelTQ77rs
+AeKmaa5L7usC+OrtiipFVilMcprtn5LvrX0K12T/DIxH9csnK10vfPHIU/kNxzpb
+d4/6GYTsngD9TtAqzKYAMz61V+W3hF7oAmaykkvAGIxQxXM+CCBCHJdaLyXgl+qt
+/gV9JUOW50T4IgAAAABJRU5ErkJggg==</picture>
+	</picture>
+	<picture>
+		<index>11</index>
+		<picture t="false">iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABHNCSVQICAgIfAhk
+iAAAAAlwSFlzAAACMgAAAjIB2rwhNAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3Nj
+YXBlLm9yZ5vuPBoAAAcsSURBVFiF3Zh/jFRXFcc/571h+VHZLrtvQKuAuzNTFpcW
+K9Qt7MxmgQrxR00tGCxIU/wRrPUXlUQjIBQ0WKRNNGDVtiZoC02UJrXSlDbKpjPD
+j7ZIa1ldOjNAW1KBebssP7ayy7x7/GNmlmF2lq6wIOk3meTl3HPP+bwz7717z4Wr
+XHKpAQ5WNFUYuzuEbY8xqhaAJWLwvLcsryxR3dHcccUBU07DZEW+hDALpe4CcRR4
+HXSbYj0ZcqN/v6yACSd8m8AKYFLO9C8giurrWKTEqAugljgYAojcqBARqM2le1nE
+rAyk488OKOAbo8I1VoZfIcwCXIH1xjKPh47tSPVnftI/Jahqfxn4tkAlsNX2+b5V
+faT50CUDJv2Ru1H9JeADWdcl9tq6dPPp/oAVK1FZXy7i+wEi9wHdgn4z4MafuGjA
+hNNwvyA/Bv5pqze7um1n68WAFeuNqsbxIuYpgVpBVgTc6Kr/GTDpNCwHWaXCC57q
+7Fo3fmog4PJKVNaXizXoKWCGqv4o1BZf02/AlBOep/C4iLxwJt1+Wx0t3QMJl1cL
+dWWDnRHPAtNVmBtKx/74noAHnIZxBnkFeLNLfLdc7PPWX+UquQv4MOJNCqZ3JgvH
+reIJBnkYsG315lxuOIBQ++6TavSLwGDBt6F4/DzAZFXkdmCawAMD9UL0DzLegvJz
+VZ2ZciKf7RMQ0aVA+rQ9bN2VgssrI7pWoR10eaG9BzBVNfVmYLLAholHn++80oC1
+bvyUIBsU6hP+xpvydl/+QrHmA2r5fBvztoS/8SZBv4JqWd4m6N4aN/5bAZP0TwmK
+seeoUJ2NoUdEZGcwHXsu7/92+ZTKrsH2PShjCoEE3Rtw478utKnlbRRjLRM184G9
+Wb+ckk54n0Im5MY+XmDbDjQV360i96l42y21dgJDeo0rd4XaYn/Ixog8CTq3VNXU
+6IRQe7yl0JZ0wvsAL+jGJkLuLz5Y0VQBfExEouffJc1ZIKYF3ZgE3JglcFBUF9r4
+OhUOZR1l4aCzVKpPRmb5mXIurn5elD8F3Zjkf4hsBDJDMubfvW+eF4EbEpX15T2A
+GetsLSCo2Vfo3N3VvV6gU2BZDliNyKMINxgvU405W5+r2MSxJ2LHQ0eiaUAkF9fY
+mUXAULX0d/mYraMaq1G9E3Tr6JM723uXlX2AWGKP6wHEtj6SK/nBQt/xp15qM8gj
+wIzkyMapAGXd+jBwWiz7J4fbh74LeIL5QFEa2X9dk6PCYoFXA+n4c7nqWD7PexQA
+T5f1ggPEyjIoWSYrV5l8gl7rrRh5CDiDMasAxp6IHUdlNejNox1vDSAiUrgUeopc
+Y3dnfg/4DSyW7MaVVFX4fpDpoqwIHt+xrzhXNqF9Inc1/FwFz41qsX+w/cW3UR4E
+ZqSqGu4ACLRF1wk8A7oEsFTl1YIp+wWdD3xaYXXIjTUDJPyROQhLga01bbG1JeHO
+k0oPoEJuSdPyUq5dlu9nwDsq8tA7100aJmDOuMfngH5D0MUB94M9z5ga/Soi60Hu
+DLmxlbn4lqiuB94adJYFAqZvLu/a7IWchPx30DOHsQSxpLrUnLp08+mUE16isKmz
+e+gjwPw6Wrpx+U2xb6g9vgvYVZwWKAM6zvi8YcDxPvmMVIuAYA5DroI+M6gVUMSa
+0NfEgBvbrMgTAvOSTvj7ffmVkoCKJV8HanxiR1tHNZYsRM55AmCMevt7AKs7mjuy
+r7c2XSjRu/bQRcAeYG3SH/5OKZ+UE56XdMJHUv7ItqR/SrDnBo9FtyjMVviQzzPR
+A07DuD7STBP4R6h998kewCy5bEOpS4ycGugLcOLR5zuxzWdA9qD8IumENx2omDq2
+0EdhNWBUNYzae5JV4S/kx0Ju7BlR+ZxAhUH+vJ0mX+HclBO+XqDWCNvytoK1mM0C
+SzDWAmBlX5DBozuOvTZq5rRrMp3rEbnL+Ky5SX9kt6gezsUZI7ARWGvgaRG2JJ1w
+s4Cbz6RwBLh+tL/ro6Tp2aCqsgABW9jcU7fC5Ekn/DIwttMeVt2fHc2BkZEb1Zi7
+VeRTKEGy6/JJUbkj0Bb9a2rErdeqfeYBYB6571ouaacqjwXbYt/N21qdhuE2csiC
+RMCN3VIyYbIqcnvSCWvSifTZZV0uJfzhNUknrMUb1l49SdIJ/w1osCw+WXMs9toV
+gXMinxB0l4hsD6SjswrHevUkFnoP0G0Mm1r8TcVr7MDDVdaXC7oZ+I+Subc3T5Fq
+3Ph+gUXA+CF4W1qoKyv2GSi1UFeW641DKnytuKMrCQgQcGObQFeo6swy/4i/tDoN
+w0v5XYoSlfXluZ54hqouLdUT9wkIEHTjqxGWiXKrjbxU2CdcqlJOw2SxBr0CTBfl
+h32dKkA/Do9SIyOz1ehjwDAVHuzG99NLOjyyypaDfg84pSoLQ23Rpy805/92/GZl
+zL01HTvefK+5748DzGJdtUfApXS5D9Gvev0XcsIcCUsExBYAAAAASUVORK5CYII=
+</picture>
+	</picture>
+	<picture>
+		<index>12</index>
+		<picture t="false">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
+9S+kWhpbrUBShQAAAABJRU5ErkJggg==</picture>
+	</picture>
+	<picture>
+		<index>13</index>
+		<picture t="false">iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABHNCSVQICAgIfAhk
+iAAAAAlwSFlzAAALEwAACxMBAJqcGAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3Nj
+YXBlLm9yZ5vuPBoAAAWoSURBVFiF3ZhxbJxlHcc/3+e9Fhyz69q33R8iy9q7rfMS
+iLakul5JQbNFFxLCXDQiCSYGcGgk+scIMlEIUXD+Q6hmiySSTEcEFk2AZCNq4/WG
+Y0Uda2Xu7qgs0eDu2pRtBNju3p9/3Hvletf1bmzrpt/kknt/z/2+z+eevO/7/H4P
+XObS+RpMtg61Bt7pGJ53TWDmAJwUUCwec8Xm9KqZkZlFB8z6A32GvozYgBFfwMeA
+w2B7Dfd0LJ/8y0UFTPuJmwUPAr1h6HUgidlhHFkFlgcwJ5+AbqRrDQYFPeF0B6Xg
+B9251IsXFPDoikSXK/AzxAYgL3gicMGu2PH92UbyMx2fiZp5XwW+JWgDXvAikW+u
+emvkn+cNmOkYvAOzx4EIaPv78h6L50ZONQJWrXRbf4sU2Yr0HeC0sC3d+dSvPjRg
+2h/4odD3gb97Vty0aurlIx8GrFpH229YKwV7BD1CD3bnkw+dM2DGH9gGesjES0Wz
+TT351MkLAVdWuq2/Ra5pD/BZM7s/NpX6UcOAWT/xFYNdkl56Lzd9c5yJ0wtNNtEx
+tPQKCt82Y7PgGgADk3EEWUrm9nZPJX9fk0e8+Qp/+YvATSa+FMuNPlMX8A1/YE2A
+xoA331fk0/Xut6yfWG2wD1gJpGUcKjlbp6GVYRyZbeqeSu2pzg9X8s/Ax1CxN5p7
+OVM5HqlOCNDPAc+z4hfj+dEF4cbobTJ4Bmg30y2xqeTvav/A4EbDnjfJn88jNn3g
+RLptYLOcXhWRYWBD5birvMi0D94C3Ch4tJEHYln7ki8A1wrbNh8cgGFv1fOJTacm
+MH5iZuuz/uDGyrG5Kyj7HpA75S3ZXs8UQLLPA+YKTb8sx9J+YsjBjw3WAK0fgCpY
+yKsge8xDW4RtA14ox2dXMNu+7nqgTzB83X/2vdMIILAamKrcbwXDBivBngV2AjuR
+nmiqmHQ+9eRTJ4WGDfrTHTd8shyfXUHD3QaYi0SeahAO0FLD/lUVXAv8IppP3dm4
+T8jgik8pcA/IgtuAv0LlPSjWg/2tke2n0lJQqKamVCScs2LH92cxxsMtFQhXcLJ1
+qLVIoQe54XommRXrOim6w0BnGBqrpgbuzPiJyhV8D3Mbo1N/+kM9fxOjMu5Ot/W3
+xKYPnIgAFNyZHiFhwXg9A4ru4yFcEnjdTHMrE3FvWIKV9QkgYVaoeaXNT8g4Qk7e
+GuBgKclzV2OGBTbZkElJu6L50Z3VwWhu9PHK64yf2A4kgiubG6oF5WwSE4a7Gjjo
+AARLw/ELut+WvO16weSaf4/kG0vw3i59sRao2UlU9+Y2uUAWAOzI+IkdwI5ofvTu
+8njGT4zxQUFbelpEzRbXqCKhySlVUC+kt3PvjC/r+MijMpYDtwJ9VT/ppVxph4wK
+gicbJrListKLQCdmAb2AY4HAOXXVy+/j1TPkuA8g4yd6z/KzZDQ/elfDUJV8gbok
+QByD8D2ooncUMJOLL5S8KBJxILDgTBpCwFUzIzMY42BDl5It1I2C12LTB07AnJ1E
+ezHi6c513ZeKLOsnVgt6ArG3HJsFNNgNiMDdfknoADNuB/DE7nJsFjBsqscEWw6t
+WH/VYsMd8Qc+amKL4EDX8dFDNYAAmB4BOq4qvrt1sQE96f5Sz6yHK+NzAKNTyd8C
+fwTb+kZn4rrFgkv7g5+S8V1J+7rzyTl1Y80G7rBvBGgsCPj1RMdQfwNNelfWT/ym
+fHGudVa6rb9F2G7gXaNwTy1P9Wz51D8EdwFrr6T43ATx5rOZm/EasNxgc/kDWBiv
+qwnizWFvHDPx9eqODv4HGveaFSwrmk89jHhAxuc89Epln3C+yvoDfXJNY8BNMu47
+Gxw0cHiU7RzcZIE9CSwx8dPTRB45r8Mj17wN7F7gpJm+drZ2tWFAuDjHb64Q3NM1
+s//Nern/HweY1bpsj4Dn08U+RL/s9V9dXGgigvtCnQAAAABJRU5ErkJggg==</picture>
+	</picture>
+</document>

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.6">
+	<Item id="bc5aa050-509c-43f5-9d11-022a5326b62b">
+		<Name>АвторПользовательРеглЗадания</Name>
+		<Code>000000007</Code>
+		<Description>Автор пользователь регл задания</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="83712e41-df3a-4c5f-9a13-620c30bab6f9">
+		<Name>ДляМоделиУстройства</Name>
+		<Code>000000001</Code>
+		<Description>Для модели устройства</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="36546f56-06ed-4319-9d6e-8403efbe9205">
+		<Name>ДопРеквПрямыеСсылкиНаФотоНоменклатура</Name>
+		<Code>000000010</Code>
+		<Description>Доп рекв прямые ссылки на фото номенклатура</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9e49e68f-3203-4c17-afec-0cedab5b30d3">
+		<Name>ДопРеквПрямыеСсылкиНаФото</Name>
+		<Code>000000008</Code>
+		<Description>Доп рекв. прямые ссылки на фото</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="62dc73a7-bb3c-44bb-91d9-218ed2c257d0">
+		<Name>ДопРеквизитФотоДляНоменклатуры</Name>
+		<Code>000000009</Code>
+		<Description>Доп реквизит ссылка на фото архив для номенклатуры</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ed7cd9b9-0bf4-41d5-9a6d-80e5f3e2a606">
+		<Name>ЗначениеДаИсточникДляГлавногоФото</Name>
+		<Code>000000012</Code>
+		<Description>Значение да источник для главного фото</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="90ebf208-69e6-446b-aaa0-cc9a63f55935">
+		<Name>ИсточникДляГлавногоФото</Name>
+		<Code>000000011</Code>
+		<Description>Источник для главного фото</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="caf7df1f-5bc6-4c07-8f69-f559c181eb63">
+		<Name>НаборДопРеквизитыНоменклатура</Name>
+		<Code>000000002</Code>
+		<Description>Набор доп реквизиты номенклатура</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6eec649a-2cfb-442a-b861-1cde4bc6cc53">
+		<Name>НаборДопРеквизитыХарактеристика</Name>
+		<Code>000000003</Code>
+		<Description>Набор доп реквизиты характеристика</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2604963b-8ffc-4773-800f-29e7b04ed41d">
+		<Name>НаличиеСпецУсловийОтгрузки</Name>
+		<Code>000000004</Code>
+		<Description>Наличие спец условий отгрузки</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ed4814bf-6d46-4a51-9018-d4df868a9db9">
+		<Name>НеизвестныйПокупательССайта</Name>
+		<Code>000000005</Code>
+		<Description>Неизвестный покупатель с сайта</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a4de4255-2905-4f75-b2b1-09664ad953cc">
+		<Name>ДопРеквизитФото2</Name>
+		<Code>000000006</Code>
+		<Description>Ссылка на фото архив для характеристики</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>
