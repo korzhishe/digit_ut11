@@ -1804,21 +1804,21 @@
 												</Button>
 											</ChildItems>
 										</Page>
-										<Page name="ИспользоватьOneDriveРусурс" id="1192">
+										<Page name="ИспользоватьOneDriveРесурс" id="1192">
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Использовать one drive русурс</v8:content>
+													<v8:content>Использовать one drive ресурс</v8:content>
 												</v8:item>
 											</Title>
 											<ToolTip>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Использовать one drive русурс</v8:content>
+													<v8:content>Использовать one drive ресурс</v8:content>
 												</v8:item>
 											</ToolTip>
 											<Group>HorizontalIfPossible</Group>
-											<ExtendedTooltip name="ИспользоватьOneDriveРусурсРасширеннаяПодсказка" id="1193"/>
+											<ExtendedTooltip name="ИспользоватьOneDriveРесурсРасширеннаяПодсказка" id="1193"/>
 											<ChildItems>
 												<InputField name="OneDriveКаталог" id="1194">
 													<DataPath>OneDriveКаталог</DataPath>
