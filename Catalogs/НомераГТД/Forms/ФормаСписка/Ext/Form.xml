@@ -114,6 +114,16 @@
 					<ContextMenu name="СсылкаКонтекстноеМеню" id="16"/>
 					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="17"/>
 				</LabelField>
+				<LabelField name="Дата" id="42">
+					<DataPath>Список.Дата</DataPath>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="43"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="44"/>
+				</LabelField>
+				<LabelField name="Импортер" id="39">
+					<DataPath>Список.Импортер</DataPath>
+					<ContextMenu name="ИмпортерКонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="ИмпортерРасширеннаяПодсказка" id="41"/>
+				</LabelField>
 				<PictureField name="ЕстьФайлы" id="33">
 					<DataPath>Список.ЕстьФайлы</DataPath>
 					<HeaderPicture>
@@ -163,7 +173,8 @@
 		КОГДА НаличиеФайлов.ЕстьФайлы
 			ТОГДА 0
 		ИНАЧЕ 1
-	КОНЕЦ КАК ЕстьФайлы
+	КОНЕЦ КАК ЕстьФайлы,
+	"" + "20" + ПОДСТРОКА(СправочникНомераГТД.Код, 14, 2) + "." + ПОДСТРОКА(СправочникНомераГТД.Код, 12, 2) + "." + ПОДСТРОКА(СправочникНомераГТД.Код, 10, 2) КАК Дата
 ИЗ
 	Справочник.НомераГТД КАК СправочникНомераГТД
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.НаличиеФайлов КАК НаличиеФайлов
@@ -175,6 +186,10 @@
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>
 					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Дата</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
 					</dcsset:order>
